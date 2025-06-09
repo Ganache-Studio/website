@@ -72,7 +72,7 @@ export const FilmCoverPresentation = ({
 }) => {
   return (
     <div className="relative h-dvh" id={filmCover.id}>
-      <Link href={`/${filmCover.type}#${filmCover.id}`} className="group">
+      <Link href={`/film-${filmCover.type}#${filmCover.id}`} className="group">
         <NextImage
           src={filmCover.url}
           alt={filmCover.id}

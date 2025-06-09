@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import { Section } from './section';
 import { Title } from './title';
-import { Parrain as ParrainType } from '../../../_types/festival-data.types';
+import { Parrain as ParrainType } from '../../_types/festival-data.types';
 
 export const Parrain = ({
   title,

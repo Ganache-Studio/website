@@ -31,7 +31,7 @@ export const useStudioContext = () => {
 
 export const StudioProvider = ({ children }: { children: ReactNode }) => {
   const pathname = usePathname();
-  const isMainContentFullScreen = ['/pub'].includes(pathname);
+  const isMainContentFullScreen = ['/film-pub'].includes(pathname);
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 

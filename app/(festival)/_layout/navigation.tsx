@@ -135,7 +135,7 @@ export const Navigation = ({ onClick }: NavigationProps) => {
         </Button>
         {festivalYear !== '2023' && (
           <FestivalPageLink
-            href="/festival/2023#presentation"
+            href="/ganache-festival-2023#presentation"
             onClick={onClick}
           >
             1ère ÉDITION
@@ -143,14 +143,17 @@ export const Navigation = ({ onClick }: NavigationProps) => {
         )}
         {festivalYear !== '2024' && (
           <FestivalPageLink
-            href="/festival/2024#presentation"
+            href="/ganache-festival-2024#presentation"
             onClick={onClick}
           >
             2ème ÉDITION
           </FestivalPageLink>
         )}
         {festivalYear !== '2025' && (
-          <FestivalPageLink href="/festival#presentation" onClick={onClick}>
+          <FestivalPageLink
+            href="/ganache-festival#presentation"
+            onClick={onClick}
+          >
             3ème ÉDITION
           </FestivalPageLink>
         )}

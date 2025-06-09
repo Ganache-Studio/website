@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { festival2024Data } from '../../../_data/(festival)/2024';
+import { festival2025Data } from '../../_data/(festival)/2025';
 import { Parrain } from '../_components/parrain';
 import { Partners } from '../_components/partners';
 import { PhotoGallery } from '../_components/photo-gallery';
@@ -17,8 +17,8 @@ const Festival = () => {
   return (
     <Section id="presentation">
       <div className="space-y-4 text-sm lg:space-y-6 lg:text-base">
-        <PhotoGallery photos={festival2024Data.photos} columns={4} />
-        <p className="text-justify">{festival2024Data.description}</p>
+        <PhotoGallery photos={festival2025Data.photos} columns={3} />
+        <p className="text-justify">{festival2025Data.description}</p>
         <p className="text-end">
           Ganache Studio et l&apos;équipe du Ganache Festival
         </p>
@@ -28,8 +28,8 @@ const Festival = () => {
         <div className="flex-1/3">
           <Image
             className="w-full"
-            src={festival2024Data.presentation.posterUrl}
-            alt="Affiche Festival 2024"
+            src={festival2025Data.presentation.posterUrl}
+            alt="Affiche Festival 2025"
             width={0}
             height={0}
           />
@@ -41,8 +41,8 @@ const Festival = () => {
             <Link href="/" className="underline">
               Ganache Studio
             </Link>
-            . La seconde édition s&apos;est tenue au cinéma Le Grand Action, à
-            Paris, les vendredi 19 et samedi 20 avril 2024.
+            . La troisième édition s&apos;est tenue au cinéma Le Grand Action, à
+            Paris, les vendredi 25 et samedi 26 avril 2025.
           </p>
           <div className="space-y-2">
             <p className="text-justify">
@@ -76,7 +76,7 @@ const Festival = () => {
       </div>
       <iframe
         className="aspect-video w-full"
-        src={festival2024Data.presentation.teaserUrl}
+        src={festival2025Data.presentation.teaserUrl}
         allowFullScreen
       />
     </Section>
@@ -91,53 +91,43 @@ const Programme = () => {
         {/* Mobile View */}
         <div className="block space-y-4 md:hidden">
           <p className="text-xl md:text-2xl">
-            {festival2024Data.programme[0].text}
+            {festival2025Data.programme[0].text}
           </p>
           <div className="border-b border-gray-300" />
           <ProgrammeStep
-            title={festival2024Data.programme[0].steps[0].text}
-            films={festival2024Data.programme[0].steps[0].films}
+            title={festival2025Data.programme[0].steps[0].text}
+            films={festival2025Data.programme[0].steps[0].films}
           />
           <div className="border-b border-gray-300" />
           <ProgrammeStep
-            title={festival2024Data.programme[0].steps[1].text}
-            films={festival2024Data.programme[0].steps[1].films}
+            title={festival2025Data.programme[0].steps[1].text}
+            films={festival2025Data.programme[0].steps[1].films}
           />
           <div className="border-b border-gray-300" />
           <ProgrammeStep
-            title={festival2024Data.programme[0].steps[2].text}
-            films={festival2024Data.programme[0].steps[2].films}
-          />
-          <div className="border-b border-gray-300" />
-          <ProgrammeStep
-            title={festival2024Data.programme[0].steps[3].text}
-            films={festival2024Data.programme[0].steps[3].films}
+            title={festival2025Data.programme[0].steps[2].text}
+            films={festival2025Data.programme[0].steps[2].films}
           />
           <div className="border-b border-gray-300" />
           <h4 className="text-xl md:text-2xl">
-            {festival2024Data.programme[1].text}
+            {festival2025Data.programme[1].text}
           </h4>
           <div className="border-b border-gray-300" />
           <ProgrammeStep
-            title={festival2024Data.programme[1].steps[0].text}
-            films={festival2024Data.programme[1].steps[0].films}
+            title={festival2025Data.programme[1].steps[0].text}
+            films={festival2025Data.programme[1].steps[0].films}
           />
           <div className="border-b border-gray-300" />
           <ProgrammeStep
-            title={festival2024Data.programme[1].steps[1].text}
-            films={festival2024Data.programme[1].steps[1].films}
-          />
-          <div className="border-b border-gray-300" />
-          <ProgrammeStep
-            title={festival2024Data.programme[1].steps[2].text}
-            films={festival2024Data.programme[1].steps[2].films}
+            title={festival2025Data.programme[1].steps[1].text}
+            films={festival2025Data.programme[1].steps[1].films}
           />
         </div>
 
         {/* Desktop View */}
         <div className="hidden space-y-8 md:block">
           <div className="flex space-x-4">
-            {festival2024Data.programme.map(({ day, text }) => (
+            {festival2025Data.programme.map(({ day, text }) => (
               <div key={day} className="flex-1/2">
                 <h4 className="text-2xl">{text}</h4>
               </div>
@@ -147,8 +137,14 @@ const Programme = () => {
           <div className="flex space-x-4">
             <div className="flex-1/2">
               <ProgrammeStep
-                title={festival2024Data.programme[0].steps[0].text}
-                films={festival2024Data.programme[0].steps[0].films}
+                title={festival2025Data.programme[0].steps[0].text}
+                films={festival2025Data.programme[0].steps[0].films}
+              />
+            </div>
+            <div className="flex-1/2">
+              <ProgrammeStep
+                title={festival2025Data.programme[0].steps[1].text}
+                films={festival2025Data.programme[0].steps[1].films}
               />
             </div>
           </div>
@@ -156,29 +152,14 @@ const Programme = () => {
           <div className="flex space-x-4">
             <div className="flex-1/2">
               <ProgrammeStep
-                title={festival2024Data.programme[0].steps[1].text}
-                films={festival2024Data.programme[0].steps[1].films}
+                title={festival2025Data.programme[0].steps[1].text}
+                films={festival2025Data.programme[0].steps[1].films}
               />
             </div>
             <div className="flex-1/2">
               <ProgrammeStep
-                title={festival2024Data.programme[1].steps[0].text}
-                films={festival2024Data.programme[1].steps[0].films}
-              />
-            </div>
-          </div>
-          <div className="border-b border-gray-300" />
-          <div className="flex space-x-4">
-            <div className="flex-1/2">
-              <ProgrammeStep
-                title={festival2024Data.programme[0].steps[2].text}
-                films={festival2024Data.programme[0].steps[2].films}
-              />
-            </div>
-            <div className="flex-1/2">
-              <ProgrammeStep
-                title={festival2024Data.programme[1].steps[1].text}
-                films={festival2024Data.programme[1].steps[1].films}
+                title={festival2025Data.programme[1].steps[1].text}
+                films={festival2025Data.programme[1].steps[1].films}
               />
             </div>
           </div>
@@ -186,14 +167,14 @@ const Programme = () => {
           <div className="flex space-x-4">
             <div className="flex-1/2">
               <ProgrammeStep
-                title={festival2024Data.programme[0].steps[3].text}
-                films={festival2024Data.programme[0].steps[3].films}
+                title={festival2025Data.programme[0].steps[2].text}
+                films={festival2025Data.programme[0].steps[2].films}
               />
             </div>
             <div className="flex-1/2">
               <ProgrammeStep
-                title={festival2024Data.programme[1].steps[2].text}
-                films={festival2024Data.programme[1].steps[2].films}
+                title={festival2025Data.programme[1].steps[2].text}
+                films={festival2025Data.programme[1].steps[2].films}
               />
             </div>
           </div>
@@ -203,15 +184,15 @@ const Programme = () => {
   );
 };
 
-export default function GanacheFestival2024Page() {
+export default function GanacheFestivalPage() {
   return (
     <div className="space-y-24 md:space-y-32 lg:space-y-48">
       <Festival />
       <Programme />
-      <Selection films={festival2024Data.films} columns={4} />
-      <Parrain {...festival2024Data.parrain} />
-      <Team members={festival2024Data.team} />
-      <Partners partners={festival2024Data.partners} />
+      <Selection films={festival2025Data.films} columns={4} />
+      <Parrain {...festival2025Data.parrain} />
+      <Team members={festival2025Data.team} />
+      <Partners partners={festival2025Data.partners} />
     </div>
   );
 }

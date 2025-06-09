@@ -63,7 +63,7 @@ export const musiquePresentations: FilmPresentation[] = [
       },
     ],
     vimeoUrl:
-      'https://player.vimeo.com/video/726662080?title=0&byline=0&portrait=0',
+      'https://player.vimeo.com/video/726662080?h=67f402da2d&title=0&byline=0&portrait=0',
     additionalHtml:
       '<p>Réalisé par Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin</p>',
   },
