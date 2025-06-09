@@ -92,7 +92,7 @@ const Capsule = ({ showCapsule }: { showCapsule?: boolean }) => {
   return (
     <p className="text-xs md:text-sm">
       {'Projet '}
-      <Link className="font-bold underline" href="/capsule">
+      <Link className="font-bold underline" href="/capsules">
         CAPSULES
       </Link>
     </p>

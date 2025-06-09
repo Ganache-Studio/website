@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-import { festival2023Data } from '../../../_data/(festival)/2023';
+import { festival2023Data } from '../../_data/(festival)/2023';
 import { Parrain } from '../_components/parrain';
 import { Partners } from '../_components/partners';
 import { PhotoGallery } from '../_components/photo-gallery';

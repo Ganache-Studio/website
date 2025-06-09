@@ -1,18 +1,18 @@
 export const navigationLinks = [
   {
-    path: '/fiction',
+    path: '/film-fiction',
     label: 'FICTION',
   },
   {
-    path: '/musique',
+    path: '/film-musique',
     label: 'MUSIQUE',
   },
   {
-    path: '/documentaire',
+    path: '/film-documentaire',
     label: 'DOCUMENTAIRE',
   },
   {
-    path: '/pub',
+    path: '/film-pub',
     label: 'PUB',
   },
 ];

@@ -12,19 +12,19 @@ module.exports = {
         priority: 1.0,
         changefreq: 'weekly',
       },
-      '/fiction': {
+      '/film-fiction': {
         priority: 0.9,
         changefreq: 'monthly',
       },
-      '/documentaire': {
+      '/film-documentaire': {
         priority: 0.9,
         changefreq: 'monthly',
       },
-      '/musique': {
+      '/film-musique': {
         priority: 0.9,
         changefreq: 'monthly',
       },
-      '/capsule': {
+      '/capsules': {
         priority: 0.8,
         changefreq: 'monthly',
       },
@@ -32,7 +32,7 @@ module.exports = {
         priority: 0.8,
         changefreq: 'monthly',
       },
-      '/pub': {
+      '/film-pub': {
         priority: 0.8,
         changefreq: 'monthly',
       },
@@ -44,19 +44,15 @@ module.exports = {
         priority: 0.3,
         changefreq: 'yearly',
       },
-      '/festival': {
+      '/ganache-festival': {
         priority: 0.9,
         changefreq: 'monthly',
       },
-      '/festival': {
+      '/ganache-festival-2024': {
         priority: 0.9,
         changefreq: 'monthly',
       },
-      '/festival/2024': {
-        priority: 0.9,
-        changefreq: 'monthly',
-      },
-      '/festival/2023': {
+      '/ganache-festival-2023': {
         priority: 0.9,
         changefreq: 'monthly',
       },

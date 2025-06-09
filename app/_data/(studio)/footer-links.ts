@@ -1,6 +1,6 @@
 export const footerLinks = [
   {
-    path: '/festival#presentation',
+    path: '/ganache-festival#presentation',
     label: 'FESTIVAL',
   },
   {
