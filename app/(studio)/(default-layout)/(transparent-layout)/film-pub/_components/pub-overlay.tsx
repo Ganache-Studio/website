@@ -93,8 +93,7 @@ export const PubOverlay = ({ onOverlayHidden }: PubOverlayProps) => {
         <p className="text-sm font-bold tracking-wide uppercase lg:text-lg">
           Issus du cinéma, nous produisons des publicités avec le savoir-faire
           et l&apos;exigence que demandent les grandes histoires. Nous croyons à
-          la créativité pure, à la disruption et au travail bien fait. Nous
-          sommes Ganache Studio.
+          la créativité pure, à la disruption et au travail bien fait.
         </p>
       </div>
     </div>
