@@ -4,14 +4,6 @@ export const pubCovers: PubAnyCover[] = [
   {
     id: 'food-society',
     src: 'videos/pubs/food_society/video.mp4',
-    vimeoUrl:
-      'https://player.vimeo.com/video/809031020?h=1e6e37278d&title=0&byline=0&portrait=0',
-    poster: 'videos/pubs/food_society/poster.jpg',
-    title: 'FOOD SOCIETY',
-    producer: 'Théo Vincent',
-    type: 'Film de marque',
-    agence: 'Fullmoun',
-    format: 'horizontal',
   },
   {
     id: 'vowels',
