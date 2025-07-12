@@ -13,8 +13,8 @@ const GanacheLogo = ({
     <Image
       src={
         isWhite
-          ? '/images/ganache_logo_white.png'
-          : '/images/ganache_logo_black.png'
+          ? 'https://ganache.studio/images/ganache_logo_white.png'
+          : 'https://ganache.studio/images/ganache_logo_black.png'
       }
       width={0}
       height={0}

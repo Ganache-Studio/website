@@ -6,20 +6,21 @@ export const festival2024Data: FestivalData = {
   description: `La seconde édition du Ganache Festival s'est tenue les 19 et 20 avril 2024 à Paris. Une fois de plus, la grande salle du Grand Action était comble tout le week-end. La sélection, paritaire et particulièrement éclectique, a rencontré un public divers et festif qui a volontiers prolongé ces deux soirées autour d'un – ou plusieurs – verres. Ganache Studio remercie du fond du cœur les spectateur·ice·s, les artistes venu·e·s présenter leurs films, les partenaires pour leur généreux soutien, et notre parrain Alex Lutz pour son implication sincère. À l'année prochaine !`,
 
   presentation: {
-    posterUrl: '/images/festival/2024/affiche_festival.jpeg',
+    posterUrl:
+      'https://ganache.studio/images/festival/2024/affiche_festival.jpeg',
     teaserUrl:
       'https://player.vimeo.com/video/931124635?h=89588603ba&title=0&byline=0&portrait=0',
   },
 
   photos: [
-    '/images/festival/2024/photos/1.jpeg',
-    '/images/festival/2024/photos/2.jpeg',
-    '/images/festival/2024/photos/3.jpeg',
-    '/images/festival/2024/photos/4.jpeg',
-    '/images/festival/2024/photos/5.jpeg',
-    '/images/festival/2024/photos/6.jpeg',
-    '/images/festival/2024/photos/7.jpeg',
-    '/images/festival/2024/photos/8.jpeg',
+    'https://ganache.studio/images/festival/2024/photos/1.jpeg',
+    'https://ganache.studio/images/festival/2024/photos/2.jpeg',
+    'https://ganache.studio/images/festival/2024/photos/3.jpeg',
+    'https://ganache.studio/images/festival/2024/photos/4.jpeg',
+    'https://ganache.studio/images/festival/2024/photos/5.jpeg',
+    'https://ganache.studio/images/festival/2024/photos/6.jpeg',
+    'https://ganache.studio/images/festival/2024/photos/7.jpeg',
+    'https://ganache.studio/images/festival/2024/photos/8.jpeg',
   ],
 
   programme: [
@@ -121,7 +122,7 @@ export const festival2024Data: FestivalData = {
       duration: "20'",
       synopsis:
         "En 1952, Amédée, le parrain du grand-père du cinéaste, s'est donné la mort en se jetant dans la Seine. Personne ne connaît la raison de cet acte tragique. Son histoire nous parvient par bribes, par fragments de souvenirs.",
-      imageUrl: '/images/festival/2024/films/AMDE.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/AMDE.jpg',
     },
     {
       title: 'ANDY ET CHARLIE',
@@ -129,7 +130,7 @@ export const festival2024Data: FestivalData = {
       duration: "21'",
       synopsis:
         "Andy et Charlie se produisent sur scène dans des numéros érotiques. L'été, loin du cabaret, les deux jeunes femmes s'interrogent frontalement et inventent leurs itinéraires.",
-      imageUrl: '/images/festival/2024/films/A&C.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/A&C.jpg',
     },
     {
       title: 'BABY BLUE',
@@ -137,14 +138,14 @@ export const festival2024Data: FestivalData = {
       duration: "20'",
       synopsis:
         "Aurore et Carla sont proches depuis l'enfance, des amies inséparables. Mais depuis quelques mois, le duo s'est transformé en trio, Carla est devenue maman. L'amitié forte et exclusive des filles résistera-t-elle ?",
-      imageUrl: '/images/festival/2024/films/BB.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/BB.jpg',
     },
     {
       title: 'BÂTIMENT Y',
       director: 'Noé Balthazard',
       duration: "18'",
       synopsis: "Un agent d'entretien erre seul dans un immense bâtiment vide.",
-      imageUrl: '/images/festival/2024/films/BY.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/BY.jpg',
     },
     {
       title: 'EN AVANT, EN ARRIÈRE',
@@ -152,7 +153,7 @@ export const festival2024Data: FestivalData = {
       duration: "18'",
       synopsis:
         "Basile vient de se faire quitter après avoir trompé Diane avec Zoé … pour reconquérir son ex-copine, une seule solution selon lui : que ce soit Zoé qui aille faire comprendre à Diane qu'entre eux, ce n'était qu'un coup d'un soir.",
-      imageUrl: '/images/festival/2024/films/EAEA.png',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/EAEA.png',
     },
     {
       title: 'GWENDOLINE',
@@ -160,7 +161,8 @@ export const festival2024Data: FestivalData = {
       duration: "22'",
       synopsis:
         "Errant sur leur vélo tandem et armés de leur désespoir, Micka et Pierre, jeune duo d'un groupe de post-punk, recherchent désespérément leur public.",
-      imageUrl: '/images/festival/2024/films/GWENDOLINE.jpg',
+      imageUrl:
+        'https://ganache.studio/images/festival/2024/films/GWENDOLINE.jpg',
     },
     {
       title: "L'AMÉRICAIN",
@@ -168,7 +170,8 @@ export const festival2024Data: FestivalData = {
       duration: "23'",
       synopsis:
         "Pour tromper l'ennui et attirer l'attention, Malik annonce à trois jeunes de son quartier qu'il va partir aux USA. Il ment, mais la nouvelle fait rapidement le tour du quartier et Malik devient un symbole d'espoir et de fierté pour tout le monde.",
-      imageUrl: '/images/festival/2024/films/AMERICAIN.jpg',
+      imageUrl:
+        'https://ganache.studio/images/festival/2024/films/AMERICAIN.jpg',
     },
     {
       title: 'LA DERNIÈRE VALLÉE',
@@ -176,7 +179,7 @@ export const festival2024Data: FestivalData = {
       duration: "23'",
       synopsis:
         "Alors que Abdou traverse avec difficulté́ les Alpes en quête de liberté, il croise la route d'un vieil homme qui vit seul, reclus dans la forêt. Une rencontre éphémère qui laissera une trace chez les deux hommes.",
-      imageUrl: '/images/festival/2024/films/LDV.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/LDV.jpg',
     },
     {
       title: 'LONELY PEOPLE ENVY LONELY PEOPLE',
@@ -184,7 +187,7 @@ export const festival2024Data: FestivalData = {
       duration: "6'",
       synopsis:
         'De la genèse de la Terre sont nées les premières âmes. Seules, elles cherchent à tout prix à former un tout.',
-      imageUrl: '/images/festival/2024/films/LPELP.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/LPELP.jpg',
     },
     {
       title: 'LORRAINE',
@@ -192,7 +195,8 @@ export const festival2024Data: FestivalData = {
       duration: "12'",
       synopsis:
         "Lorraine, une jeune mannequin de vingt-trois ans, rend visite à sa mère dans sa maison d'enfance. Durant son séjour, elle va s'avouer la vraie raison de sa venue.",
-      imageUrl: '/images/festival/2024/films/LORRAINE.jpeg',
+      imageUrl:
+        'https://ganache.studio/images/festival/2024/films/LORRAINE.jpeg',
     },
     {
       title: 'MINUIT SUR MSN',
@@ -200,7 +204,7 @@ export const festival2024Data: FestivalData = {
       duration: "22'",
       synopsis:
         "2008, le début de l'été, la fin de la cinquième. La nuit, Laure parle secrètement à Alix sur msn. Mais le jour, dans leur collège de filles, elle l'évite - comme tout le monde. Quand Laure invite Alix à venir chez elle après les cours, quelque chose change entre elles.",
-      imageUrl: '/images/festival/2024/films/MINUIT.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/MINUIT.jpg',
     },
     {
       title: 'NATURE ATTACK',
@@ -208,7 +212,7 @@ export const festival2024Data: FestivalData = {
       duration: "3'25",
       synopsis:
         'Un oiseau décide de chasser les grillons, mais sa traversée sera plus compliquée que prévu.',
-      imageUrl: '/images/festival/2024/films/NA.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/NA.jpg',
     },
     {
       title: 'NOUS LES SINGES',
@@ -216,7 +220,7 @@ export const festival2024Data: FestivalData = {
       duration: "19'",
       synopsis:
         "Dimitri et Pierrot partent faire de l'accrobranche. En mal d'amour, ils aimeraient devenir de véritables aventuriers pour gagner le cœur des femmes, mais leur baudrier trop serré à l'entrejambe leur impose un inconfort qui va les conduire à remettre tout leur mode de vie en question.",
-      imageUrl: '/images/festival/2024/films/NLS.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/NLS.jpg',
     },
     {
       title: 'PARENTS',
@@ -224,7 +228,8 @@ export const festival2024Data: FestivalData = {
       duration: "16'",
       synopsis:
         'Des parents sondent le passé pour tenter de comprendre la journée qui changea à jamais leur vie et celle de leur fille.',
-      imageUrl: '/images/festival/2024/films/PARENTS.jpeg',
+      imageUrl:
+        'https://ganache.studio/images/festival/2024/films/PARENTS.jpeg',
     },
     {
       title: "RIEN N'EST GRAVE",
@@ -232,7 +237,7 @@ export const festival2024Data: FestivalData = {
       duration: "13'",
       synopsis:
         "Alex, 25 ans, jeune femme nostalgique, retrouve Léo, son premier amour, le temps d'une soirée. Cinq ans se sont écoulés depuis leur séparation.",
-      imageUrl: '/images/festival/2024/films/RNEG.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/RNEG.jpg',
     },
     {
       title: 'TOUTES LES DEUX',
@@ -240,7 +245,7 @@ export const festival2024Data: FestivalData = {
       duration: "20'",
       synopsis:
         "Alma le sait. Si sa mère persiste à ne pas vouloir prendre le nouveau traitement qu'on lui propose, elle mourra. Elle n'a donc qu'une idée en tête : la faire changer d'avis alors qu'elles roulent toutes deux vers la Drôme.",
-      imageUrl: '/images/festival/2024/films/TLD.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/TLD.jpg',
     },
   ],
 
@@ -249,55 +254,77 @@ export const festival2024Data: FestivalData = {
     title: ['Alex Lutz,', 'parrain du festival'],
     description:
       'Alex Lutz est le parrain de la seconde édition du Ganache Festival. Acteur, auteur, réalisateur, metteur en scène, humoriste, romancier, son parcours complet et fédérateur nous inspire. Nous sommes fiers de compter sur son regard pour accompagner notre événement.',
-    posterUrl: '/images/festival/2024/affiche_parrain.jpeg',
+    posterUrl:
+      'https://ganache.studio/images/festival/2024/affiche_parrain.jpeg',
     videoUrl:
       'https://player.vimeo.com/video/938149440?h=2631b72169&title=0&byline=0&portrait=0',
   },
 
   team: [
-    { name: 'Adrio', imageUrl: '/images/festival/staffs/adrio.jpeg' },
-    { name: 'Benjamin', imageUrl: '/images/festival/staffs/benjamin.jpg' },
-    { name: 'Mathilde', imageUrl: '/images/festival/staffs/mathilde.jpg' },
-    { name: 'Gabriel', imageUrl: '/images/festival/staffs/gabriel.jpg' },
-    { name: 'Lily', imageUrl: '/images/festival/staffs/lily.jpg' },
-    { name: 'Aurélien', imageUrl: '/images/festival/staffs/aurelien.jpg' },
+    {
+      name: 'Adrio',
+      imageUrl: 'https://ganache.studio/images/festival/staffs/adrio.jpeg',
+    },
+    {
+      name: 'Benjamin',
+      imageUrl: 'https://ganache.studio/images/festival/staffs/benjamin.jpg',
+    },
+    {
+      name: 'Mathilde',
+      imageUrl: 'https://ganache.studio/images/festival/staffs/mathilde.jpg',
+    },
+    {
+      name: 'Gabriel',
+      imageUrl: 'https://ganache.studio/images/festival/staffs/gabriel.jpg',
+    },
+    {
+      name: 'Lily',
+      imageUrl: 'https://ganache.studio/images/festival/staffs/lily.jpg',
+    },
+    {
+      name: 'Aurélien',
+      imageUrl: 'https://ganache.studio/images/festival/staffs/aurelien.jpg',
+    },
   ],
 
   partners: [
     {
       name: "L'Éloge",
-      imageUrl: '/images/festival/partenaires/E.png',
+      imageUrl: 'https://ganache.studio/images/festival/partenaires/E.png',
       url: 'https://www.instagram.com/l_eloge_/',
     },
     {
       name: 'Le Grand Action',
-      imageUrl: '/images/festival/partenaires/GA.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/partenaires/GA.jpg',
       url: 'https://www.legrandaction.com/',
     },
-    { name: 'MF', imageUrl: '/images/festival/partenaires/MF.png' },
+    {
+      name: 'MF',
+      imageUrl: 'https://ganache.studio/images/festival/partenaires/MF.png',
+    },
     {
       name: 'Movin Motion',
-      imageUrl: '/images/festival/partenaires/MM.png',
+      imageUrl: 'https://ganache.studio/images/festival/partenaires/MM.png',
       url: 'https://www.movinmotion.com/',
     },
     {
       name: 'Paume',
-      imageUrl: '/images/festival/partenaires/P.png',
+      imageUrl: 'https://ganache.studio/images/festival/partenaires/P.png',
       url: 'https://paume.paris',
     },
     {
       name: 'Périscope',
-      imageUrl: '/images/festival/partenaires/PR.png',
+      imageUrl: 'https://ganache.studio/images/festival/partenaires/PR.png',
       url: 'https://www.instagram.com/filmsduperiscope/',
     },
     {
       name: 'Pleine Image',
-      imageUrl: '/images/festival/partenaires/PI.png',
+      imageUrl: 'https://ganache.studio/images/festival/partenaires/PI.png',
       url: 'https://www.pleineimage-loc.com/',
     },
     {
       name: 'Roi René',
-      imageUrl: '/images/festival/partenaires/RR.png',
+      imageUrl: 'https://ganache.studio/images/festival/partenaires/RR.png',
       url: 'https://www.the-social-club.com/destinations/roi-rene/',
     },
   ],

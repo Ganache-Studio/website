@@ -14,7 +14,7 @@ export const capsulePresentationData: FilmPresentation[] = [
     ],
     description:
       "Monsieur Zo, un étrange personnage, cherche l'amour dans les rues de Paris.",
-    imageUrl: '/images/capsules/1_janvier.png',
+    imageUrl: 'https://ganache.studio/images/capsules/1_janvier.png',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin<br />Avec Augustin Bouchacourt et Suzanne Rault-Balet<br />2020</p>",
     showCapsule: false,
@@ -109,10 +109,10 @@ export const capsulePresentationData: FilmPresentation[] = [
     ],
     description:
       "Un matin, Gabriel, 24 ans, se réveille avec l'âme d'un vieil homme au crépuscule de sa vie.",
-    imageUrl: '/images/capsules/6_juin/cover.jpg',
+    imageUrl: 'https://ganache.studio/images/capsules/6_juin/cover.jpg',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin<br />Avec Gabriel Washer, Suzanne de Baecque, Adrien Rouyard, Théo Salemkour, et David Clavel<br />2020</p>",
-    affiche: '/images/capsules/6_juin/affiche.png',
+    affiche: 'https://ganache.studio/images/capsules/6_juin/affiche.png',
     showCapsule: false,
     festivals: [
       'Festival du Film Court en Armagnac - Prix de la fiction',
@@ -215,7 +215,7 @@ export const capsulePresentationData: FilmPresentation[] = [
       'https://player.vimeo.com/video/502540258?title=0&byline=0&portrait=0',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet et Gabriel Washer • Photographie de Florian Solin • Son de Paul Kusnierek<br />Avec Augustin Bouchacourt, Stanislas Perrin, Éric Verdin, Lucie Brunet, Sylvain Debry, Édouard Eftimakis et Manon Rey<br />2021</p>",
-    affiche: '/images/capsules/11_novembre/affiche.jpg',
+    affiche: 'https://ganache.studio/images/capsules/11_novembre/affiche.jpg',
     showCapsule: false,
   },
   {
@@ -231,7 +231,7 @@ export const capsulePresentationData: FilmPresentation[] = [
     ],
     description:
       'Sous un soleil de plomb, un jeune couple se lance dans un jeu qui va les transformer.',
-    imageUrl: '/images/capsules/12_decembre.png',
+    imageUrl: 'https://ganache.studio/images/capsules/12_decembre.png',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin • Son de Paul Kusnierek<br />Avec Pauline Briand, Benjamin Voisin et Eugène Marcuse<br />2021</p>",
     showCapsule: false,

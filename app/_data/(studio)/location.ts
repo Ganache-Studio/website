@@ -9,7 +9,7 @@ export const locationPresentations: LocationPresentation[] = [
       'RESOLVE + PREMIERE',
       'FOCUSRITE SCARLETT 2I2',
     ],
-    imageUrl: '/images/location/station_montage.jpg',
+    imageUrl: 'https://ganache.studio/images/location/station_montage.jpg',
   },
   {
     name: 'ARRI ALEXA MINI',
@@ -18,7 +18,7 @@ export const locationPresentations: LocationPresentation[] = [
       'VIEWFINDER, CARTES',
       'BATTERIES, ETC.',
     ],
-    imageUrl: '/images/location/arri_alexa_mini.jpg',
+    imageUrl: 'https://ganache.studio/images/location/arri_alexa_mini.jpg',
   },
   {
     name: 'SONY ALPHA 7SIII',
@@ -27,6 +27,6 @@ export const locationPresentations: LocationPresentation[] = [
       'ZOOM SONY 24-105',
       'BATTERIES ET CARTES',
     ],
-    imageUrl: '/images/location/sony_alpha.webp',
+    imageUrl: 'https://ganache.studio/images/location/sony_alpha.webp',
   },
 ];

@@ -30,7 +30,8 @@ export const documentairePresentations: FilmPresentation[] = [
     ],
     description:
       "Deux ans après l'échec de son propre concert, Max repère Maxime et lui propose un défi : en l'espace d'une semaine, il doit composer une chanson et donner son premier concert. Derrière sa caméra, Max participe activement à la préparation de l'aspirant musicien, révélant peu à peu ses propres désirs artistiques inassouvis.",
-    imageUrl: 'images/documentaires/max_et_sa_guitare.jpg',
+    imageUrl:
+      'https://ganache.studio/images/documentaires/max_et_sa_guitare.jpg',
     additionalHtml:
       '<p>Un film de Max Lesage • Produit par Benjamin Gilet • Avec Maxime Crescini<br/>En production',
   },
@@ -42,7 +43,7 @@ export const documentairePresentations: FilmPresentation[] = [
         italic: true,
       },
     ],
-    imageUrl: 'images/documentaires/rodrigo.jpg',
+    imageUrl: 'https://ganache.studio/images/documentaires/rodrigo.jpg',
     additionalHtml:
       "<p>Un documentaire de Thibault Pastierik • Écrit par Thibault Pastierik et Emilio Frignati • Produit par Benjamin Gilet<br/>En développement<br/>Soutenu par la Bourse <i>Brouillon d'un Rêve</i> de la SCAM",
   },

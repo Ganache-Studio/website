@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   title: 'Ganache Studio',
   description: 'Ganache Studio',
   icons: {
-    icon: '/images/ganache_favicon.ico',
-    shortcut: '/images/ganache_favicon.ico',
-    apple: '/images/ganache-favicon.png',
+    icon: 'https://ganache.studio/images/ganache_favicon.ico',
+    shortcut: 'https://ganache.studio/images/ganache_favicon.ico',
+    apple: 'https://ganache.studio/images/ganache-favicon.png',
   },
 };
 
@@ -27,7 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/ganache_favicon.ico" />
+        <link
+          rel="icon"
+          href="https://ganache.studio/images/ganache_favicon.ico"
+        />
       </head>
 
       <body className={`pt-safe px-safe pb-safe flex flex-col antialiased`}>

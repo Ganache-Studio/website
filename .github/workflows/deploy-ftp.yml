@@ -2,8 +2,8 @@ name: Deploy to FTP
 
 on:
   push:
-    branches: [main] # Trigger on push to main branch
-  workflow_dispatch: # Allow manual trigger
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -33,3 +33,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/
           server-dir: ./www/
+          exclude: |
+            **/images/**
+            **/videos/**
+            **/fonts/**

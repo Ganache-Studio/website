@@ -4,7 +4,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'les-tremblements',
     type: 'fiction',
-    url: 'images/fictions/les_tremblements.png',
+    url: 'https://ganache.studio/images/fictions/les_tremblements.png',
     titles: [
       {
         text: 'LES TREMBLEMENTS',
@@ -16,7 +16,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'mortel',
     type: 'documentaire',
-    url: 'images/documentaires/mortel.png',
+    url: 'https://ganache.studio/images/documentaires/mortel.png',
     titles: [
       {
         text: 'MORTEL',
@@ -28,7 +28,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'son-seul',
     type: 'fiction',
-    url: 'images/fictions/son_seul.jpg',
+    url: 'https://ganache.studio/images/fictions/son_seul.jpg',
     titles: [
       {
         text: 'SON SEUL',
@@ -40,7 +40,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'max-entre-deux',
     type: 'fiction',
-    url: 'images/fictions/max_entre_deux.png',
+    url: 'https://ganache.studio/images/fictions/max_entre_deux.png',
     titles: [
       {
         text: 'MAX ENTRE DEUX',
@@ -52,7 +52,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'capsules-decembre',
     type: 'fiction',
-    url: 'images/capsules/12_decembre.png',
+    url: 'https://ganache.studio/images/capsules/12_decembre.png',
     titles: [
       {
         text: 'CAPSULES',
@@ -68,7 +68,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'vowels',
     type: 'pub',
-    url: 'images/pubs/vowels.jpg',
+    url: 'https://ganache.studio/images/pubs/vowels.jpg',
     titles: [
       {
         text: 'VOWELS',
@@ -80,7 +80,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'oscar-lesage-action',
     type: 'musique',
-    url: 'images/musiques/action.png',
+    url: 'https://ganache.studio/images/musiques/action.png',
     titles: [
       {
         text: 'OSCAR LESAGE',
@@ -96,7 +96,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'titou',
     type: 'fiction',
-    url: 'images/fictions/titou/cover.png',
+    url: 'https://ganache.studio/images/fictions/titou/cover.png',
     titles: [
       {
         text: 'TITOU',
@@ -108,7 +108,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'food-society',
     type: 'pub',
-    url: 'images/pubs/food_society.png',
+    url: 'https://ganache.studio/images/pubs/food_society.png',
     titles: [
       {
         text: 'FOOD SOCIETY',
@@ -120,7 +120,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'napkey-land',
     type: 'musique',
-    url: 'images/musiques/land.png',
+    url: 'https://ganache.studio/images/musiques/land.png',
     titles: [
       {
         text: 'NAPKEY',
@@ -136,7 +136,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'la-troisieme-nuit',
     type: 'fiction',
-    url: 'images/fictions/la_troisieme_nuit/covers/2.png',
+    url: 'https://ganache.studio/images/fictions/la_troisieme_nuit/covers/2.png',
     titles: [
       {
         text: 'LA TROISIÈME NUIT',
@@ -148,7 +148,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'capsules-novembre',
     type: 'fiction',
-    url: 'images/capsules/11_novembre/cover.png',
+    url: 'https://ganache.studio/images/capsules/11_novembre/cover.png',
     titles: [
       {
         text: 'CAPSULES',
@@ -164,7 +164,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'capsules-septembre',
     type: 'fiction',
-    url: 'images/capsules/9_septembre.png',
+    url: 'https://ganache.studio/images/capsules/9_septembre.png',
     titles: [
       {
         text: 'CAPSULES',
@@ -180,7 +180,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'ephese-silver-lining',
     type: 'musique',
-    url: 'images/musiques/silver.png',
+    url: 'https://ganache.studio/images/musiques/silver.png',
     titles: [
       {
         text: 'EPHESE',
@@ -196,7 +196,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'capsules-juin',
     type: 'fiction',
-    url: 'images/capsules/6_juin/cover.jpg',
+    url: 'https://ganache.studio/images/capsules/6_juin/cover.jpg',
     titles: [
       {
         text: 'CAPSULES',
@@ -212,7 +212,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'capsules-avril',
     type: 'fiction',
-    url: 'images/capsules/4_avril.jpg',
+    url: 'https://ganache.studio/images/capsules/4_avril.jpg',
     titles: [
       {
         text: 'CAPSULES',
@@ -228,7 +228,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'chute-libre-1',
     type: 'fiction',
-    url: 'images/fictions/chute_libre.png',
+    url: 'https://ganache.studio/images/fictions/chute_libre.png',
     titles: [
       {
         text: 'CHUTE LIBRE',
@@ -240,7 +240,7 @@ export const filmCovers: FilmCoverType[] = [
   {
     id: 'capsules-fevrier',
     type: 'documentaire',
-    url: 'images/capsules/2_fevrier.png',
+    url: 'https://ganache.studio/images/capsules/2_fevrier.png',
     titles: [
       {
         text: 'CAPSULES',
