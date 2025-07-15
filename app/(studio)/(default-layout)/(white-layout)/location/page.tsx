@@ -1,6 +1,11 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 
 import { locationPresentations } from '../../../../_data/(studio)/location';
+import { generateMetadata } from '../../../../_data/metadata';
+import { pages } from '../../../../_data/pages';
+
+export const metadata: Metadata = generateMetadata(pages.Location);
 
 const LocationName = ({ name }: { name: string }) => {
   return (

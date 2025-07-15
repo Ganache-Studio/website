@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 
 import './globals.css';
+import { generateMetadata } from './_data/metadata';
+import { pages } from './_data/pages';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -9,15 +11,7 @@ export const viewport: Viewport = {
   themeColor: '#ffffff',
 };
 
-export const metadata: Metadata = {
-  title: 'Ganache Studio',
-  description: 'Ganache Studio',
-  icons: {
-    icon: 'https://ganache.studio/images/ganache_favicon.ico',
-    shortcut: 'https://ganache.studio/images/ganache_favicon.ico',
-    apple: 'https://ganache.studio/images/ganache-favicon.png',
-  },
-};
+export const metadata: Metadata = generateMetadata(pages.Home);
 
 export default function RootLayout({
   children,
@@ -25,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <link
           rel="icon"

@@ -1,9 +1,10 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { festival2024Data } from '../../_data/(festival)/2024';
+import { generateMetadata } from '../../_data/metadata';
+import { pages } from '../../_data/pages';
 import { Parrain } from '../_components/parrain';
 import { Partners } from '../_components/partners';
 import { PhotoGallery } from '../_components/photo-gallery';
@@ -12,6 +13,8 @@ import { Section } from '../_components/section';
 import { Selection } from '../_components/selection';
 import { Team } from '../_components/team';
 import { Title } from '../_components/title';
+
+export const metadata: Metadata = generateMetadata(pages.GanacheFestival2024);
 
 const Festival = () => {
   return (

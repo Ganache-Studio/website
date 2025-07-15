@@ -1,5 +1,11 @@
+import type { Metadata } from 'next';
+
 import { CookiesPolicy } from './_components/cookies-policy';
 import { PrivacyPolicy } from './_components/privacy-policy';
+import { generateMetadata } from '../../../../_data/metadata';
+import { pages } from '../../../../_data/pages';
+
+export const metadata: Metadata = generateMetadata(pages.Legal);
 
 export default function LegalPage() {
   return (
