@@ -6,9 +6,9 @@ export type FilmPresentation = {
   }[];
   description?: string;
   additionalHtml?: string;
-  showCapsule?: boolean;
   affiche?: string;
   festivals?: string[];
   imageUrl?: string;
   vimeoUrl?: string;
+  showCapsule?: boolean;
 };

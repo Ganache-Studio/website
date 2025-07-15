@@ -17,7 +17,6 @@ export const musiquePresentations: FilmPresentation[] = [
     vimeoUrl:
       'https://player.vimeo.com/video/467370202?title=0&byline=0&portrait=0',
     festivals: ['Clipped Festival (Australia) - Top 5 International Finalists'],
-    showCapsule: true,
   },
   {
     id: 'birdwish-heart-of-clay',

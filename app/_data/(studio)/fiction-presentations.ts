@@ -142,7 +142,6 @@ export const fictionPresentations: FilmPresentation[] = [
     imageUrl: 'https://ganache.studio/images/capsules/12_decembre.png',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin • Son de Paul Kusnierek<br />Avec Pauline Briand, Benjamin Voisin et Eugène Marcuse <br />2021</p>",
-    showCapsule: true,
   },
   {
     id: 'capsules-novembre',
@@ -161,7 +160,6 @@ export const fictionPresentations: FilmPresentation[] = [
       'https://player.vimeo.com/video/502540258?title=0&byline=0&portrait=0',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet et Gabriel Washer • Photographie de Florian Solin • Son de Paul Kusnierek<br />Avec Augustin Bouchacourt, Stanislas Perrin, Éric Verdin, Lucie Brunet, Sylvain Debry, Édouard Eftimakis et Manon Rey<br />2021</p>",
-    showCapsule: true,
     affiche: 'https://ganache.studio/images/capsules/11_novembre/affiche.jpg',
     festivals: ['Lyon Young Film Festival'],
   },
@@ -200,7 +198,6 @@ export const fictionPresentations: FilmPresentation[] = [
       'https://player.vimeo.com/video/426943646?title=0&byline=0&portrait=0',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin • Son de Paul Kusnierek<br />Avec Augustin Bouchacourt, Lucie Brunet, Teddy Chawa, Sylvain Debry, Édouard Eftimakis et Manon Rey<br />2020</p>",
-    showCapsule: true,
     festivals: ['Lyon Young Film Festival', 'Festival On Vous Ment'],
   },
   {
@@ -220,7 +217,6 @@ export const fictionPresentations: FilmPresentation[] = [
     affiche: 'https://ganache.studio/images/capsules/6_juin/affiche.png',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin • Son de Paul Kusnierek<br />Avec Gabriel Washer, Suzanne de Baecque, Adrien Rouyard, Théo Salemkour, et David Clavel<br />2020</p>",
-    showCapsule: true,
     festivals: [
       'Festival du Film Court en Armagnac - Prix de la fiction',
       "Festival du Film Court d'Angoulême",
@@ -244,7 +240,6 @@ export const fictionPresentations: FilmPresentation[] = [
       'https://player.vimeo.com/video/394498915?title=0&byline=0&portrait=0',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin <br />Avec Maxime Gleizes<br />2020</p>",
-    showCapsule: true,
     festivals: ['The Fighting Spirit Film Festival - UK'],
   },
   {

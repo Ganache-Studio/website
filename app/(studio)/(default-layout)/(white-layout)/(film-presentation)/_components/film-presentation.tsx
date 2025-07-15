@@ -86,19 +86,6 @@ const Affiche = ({ affiche }: { affiche?: string }) => {
   );
 };
 
-const Capsule = ({ showCapsule }: { showCapsule?: boolean }) => {
-  if (!showCapsule) return null;
-
-  return (
-    <p className="text-xs md:text-sm">
-      {'Projet '}
-      <Link className="font-bold underline" href="/capsules">
-        CAPSULES
-      </Link>
-    </p>
-  );
-};
-
 const Festivals = ({ festivals }: { festivals?: string[] }) => {
   if (!festivals || festivals.length === 0) return null;
 
@@ -118,7 +105,6 @@ export const FilmPresentation: FunctionComponent<FilmPresentationType> = ({
   titles,
   description,
   additionalHtml,
-  showCapsule,
   affiche,
   festivals,
   imageUrl,
@@ -136,7 +122,6 @@ export const FilmPresentation: FunctionComponent<FilmPresentationType> = ({
         <Description description={description} />
         <AdditionalHtml additionalHtml={additionalHtml} />
         <Affiche affiche={affiche} />
-        <Capsule showCapsule={showCapsule} />
         <Festivals festivals={festivals} />
       </div>
     </div>
