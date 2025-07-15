@@ -6,7 +6,7 @@ module.exports = {
 
   outDir: './out',
 
-  transform: async (config, path) => {
+  transform: async (_, path) => {
     const customConfig = {
       '/': {
         priority: 1.0,
@@ -22,10 +22,6 @@ module.exports = {
       },
       '/film-musique': {
         priority: 0.9,
-        changefreq: 'monthly',
-      },
-      '/capsules': {
-        priority: 0.8,
         changefreq: 'monthly',
       },
       '/contact': {
@@ -68,7 +64,7 @@ module.exports = {
     };
   },
 
-  exclude: ['/404', '/_*'],
+  exclude: ['/_*'],
 
   robotsTxtOptions: {
     policies: [
