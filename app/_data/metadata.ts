@@ -42,7 +42,7 @@ export const metadataConfig: Record<Page, PageMetadata> = {
   },
 
   '/location': {
-    title: "Location d'Espaces | Ganache Studio",
+    title: 'Location | Ganache Studio',
     description: '',
     keywords: [],
   },
