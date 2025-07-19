@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 
+import { filmCovers } from '@/data/(studio)/film-covers';
+import { generateMetadata } from '@/data/metadata';
+import { pages } from '@/data/pages';
+
 import { FilmCoverPresentation } from './_components/film-cover-presentation';
-import { filmCovers } from '../../../_data/(studio)/film-covers';
-import { generateMetadata } from '../../../_data/metadata';
-import { pages } from '../../../_data/pages';
 
 export const metadata: Metadata = generateMetadata(pages.Home);
 

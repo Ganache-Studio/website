@@ -48,12 +48,7 @@ export default function ContactPage() {
         </div>
         <div className="relative flex-1/3 pr-4">
           <div className="relative h-full">
-            <Image
-              src="/images/madame_kupka.jpeg"
-              alt="Madame Kupka"
-              className="object-cover"
-              fill={true}
-            />
+            <Image src="/images/madame_kupka.jpeg" alt="Madame Kupka" className="object-cover" fill={true} />
           </div>
           <p className="absolute right-0 bottom-0 m-0 rotate-180 p-0 text-xs whitespace-nowrap [writing-mode:vertical-lr]">
             František Kupka, <i>Mme Kupka among Verticals</i>, 1910-11

@@ -1,10 +1,10 @@
 'use client';
 
+import { useStudioContext } from '@studio/context/studio.context';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { navigationLinks } from '../../../../_data/(studio)/navigation-links';
-import { useStudioContext } from '../../../_context/studio.context';
+import { navigationLinks } from '@/data/(studio)/navigation-links';
 
 export const MobileNavigationMenu = () => {
   const { handleDrawerClose, isMainContentFullScreen } = useStudioContext();
@@ -16,9 +16,7 @@ export const MobileNavigationMenu = () => {
         <li className="flex justify-center">
           <Link
             href="/"
-            className={`font-bold ${
-              isMainContentFullScreen ? 'text-white' : 'text-black'
-            }`}
+            className={`font-bold ${isMainContentFullScreen ? 'text-white' : 'text-black'}`}
             onClick={handleDrawerClose}
           >
             FILMS
@@ -29,12 +27,8 @@ export const MobileNavigationMenu = () => {
             <Link
               onClick={handleDrawerClose}
               href={item.path}
-              className={`leading-none ${
-                isMainContentFullScreen ? 'text-white' : 'text-black'
-              } ${
-                pathname === item.path
-                  ? 'font-bold opacity-100'
-                  : 'opacity-30 hover:opacity-100'
+              className={`leading-none ${isMainContentFullScreen ? 'text-white' : 'text-black'} ${
+                pathname === item.path ? 'font-bold opacity-100' : 'opacity-30 hover:opacity-100'
               }`}
             >
               {item.label}

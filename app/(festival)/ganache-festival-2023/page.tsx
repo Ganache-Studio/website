@@ -1,17 +1,17 @@
+import { Parrain } from '@festival/components/parrain';
+import { Partners } from '@festival/components/partners';
+import { PhotoGallery } from '@festival/components/photo-gallery';
+import { ProgrammeStep } from '@festival/components/program-step';
+import { Section } from '@festival/components/section';
+import { Selection } from '@festival/components/selection';
+import { Team } from '@festival/components/team';
+import { Title } from '@festival/components/title';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
-import { festival2023Data } from '../../_data/(festival)/2023';
-import { generateMetadata } from '../../_data/metadata';
-import { pages } from '../../_data/pages';
-import { Parrain } from '../_components/parrain';
-import { Partners } from '../_components/partners';
-import { PhotoGallery } from '../_components/photo-gallery';
-import { ProgrammeStep } from '../_components/program-step';
-import { Section } from '../_components/section';
-import { Selection } from '../_components/selection';
-import { Team } from '../_components/team';
-import { Title } from '../_components/title';
+import { festival2023Data } from '@/data/(festival)/2023';
+import { generateMetadata } from '@/data/metadata';
+import { pages } from '@/data/pages';
 
 export const metadata: Metadata = generateMetadata(pages.GanacheFestival2023);
 
@@ -21,9 +21,7 @@ const Festival = () => {
       <div className="space-y-4 text-sm lg:space-y-6 lg:text-base">
         <PhotoGallery photos={festival2023Data.photos} columns={3} />
         <p className="text-justify">{festival2023Data.description}</p>
-        <p className="text-end">
-          Ganache Studio et l&apos;équipe du Ganache Festival
-        </p>
+        <p className="text-end">Ganache Studio et l&apos;équipe du Ganache Festival</p>
       </div>
 
       <div className="flex flex-col items-center space-y-4 text-sm lg:space-y-6 lg:text-base xl:flex-row xl:space-y-0 xl:space-x-8">
@@ -39,21 +37,15 @@ const Festival = () => {
         <div className="flex-2/3 space-y-4">
           <div className="space-y-2">
             <p className="text-justify">
-              Pour la première édition de notre festival, nous souhaitons mettre
-              en lumière des courts métrages portés par de jeunes
-              réalisateur.trice.s francophones.
+              Pour la première édition de notre festival, nous souhaitons mettre en lumière des courts métrages portés
+              par de jeunes réalisateur.trice.s francophones.
             </p>
-            <p className="text-justify">
-              Les 21 et 22 avril, au Grand Action, nous aurons à cœur de :
-            </p>
+            <p className="text-justify">Les 21 et 22 avril, au Grand Action, nous aurons à cœur de :</p>
             <ul className="ml-2 space-y-1">
+              <li>- donner à voir des films émergents, personnels, et pas encore institutionnalisés,</li>
               <li>
-                - donner à voir des films émergents, personnels, et pas encore
-                institutionnalisés,
-              </li>
-              <li>
-                - permettre à des réalisateur.trice.s, technicien.ne.s,
-                auteur.trice.s, comédien.ne.s de tisser des liens,
+                - permettre à des réalisateur.trice.s, technicien.ne.s, auteur.trice.s, comédien.ne.s de tisser des
+                liens,
               </li>
               <li>- réunir un public varié et organiser une grande fête !</li>
             </ul>
@@ -61,21 +53,14 @@ const Festival = () => {
           <div className="space-y-2">
             <p className="text-justify">Nous projetterons des films :</p>
             <ul className="ml-2 space-y-1">
-              <li>
-                - autoproduits ou qui sont le fruit d&apos;une première
-                production,
-              </li>
+              <li>- autoproduits ou qui sont le fruit d&apos;une première production,</li>
               <li>- réalisés par des personnes de moins de 35 ans,</li>
               <li>- francophones.</li>
             </ul>
           </div>
         </div>
       </div>
-      <iframe
-        className="aspect-video w-full"
-        src={festival2023Data.presentation.teaserUrl}
-        allowFullScreen
-      />
+      <iframe className="aspect-video w-full" src={festival2023Data.presentation.teaserUrl} allowFullScreen />
     </Section>
   );
 };
@@ -87,9 +72,7 @@ const Programme = () => {
       <div className="space-y-4 md:space-y-8">
         {/* Mobile View */}
         <div className="block space-y-4 md:hidden">
-          <p className="text-xl md:text-2xl">
-            {festival2023Data.programme[0].text}
-          </p>
+          <p className="text-xl md:text-2xl">{festival2023Data.programme[0].text}</p>
           <div className="border-b border-gray-300" />
           <ProgrammeStep
             title={festival2023Data.programme[0].steps[0].text}
@@ -111,9 +94,7 @@ const Programme = () => {
             films={festival2023Data.programme[0].steps[3].films}
           />
           <div className="border-b border-gray-300" />
-          <h4 className="text-xl md:text-2xl">
-            {festival2023Data.programme[1].text}
-          </h4>
+          <h4 className="text-xl md:text-2xl">{festival2023Data.programme[1].text}</h4>
           <div className="border-b border-gray-300" />
           <ProgrammeStep
             title={festival2023Data.programme[1].steps[0].text}

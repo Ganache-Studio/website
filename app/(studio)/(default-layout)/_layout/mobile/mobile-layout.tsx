@@ -1,24 +1,21 @@
 'use client';
 
+import { useStudioContext } from '@studio/context/studio.context';
 import Link from 'next/link';
+
+import GanacheLogo from '@/components/ganache-logo';
 
 import { BurgerMenuButton } from './burger-menu-button';
 import { MobileDrawer } from './mobile-drawer';
-import GanacheLogo from '../../../../_components/ganache-logo';
-import { useStudioContext } from '../../../_context/studio.context';
 
 export const MobileLayout = () => {
-  const { handleDrawerClose, isDrawerOpen, isMainContentFullScreen } =
-    useStudioContext();
+  const { handleDrawerClose, isDrawerOpen, isMainContentFullScreen } = useStudioContext();
 
   return (
     <>
       <header className="fixed top-0 left-1/2 z-20 -translate-x-1/2 lg:hidden">
         <Link href="/" onClick={handleDrawerClose}>
-          <GanacheLogo
-            isWhite={isMainContentFullScreen}
-            className="h-16 w-auto md:h-20 lg:h-auto lg:w-56"
-          />
+          <GanacheLogo isWhite={isMainContentFullScreen} className="h-16 w-auto md:h-20 lg:h-auto lg:w-56" />
         </Link>
       </header>
 

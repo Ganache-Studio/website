@@ -1,12 +1,6 @@
 'use client';
 
-import {
-  createContext,
-  useContext,
-  useState,
-  ReactNode,
-  useEffect,
-} from 'react';
+import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
 
 type FestivalContextType = {
   isDrawerOpen: boolean;
@@ -16,8 +10,8 @@ type FestivalContextType = {
 
 const FestivalContext = createContext<FestivalContextType>({
   isDrawerOpen: false,
-  handleDrawerOpen: () => {},
-  handleDrawerClose: () => {},
+  handleDrawerOpen: () => null,
+  handleDrawerClose: () => null,
 });
 
 export const useFestivalContext = () => {
@@ -37,11 +31,9 @@ export const FestivalProvider = ({ children }: { children: ReactNode }) => {
 
   // Close the drawer when the media query changes to desktop
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 1024px)');
+    const mediaQuery = globalThis.matchMedia('(min-width: 1024px)');
 
-    const handleMediaQueryChange = (
-      e: MediaQueryListEvent | MediaQueryList,
-    ) => {
+    const handleMediaQueryChange = (e: MediaQueryListEvent | MediaQueryList) => {
       if (e.matches) {
         setIsDrawerOpen(false);
       }

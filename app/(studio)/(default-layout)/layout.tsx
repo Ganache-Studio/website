@@ -1,4 +1,5 @@
-import { StudioProvider } from '../_context/studio.context';
+import { StudioProvider } from '@studio/context/studio.context';
+
 import { DesktopLayout } from './_layout/desktop/desktop-layout';
 import { MobileLayout } from './_layout/mobile/mobile-layout';
 

@@ -1,18 +1,14 @@
 'use client';
 
-import clsx from 'clsx';
-import {
-  HiMiniBars3 as BurgerIcon,
-  HiOutlineXMark as CrossIcon,
-} from 'react-icons/hi2';
+import { useFestivalContext } from '@festival/context/festival.context';
+import { clsx } from 'clsx';
+import { HiMiniBars3 as BurgerIcon, HiOutlineXMark as CrossIcon } from 'react-icons/hi2';
 
 import { Header } from './header';
 import { Navigation } from './navigation';
-import { useFestivalContext } from '../_context/festival.context';
 
 export const BurgerMenuButton = () => {
-  const { isDrawerOpen, handleDrawerOpen, handleDrawerClose } =
-    useFestivalContext();
+  const { isDrawerOpen, handleDrawerOpen, handleDrawerClose } = useFestivalContext();
 
   return (
     <button
@@ -22,22 +18,14 @@ export const BurgerMenuButton = () => {
       }}
       className={`focus:outline-none`}
     >
-      <div
-        className={`transition-transform duration-300 ${
-          isDrawerOpen ? 'rotate-90' : 'rotate-0'
-        }`}
-      >
-        {isDrawerOpen ? (
-          <CrossIcon className="size-7 md:size-9" />
-        ) : (
-          <BurgerIcon className="size-7 md:size-9" />
-        )}
+      <div className={`transition-transform duration-300 ${isDrawerOpen ? 'rotate-90' : 'rotate-0'}`}>
+        {isDrawerOpen ? <CrossIcon className="size-7 md:size-9" /> : <BurgerIcon className="size-7 md:size-9" />}
       </div>
     </button>
   );
 };
 
-export const MobileLayout: React.FC = () => {
+export const MobileLayout = () => {
   const { isDrawerOpen, handleDrawerClose } = useFestivalContext();
 
   return (

@@ -1,7 +1,8 @@
+import { Film } from '@/types/festival-data.types';
+
 import { FilmGallery } from './film-gallery';
 import { Section } from './section';
 import { Title } from './title';
-import { Film } from '../../_types/festival-data.types';
 
 type SelectionProps = {
   films: Film[];

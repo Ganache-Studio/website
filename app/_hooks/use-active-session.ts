@@ -10,7 +10,7 @@ export const useActiveSection = (sections: string[]) => {
 
     const observer = new IntersectionObserver(
       entries => {
-        entries.forEach(entry => {
+        for (const entry of entries) {
           const sectionId = entry.target.id;
 
           // If the element is intersecting, add it to the Map with the intersection ratio
@@ -21,15 +21,13 @@ export const useActiveSection = (sections: string[]) => {
             // If the element is not intersecting, remove it from the Map
             intersectingElements.delete(sectionId);
           }
-        });
+        }
 
         // If there are intersecting elements, find the section with the highest intersection ratio
         if (intersectingElements.size > 0) {
           // Find the section with the highest intersection ratio by comparing
           // each entry's ratio (stored in the Map) and keeping the highest one
-          const mostVisibleSection = Array.from(
-            intersectingElements.entries(),
-          ).reduce((prev, current) =>
+          const mostVisibleSection = Array.from(intersectingElements.entries()).reduce((prev, current) =>
             current[1] > prev[1] ? current : prev,
           )[0];
 
@@ -43,13 +41,13 @@ export const useActiveSection = (sections: string[]) => {
       },
     );
 
-    sections.forEach(id => {
+    for (const id of sections) {
       const element = document.getElementById(id);
 
       if (element) {
         observer.observe(element);
       }
-    });
+    }
 
     return () => {
       observer.disconnect();

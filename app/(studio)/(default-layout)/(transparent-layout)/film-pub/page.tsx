@@ -1,34 +1,30 @@
 'use client';
 
-import clsx from 'clsx';
+import { useStudioContext } from '@studio/context/studio.context';
+import { clsx } from 'clsx';
 import { Dialog } from 'radix-ui';
 import { useEffect, useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 
+import { pubCovers } from '@/data/(studio)/pub-covers';
+import { scrollToSection } from '@/helpers/scroll-to-section';
+import { PubAnyCover } from '@/types/pub-cover.type';
+
 import { PubModal } from './_components/pub-modal';
 import { PubOverlay } from './_components/pub-overlay';
 import { PubSection } from './_components/pub-section';
-import { pubCovers } from '../../../../_data/(studio)/pub-covers';
-import { scrollToSection } from '../../../../_helpers/scroll-to-section';
-import { PubAnyCover } from '../../../../_types/pub-cover.type';
-import { useStudioContext } from '../../../_context/studio.context';
 
-const DownArrow = ({
-  currentIndex,
-  isDrawerOpen,
-}: {
-  currentIndex: number;
-  isDrawerOpen: boolean;
-}) => {
+const DownArrow = ({ currentIndex, isDrawerOpen }: { currentIndex: number; isDrawerOpen: boolean }) => {
   return (
     <button
-      onClick={() => scrollToSection(pubCovers[currentIndex + 1]?.id)}
+      onClick={() => {
+        scrollToSection(pubCovers[currentIndex + 1]?.id);
+      }}
       className={clsx(
         'fixed bottom-0 left-1/2 z-20 flex -translate-x-1/2 transform items-center justify-center p-2 text-white transition-opacity duration-300 hover:opacity-100 md:p-3 lg:p-4',
         {
           'pointer-events-auto opacity-30': currentIndex < pubCovers.length - 1,
-          'pointer-events-none opacity-0':
-            currentIndex >= pubCovers.length - 1 || isDrawerOpen,
+          'pointer-events-none opacity-0': currentIndex >= pubCovers.length - 1 || isDrawerOpen,
           hidden: currentIndex >= pubCovers.length - 1 || isDrawerOpen,
         },
       )}
@@ -45,9 +41,7 @@ export default function PubPage() {
   const [isOverlayVisible, setIsOverlayVisible] = useState<boolean>(true);
 
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [currentPubCover, setCurrentPubCover] = useState<PubAnyCover>(
-    pubCovers[0],
-  );
+  const [currentPubCover, setCurrentPubCover] = useState<PubAnyCover>(pubCovers[0]);
 
   useEffect(() => {
     setCurrentPubCover(pubCovers[currentIndex]);

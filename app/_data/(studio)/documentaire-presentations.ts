@@ -1,4 +1,4 @@
-import { FilmPresentation } from '../../_types/film-presentation.type';
+import { FilmPresentation } from '@/types/film-presentation.type';
 
 export const documentairePresentations: FilmPresentation[] = [
   {
@@ -11,8 +11,7 @@ export const documentairePresentations: FilmPresentation[] = [
     ],
     description:
       "Lidvine est conseillère funéraire le jour et biker la nuit. Le temps d'un portrait, elle raconte les coulisses d'une vie à la croisée des morts et des vivants.",
-    vimeoUrl:
-      'https://player.vimeo.com/video/887722450?title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/887722450?title=0&byline=0&portrait=0',
     additionalHtml:
       '<p>Créé et produit par Benjamin Gilet • Réalisé par Julien Thiverny • Musique de Flavien Berger et Lou Rotzinger • En co-production avec Jak Prod (Belgique)</p><p>Distribué par <a href="http://www.manifest.pictures/" target="_blank"><u>Manifest</u></a></p>',
     festivals: [
@@ -30,10 +29,8 @@ export const documentairePresentations: FilmPresentation[] = [
     ],
     description:
       "Deux ans après l'échec de son propre concert, Max repère Maxime et lui propose un défi : en l'espace d'une semaine, il doit composer une chanson et donner son premier concert. Derrière sa caméra, Max participe activement à la préparation de l'aspirant musicien, révélant peu à peu ses propres désirs artistiques inassouvis.",
-    imageUrl:
-      'https://ganache.studio/images/documentaires/max_et_sa_guitare.jpg',
-    additionalHtml:
-      '<p>Un film de Max Lesage • Produit par Benjamin Gilet • Avec Maxime Crescini<br/>En production',
+    imageUrl: 'https://ganache.studio/images/documentaires/max_et_sa_guitare.jpg',
+    additionalHtml: '<p>Un film de Max Lesage • Produit par Benjamin Gilet • Avec Maxime Crescini<br/>En production',
   },
   {
     id: 'rodrigo',
@@ -58,10 +55,8 @@ export const documentairePresentations: FilmPresentation[] = [
         italic: true,
       },
     ],
-    description:
-      'Après une nuit tourmentée, Yolande apprend une heureuse nouvelle de la bouche de son petit-fils.',
-    vimeoUrl:
-      'https://player.vimeo.com/video/456740100?title=0&byline=0&portrait=0',
+    description: 'Après une nuit tourmentée, Yolande apprend une heureuse nouvelle de la bouche de son petit-fils.',
+    vimeoUrl: 'https://player.vimeo.com/video/456740100?title=0&byline=0&portrait=0',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet • Étalonnage de Florian Solin • Mixage de Matthieu Fraticelli<br/>2020</p>",
     showCapsule: true,
@@ -77,10 +72,8 @@ export const documentairePresentations: FilmPresentation[] = [
         italic: true,
       },
     ],
-    description:
-      "Yolande passe une journée en compagnie de son petit-fils alors que ses souvenirs s'évaporent.",
-    vimeoUrl:
-      'https://player.vimeo.com/video/394411387?title=0&byline=0&portrait=0',
+    description: "Yolande passe une journée en compagnie de son petit-fils alors que ses souvenirs s'évaporent.",
+    vimeoUrl: 'https://player.vimeo.com/video/394411387?title=0&byline=0&portrait=0',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet • Étalonnage de Florian Solin • Mixage de Matthieu Fraticelli<br/>2020</p>",
     showCapsule: true,

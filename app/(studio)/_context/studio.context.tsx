@@ -1,13 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import {
-  createContext,
-  useContext,
-  useState,
-  ReactNode,
-  useEffect,
-} from 'react';
+import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
 
 type StudioContextType = {
   isDrawerOpen: boolean;
@@ -44,11 +38,9 @@ export const StudioProvider = ({ children }: { children: ReactNode }) => {
   };
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 1024px)');
+    const mediaQuery = globalThis.matchMedia('(min-width: 1024px)');
 
-    const handleMediaQueryChange = (
-      e: MediaQueryListEvent | MediaQueryList,
-    ) => {
+    const handleMediaQueryChange = (e: MediaQueryListEvent | MediaQueryList) => {
       if (e.matches) {
         setIsDrawerOpen(false);
       }

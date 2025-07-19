@@ -4,11 +4,11 @@ import { DesktopLayout } from './desktop-layout';
 import { Footer } from './footer';
 import { MobileLayout } from './mobile-layout';
 
-interface FestivalLayoutProps {
+type FestivalLayoutProps = {
   children: React.ReactNode;
-}
+};
 
-export const FestivalLayout: React.FC<FestivalLayoutProps> = ({ children }) => {
+export const FestivalLayout = ({ children }: FestivalLayoutProps) => {
   return (
     <div className="font-chalet">
       <div className="hidden lg:block">
@@ -17,9 +17,7 @@ export const FestivalLayout: React.FC<FestivalLayoutProps> = ({ children }) => {
       <div className="lg:hidden">
         <MobileLayout />
       </div>
-      <main className="mx-6 mt-16 md:mx-8 md:mt-20 lg:mx-56 lg:mt-[7vw]">
-        {children}
-      </main>
+      <main className="mx-6 mt-16 md:mx-8 md:mt-20 lg:mx-56 lg:mt-[7vw]">{children}</main>
       <Footer />
     </div>
   );

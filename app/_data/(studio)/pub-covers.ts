@@ -1,11 +1,10 @@
-import { PubAnyCover } from '../../_types/pub-cover.type';
+import { PubAnyCover } from '@/types/pub-cover.type';
 
 export const pubCovers: PubAnyCover[] = [
   {
     id: 'food-society',
     src: 'https://ganache.studio/videos/pubs/food_society/video.mp4',
-    vimeoUrl:
-      'https://player.vimeo.com/video/809031020?h=1e6e37278d&title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/809031020?h=1e6e37278d&title=0&byline=0&portrait=0',
     poster: 'https://ganache.studio/videos/pubs/food_society/poster.jpg',
     title: 'FOOD SOCIETY',
     producer: 'Théo Vincent',
@@ -16,8 +15,7 @@ export const pubCovers: PubAnyCover[] = [
   {
     id: 'vowels',
     src: 'https://ganache.studio/videos/pubs/vowels/video.mp4',
-    vimeoUrl:
-      'https://player.vimeo.com/video/1057439487?title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/1057439487?title=0&byline=0&portrait=0',
     poster: 'https://ganache.studio/videos/pubs/vowels/poster.jpg',
     title: 'VOWELS',
     producer: 'Andreas Pappamikail',
@@ -27,8 +25,7 @@ export const pubCovers: PubAnyCover[] = [
   {
     id: 'heineken',
     src: 'https://ganache.studio/videos/pubs/heineken/video.mp4',
-    vimeoUrl:
-      'https://player.vimeo.com/video/707739875?h=bbdbbf164f&title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/707739875?h=bbdbbf164f&title=0&byline=0&portrait=0',
     poster: 'https://ganache.studio/videos/pubs/heineken/poster.jpg',
     title: 'HEINEKEN',
     producer: 'Aurélien Grellier-Beker',
@@ -39,8 +36,7 @@ export const pubCovers: PubAnyCover[] = [
   {
     id: 'florajet',
     src: 'https://ganache.studio/videos/pubs/florajet/video.mp4',
-    vimeoUrl:
-      'https://player.vimeo.com/video/833260644?h=59fc5138f5&title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/833260644?h=59fc5138f5&title=0&byline=0&portrait=0',
     poster: 'https://ganache.studio/videos/pubs/florajet/poster.jpg',
     title: 'FLORAJET',
     producer: 'Rémy Cayuela',
@@ -51,8 +47,7 @@ export const pubCovers: PubAnyCover[] = [
   {
     id: 'lgn',
     src: 'https://ganache.studio/videos/pubs/lgn/video.mp4',
-    vimeoUrl:
-      'https://player.vimeo.com/video/970564462?title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/970564462?title=0&byline=0&portrait=0',
     poster: 'https://ganache.studio/videos/pubs/lgn/poster.jpg',
     title: 'LGN LOUIS GABRIEL NOUCHI',
     producer: 'Andreas Pappamikail',
@@ -62,8 +57,7 @@ export const pubCovers: PubAnyCover[] = [
   {
     id: 'prince-de-bretagne',
     src: 'https://ganache.studio/videos/pubs/prince_de_bretagne/video.mp4',
-    vimeoUrl:
-      'https://player.vimeo.com/video/717927697?h=1262268991&title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/717927697?h=1262268991&title=0&byline=0&portrait=0',
     poster: 'https://ganache.studio/videos/pubs/prince_de_bretagne/poster.jpg',
     title: 'PRINCE DE BRETAGNE',
     producer: 'Julien Thiverny',
@@ -74,8 +68,7 @@ export const pubCovers: PubAnyCover[] = [
   {
     id: 'saint-gobain',
     src: 'https://ganache.studio/videos/pubs/saint_gobain/video.mp4',
-    vimeoUrl:
-      'https://player.vimeo.com/video/737931861?h=ae743b9c61&title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/737931861?h=ae743b9c61&title=0&byline=0&portrait=0',
     poster: 'https://ganache.studio/videos/pubs/saint_gobain/poster.jpg',
     title: 'SAINT GOBAIN',
     producer: 'Théo Vincent',
@@ -86,8 +79,7 @@ export const pubCovers: PubAnyCover[] = [
   {
     id: 'maison-margiela',
     src: 'https://ganache.studio/videos/pubs/maison_margiela/video.mp4',
-    vimeoUrl:
-      'https://player.vimeo.com/video/576917131?h=f4e9b7c41b&title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/576917131?h=f4e9b7c41b&title=0&byline=0&portrait=0',
     poster: 'https://ganache.studio/videos/pubs/maison_margiela/poster.jpg',
     title: 'MAISON MARGIELA',
     producer: 'Aurélien Grellier-Beker',
@@ -97,8 +89,7 @@ export const pubCovers: PubAnyCover[] = [
   {
     id: 'ornikar',
     src: 'https://ganache.studio/videos/pubs/ornikar/video.mp4',
-    vimeoUrl:
-      'https://player.vimeo.com/video/835818764?h=d36a9a470e&title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/835818764?h=d36a9a470e&title=0&byline=0&portrait=0',
     poster: 'https://ganache.studio/videos/pubs/ornikar/poster.jpg',
     title: 'ORNIKAR',
     producer: 'Julien Thiverny',
@@ -119,8 +110,7 @@ export const pubCovers: PubAnyCover[] = [
   {
     id: 'racine-avocats',
     src: 'https://ganache.studio/videos/pubs/racine_avocats/video.mp4',
-    vimeoUrl:
-      'https://player.vimeo.com/video/746829188?h=4a709ee1ff&title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/746829188?h=4a709ee1ff&title=0&byline=0&portrait=0',
     poster: 'https://ganache.studio/videos/pubs/racine_avocats/poster.jpg',
     title: 'RACINE AVOCATS',
     producer: 'Aurélien Grellier-Beker',

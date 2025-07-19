@@ -1,4 +1,4 @@
-import { FestivalData } from '../../_types/festival-data.types';
+import { FestivalData } from '@/types/festival-data.types';
 
 export const festival2023Data: FestivalData = {
   year: '2023',
@@ -6,10 +6,8 @@ export const festival2023Data: FestivalData = {
   description: `La première édition du Ganache Festival s'est tenue les 21 et 22 avril à Paris. La grande salle du Grand Action fut quasiment comble tout le week-end, et les 18 films de la sélection ont trouvé un public chaleureux, enthousiaste et bienveillant. Ganache Studio remercie du fond du cœur tous.tes les spectateur.ice.s d'avoir participé à ce moment de cinéma, ainsi que les artistes venu.e.s présenter leurs films. À l'année prochaine !`,
 
   presentation: {
-    posterUrl:
-      'https://ganache.studio/images/festival/2023/affiche_festival.jpg',
-    teaserUrl:
-      'https://player.vimeo.com/video/814648790?h=be5eba5b39&title=0&byline=0&portrait=0',
+    posterUrl: 'https://ganache.studio/images/festival/2023/affiche_festival.jpg',
+    teaserUrl: 'https://player.vimeo.com/video/814648790?h=be5eba5b39&title=0&byline=0&portrait=0',
   },
 
   photos: [
@@ -244,8 +242,7 @@ export const festival2023Data: FestivalData = {
       title: "T'ES EN VOIE D'EXTINCTION",
       director: 'Julien Crampon',
       duration: "5'",
-      synopsis:
-        "Deux amis prennent le temps d'observer une dernière fois le monde.",
+      synopsis: "Deux amis prennent le temps d'observer une dernière fois le monde.",
       imageUrl: 'https://ganache.studio/images/festival/2023/films/TEVDE.jpeg',
     },
     {
@@ -271,8 +268,7 @@ export const festival2023Data: FestivalData = {
     title: ['Emmanuelle Bercot,', 'marraine du festival'],
     description:
       "Nous sommes heureux d'annoncer qu'Emmanuelle Bercot est la marraine de la première édition du Ganache Festival ! Réalisatrice, comédienne et scénariste exigeante, Emmanuelle Bercot a été révélée en 1997 en remportant le prix du jury à Cannes pour son court métrage Les Vacances, que nous projetterons en ouverture du festival. Nous sommes fiers de compter sur son regard expérimenté et bienveillant pour accompagner cet événement.",
-    posterUrl:
-      'https://ganache.studio/images/festival/2023/affiche_parrain.jpg',
+    posterUrl: 'https://ganache.studio/images/festival/2023/affiche_parrain.jpg',
   },
 
   team: [

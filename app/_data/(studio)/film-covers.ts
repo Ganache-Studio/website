@@ -1,4 +1,4 @@
-import { FilmCoverType } from '../../(studio)/_types/film-cover.type';
+import { FilmCoverType } from '@studio/types/film-cover.type';
 
 export const filmCovers: FilmCoverType[] = [
   {

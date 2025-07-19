@@ -19,7 +19,21 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/types/*": ["./app/_types/*"],
+      "@/data/*": ["./app/_data/*"],
+      "@/components/*": ["./app/_components/*"],
+      "@/helpers/*": ["./app/_helpers/*"],
+      "@/hooks/*": ["./app/_hooks/*"],
+      "@/context/*": ["./app/_context/*"],
+      "@/layout/*": ["./app/_layout/*"],
+
+      "@studio/components/*": ["./app/(studio)/_components/*"],
+      "@studio/context/*": ["./app/(studio)/_context/*"],
+      "@studio/types/*": ["./app/(studio)/_types/*"],
+
+      "@festival/components/*": ["./app/(festival)/_components/*"],
+      "@festival/context/*": ["./app/(festival)/_context/*"],
+      "@festival/layout/*": ["./app/(festival)/_layout/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

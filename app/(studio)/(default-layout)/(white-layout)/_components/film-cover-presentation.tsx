@@ -1,25 +1,18 @@
 'use client';
 
-import clsx from 'clsx';
+import { FilmCoverType } from '@studio/types/film-cover.type';
+import { clsx } from 'clsx';
 import NextImage from 'next/image';
 import Link from 'next/link';
 import { useInView } from 'react-intersection-observer';
-
-import { FilmCoverType } from '../../../_types/film-cover.type';
 
 const Titles = ({ titles }: { titles: FilmCoverType['titles'] }) => {
   if (!titles || titles.length === 0) return null;
 
   return (
     <>
-      {titles.map(({ text, italic }, i) => (
-        <p
-          key={i}
-          className={clsx(
-            'text-3xl font-bold text-white md:text-4xl lg:text-5xl',
-            { italic },
-          )}
-        >
+      {titles.map(({ text, italic }, index) => (
+        <p key={index} className={clsx('text-3xl font-bold text-white md:text-4xl lg:text-5xl', { italic })}>
           {text}
         </p>
       ))}
@@ -30,18 +23,10 @@ const Titles = ({ titles }: { titles: FilmCoverType['titles'] }) => {
 const Subtitle = ({ text }: { text?: string }) => {
   if (!text) return null;
 
-  return (
-    <p className="text-base font-bold text-white md:text-lg lg:text-xl">
-      {text}
-    </p>
-  );
+  return <p className="text-base font-bold text-white md:text-lg lg:text-xl">{text}</p>;
 };
 
-const Image = ({
-  filmCover: { titles, subtitle },
-}: {
-  filmCover: FilmCoverType;
-}) => {
+const Image = ({ filmCover: { titles, subtitle } }: { filmCover: FilmCoverType }) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: false,
@@ -65,21 +50,11 @@ const Image = ({
   );
 };
 
-export const FilmCoverPresentation = ({
-  filmCover,
-}: {
-  filmCover: FilmCoverType;
-}) => {
+export const FilmCoverPresentation = ({ filmCover }: { filmCover: FilmCoverType }) => {
   return (
     <div className="relative h-dvh" id={filmCover.id}>
       <Link href={`/film-${filmCover.type}#${filmCover.id}`} className="group">
-        <NextImage
-          src={filmCover.url}
-          alt={filmCover.id}
-          width={0}
-          height={0}
-          className="h-full w-full object-cover"
-        />
+        <NextImage src={filmCover.url} alt={filmCover.id} width={0} height={0} className="h-full w-full object-cover" />
         {/* eslint-disable-next-line jsx-a11y/alt-text */}
         <Image filmCover={filmCover} />
       </Link>

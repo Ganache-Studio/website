@@ -1,9 +1,11 @@
+'use client';
+
+import { useStudioContext } from '@studio/context/studio.context';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { footerLinks } from '../../../../_data/(studio)/footer-links';
-import { socialNetworkLinks } from '../../../../_data/(studio)/social-network-links';
-import { useStudioContext } from '../../../_context/studio.context';
+import { footerLinks } from '@/data/(studio)/footer-links';
+import { socialNetworkLinks } from '@/data/(studio)/social-network-links';
 
 const SocialNetworks = () => {
   const { isMainContentFullScreen } = useStudioContext();
@@ -16,7 +18,7 @@ const SocialNetworks = () => {
             href={item.href}
             target="_blank"
             rel="noopener noreferrer"
-            className={`${isMainContentFullScreen ? 'text-white' : 'text-black'}`}
+            className={isMainContentFullScreen ? 'text-white' : 'text-black'}
           >
             {item.icon}
           </a>
@@ -36,9 +38,7 @@ const Navigation = () => {
         <li
           key={index}
           className={`${isMainContentFullScreen ? 'text-white' : 'text-black'} ${
-            pathname === item.path
-              ? 'font-bold opacity-100'
-              : 'opacity-30 hover:opacity-100'
+            pathname === item.path ? 'font-bold opacity-100' : 'opacity-30 hover:opacity-100'
           }`}
         >
           <Link href={item.path}>{item.label}</Link>

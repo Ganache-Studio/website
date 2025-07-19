@@ -26,7 +26,7 @@ export const Partners = ({ partners }: PartnersProps) => {
           >
             <div className="relative w-full">
               {partner.url ? (
-                <a href={partner.url} target="_blank">
+                <a href={partner.url} target="_blank" rel="noreferrer">
                   <Image
                     src={partner.imageUrl}
                     alt={partner.name}

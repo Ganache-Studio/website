@@ -1,13 +1,13 @@
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FaInstagram } from 'react-icons/fa';
 
-import { festival2023Data } from '../../_data/(festival)/2023';
-import { festival2024Data } from '../../_data/(festival)/2024';
-import { festival2025Data } from '../../_data/(festival)/2025';
-import { scrollToSection } from '../../_helpers/scroll-to-section';
-import { useActiveSection } from '../../_hooks/use-active-session';
+import { festival2023Data } from '@/data/(festival)/2023';
+import { festival2024Data } from '@/data/(festival)/2024';
+import { festival2025Data } from '@/data/(festival)/2025';
+import { scrollToSection } from '@/helpers/scroll-to-section';
+import { useActiveSection } from '@/hooks/use-active-session';
 
 const Button = ({
   id,
@@ -28,10 +28,7 @@ const Button = ({
           scrollToSection(id);
           onClick?.();
         }}
-        className={clsx(
-          'hover:underline hover:underline-offset-2',
-          isActive && 'underline',
-        )}
+        className={clsx('hover:underline hover:underline-offset-2', isActive && 'underline')}
       >
         {children}
       </Link>
@@ -82,83 +79,60 @@ export const Navigation = ({ onClick }: NavigationProps) => {
   const festivalYear = getFestivalYear();
 
   const getGender = () => {
-    if (festivalYear === '2025') return festival2025Data.parrain.gender;
-    if (festivalYear === '2024') return festival2024Data.parrain.gender;
-    if (festivalYear === '2023') return festival2023Data.parrain.gender;
-    return 'male';
+    switch (festivalYear) {
+      case '2025': {
+        return festival2025Data.parrain.gender;
+      }
+      case '2024': {
+        return festival2024Data.parrain.gender;
+      }
+      case '2023': {
+        return festival2023Data.parrain.gender;
+      }
+      default: {
+        return 'male';
+      }
+    }
   };
 
   return (
     <nav className="fixed right-0 z-10 pt-4 pr-4 text-right lg:w-48">
       <ul className="space-y-6 text-2xl lg:space-y-2 lg:text-lg">
-        <Button
-          id="presentation"
-          isActive={activeSection === 'presentation'}
-          onClick={onClick}
-        >
+        <Button id="presentation" isActive={activeSection === 'presentation'} onClick={onClick}>
           PRÉSENTATION
         </Button>
-        <Button
-          id="programme"
-          isActive={activeSection === 'programme'}
-          onClick={onClick}
-        >
+        <Button id="programme" isActive={activeSection === 'programme'} onClick={onClick}>
           PROGRAMME
         </Button>
-        <Button
-          id="selection"
-          isActive={activeSection === 'selection'}
-          onClick={onClick}
-        >
+        <Button id="selection" isActive={activeSection === 'selection'} onClick={onClick}>
           LA SÉLECTION
         </Button>
-        <Button
-          id="parrain"
-          isActive={activeSection === 'parrain'}
-          onClick={onClick}
-        >
+        <Button id="parrain" isActive={activeSection === 'parrain'} onClick={onClick}>
           {getGender() === 'male' ? 'PARRAIN' : 'MARRAINE'}
         </Button>
-        <Button
-          id="equipe"
-          isActive={activeSection === 'equipe'}
-          onClick={onClick}
-        >
+        <Button id="equipe" isActive={activeSection === 'equipe'} onClick={onClick}>
           ÉQUIPE
         </Button>
-        <Button
-          id="partenaires"
-          isActive={activeSection === 'partenaires'}
-          onClick={onClick}
-        >
+        <Button id="partenaires" isActive={activeSection === 'partenaires'} onClick={onClick}>
           PARTENAIRES
         </Button>
         {festivalYear !== '2023' && (
-          <FestivalPageLink
-            href="/ganache-festival-2023#presentation"
-            onClick={onClick}
-          >
+          <FestivalPageLink href="/ganache-festival-2023#presentation" onClick={onClick}>
             1ère ÉDITION
           </FestivalPageLink>
         )}
         {festivalYear !== '2024' && (
-          <FestivalPageLink
-            href="/ganache-festival-2024#presentation"
-            onClick={onClick}
-          >
+          <FestivalPageLink href="/ganache-festival-2024#presentation" onClick={onClick}>
             2ème ÉDITION
           </FestivalPageLink>
         )}
         {festivalYear !== '2025' && (
-          <FestivalPageLink
-            href="/ganache-festival#presentation"
-            onClick={onClick}
-          >
+          <FestivalPageLink href="/ganache-festival#presentation" onClick={onClick}>
             3ème ÉDITION
           </FestivalPageLink>
         )}
         <li className="flex justify-end">
-          <a href="https://www.instagram.com/ganache.festival" target="_blank">
+          <a href="https://www.instagram.com/ganache.festival" target="_blank" rel="noreferrer">
             <FaInstagram className="size-7 lg:size-5" />
           </a>
         </li>

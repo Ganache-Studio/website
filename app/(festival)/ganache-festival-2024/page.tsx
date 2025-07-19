@@ -1,18 +1,18 @@
+import { Parrain } from '@festival/components/parrain';
+import { Partners } from '@festival/components/partners';
+import { PhotoGallery } from '@festival/components/photo-gallery';
+import { ProgrammeStep } from '@festival/components/program-step';
+import { Section } from '@festival/components/section';
+import { Selection } from '@festival/components/selection';
+import { Team } from '@festival/components/team';
+import { Title } from '@festival/components/title';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { festival2024Data } from '../../_data/(festival)/2024';
-import { generateMetadata } from '../../_data/metadata';
-import { pages } from '../../_data/pages';
-import { Parrain } from '../_components/parrain';
-import { Partners } from '../_components/partners';
-import { PhotoGallery } from '../_components/photo-gallery';
-import { ProgrammeStep } from '../_components/program-step';
-import { Section } from '../_components/section';
-import { Selection } from '../_components/selection';
-import { Team } from '../_components/team';
-import { Title } from '../_components/title';
+import { festival2024Data } from '@/data/(festival)/2024';
+import { generateMetadata } from '@/data/metadata';
+import { pages } from '@/data/pages';
 
 export const metadata: Metadata = generateMetadata(pages.GanacheFestival2024);
 
@@ -22,9 +22,7 @@ const Festival = () => {
       <div className="space-y-4 text-sm lg:space-y-6 lg:text-base">
         <PhotoGallery photos={festival2024Data.photos} columns={4} />
         <p className="text-justify">{festival2024Data.description}</p>
-        <p className="text-end">
-          Ganache Studio et l&apos;équipe du Ganache Festival
-        </p>
+        <p className="text-end">Ganache Studio et l&apos;équipe du Ganache Festival</p>
       </div>
 
       <div className="flex flex-col items-center space-y-4 text-sm lg:space-y-6 lg:text-base xl:flex-row xl:space-y-0 xl:space-x-8">
@@ -39,49 +37,34 @@ const Festival = () => {
         </div>
         <div className="flex-2/3 space-y-4">
           <p className="text-justify">
-            Le Ganache Festival est un festival de cinéma émergent créé en 2023
-            par la société de production{' '}
+            Le Ganache Festival est un festival de cinéma émergent créé en 2023 par la société de production{' '}
             <Link href="/" className="underline">
               Ganache Studio
             </Link>
-            . La seconde édition s&apos;est tenue au cinéma Le Grand Action, à
-            Paris, les vendredi 19 et samedi 20 avril 2024.
+            . La seconde édition s&apos;est tenue au cinéma Le Grand Action, à Paris, les vendredi 19 et samedi 20 avril
+            2024.
           </p>
           <div className="space-y-2">
-            <p className="text-justify">
-              Cette année encore, nous avons projeté des films :
-            </p>
+            <p className="text-justify">Cette année encore, nous avons projeté des films :</p>
             <ul className="ml-2 space-y-1">
-              <li>
-                - autoproduits ou qui sont le fruit d&apos;une première
-                production,
-              </li>
-              <li>
-                - réalisés par des personnes francophones de moins de 35 ans.
-              </li>
+              <li>- autoproduits ou qui sont le fruit d&apos;une première production,</li>
+              <li>- réalisés par des personnes francophones de moins de 35 ans.</li>
             </ul>
           </div>
           <div className="space-y-2">
             <p className="text-justify">Nous avons eu à cœur de :</p>
             <ul className="ml-2 space-y-1">
+              <li>- donner à voir une sélection paritaire de films émergents et personnels,</li>
               <li>
-                - donner à voir une sélection paritaire de films émergents et
-                personnels,
-              </li>
-              <li>
-                - permettre à des réalisateur·trice·s, technicien·ne·s,
-                auteur·trice·s, comédien·ne·s de tisser des liens,
+                - permettre à des réalisateur·trice·s, technicien·ne·s, auteur·trice·s, comédien·ne·s de tisser des
+                liens,
               </li>
               <li>- réunir un public varié et organiser une grande fête !</li>
             </ul>
           </div>
         </div>
       </div>
-      <iframe
-        className="aspect-video w-full"
-        src={festival2024Data.presentation.teaserUrl}
-        allowFullScreen
-      />
+      <iframe className="aspect-video w-full" src={festival2024Data.presentation.teaserUrl} allowFullScreen />
     </Section>
   );
 };
@@ -93,9 +76,7 @@ const Programme = () => {
       <div className="space-y-4 md:space-y-8">
         {/* Mobile View */}
         <div className="block space-y-4 md:hidden">
-          <p className="text-xl md:text-2xl">
-            {festival2024Data.programme[0].text}
-          </p>
+          <p className="text-xl md:text-2xl">{festival2024Data.programme[0].text}</p>
           <div className="border-b border-gray-300" />
           <ProgrammeStep
             title={festival2024Data.programme[0].steps[0].text}
@@ -117,9 +98,7 @@ const Programme = () => {
             films={festival2024Data.programme[0].steps[3].films}
           />
           <div className="border-b border-gray-300" />
-          <h4 className="text-xl md:text-2xl">
-            {festival2024Data.programme[1].text}
-          </h4>
+          <h4 className="text-xl md:text-2xl">{festival2024Data.programme[1].text}</h4>
           <div className="border-b border-gray-300" />
           <ProgrammeStep
             title={festival2024Data.programme[1].steps[0].text}

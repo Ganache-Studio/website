@@ -6,11 +6,7 @@ import { VisuallyHidden } from 'radix-ui';
 import { useCallback, useEffect, useState } from 'react';
 import { FiChevronLeft, FiChevronRight, FiX } from 'react-icons/fi';
 
-import {
-  PubAnyCover,
-  PubPictureCover,
-  PubVideoCover,
-} from '../../../../../_types/pub-cover.type';
+import type { PubAnyCover, PubPictureCover, PubVideoCover } from '@/types/pub-cover.type';
 
 const NavigationButton = ({
   onAction,
@@ -37,10 +33,10 @@ const NavigationButton = ({
   );
 };
 
-interface PubModalProps {
+type PubModalProps = {
   pubCover: PubAnyCover;
   isOpen: boolean;
-}
+};
 
 const isVideoCover = (cover: PubAnyCover): cover is PubVideoCover => {
   return 'vimeoUrl' in cover;
@@ -52,32 +48,31 @@ const isPictureCover = (cover: PubAnyCover): cover is PubPictureCover => {
 
 const getAspectRatioClasses = (pubCover: PubAnyCover) => {
   switch (pubCover.format) {
-    case 'square':
+    case 'square': {
       return 'aspect-square h-[60dvh] lg:h-[70dvh]';
-    case 'vertical':
+    }
+    case 'vertical': {
       return 'aspect-[9/16] h-[60dvh] lg:h-[80dvh]';
+    }
     case 'horizontal':
-    default:
+    default: {
       return 'aspect-video h-[50dvh] lg:h-[55dvh]';
+    }
   }
 };
 
-export const PubModal: React.FC<PubModalProps> = ({ pubCover, isOpen }) => {
+export const PubModal = ({ pubCover, isOpen }: PubModalProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleNext = useCallback(() => {
     if (isPictureCover(pubCover)) {
-      setCurrentImageIndex(prev =>
-        prev < pubCover.pictures.length - 1 ? prev + 1 : 0,
-      );
+      setCurrentImageIndex(prev => (prev < pubCover.pictures.length - 1 ? prev + 1 : 0));
     }
   }, [pubCover]);
 
   const handlePrevious = useCallback(() => {
     if (isPictureCover(pubCover)) {
-      setCurrentImageIndex(prev =>
-        prev > 0 ? prev - 1 : pubCover.pictures.length - 1,
-      );
+      setCurrentImageIndex(prev => (prev > 0 ? prev - 1 : pubCover.pictures.length - 1));
     }
   }, [pubCover]);
 
@@ -92,17 +87,21 @@ export const PubModal: React.FC<PubModalProps> = ({ pubCover, isOpen }) => {
       if (!isOpen || !isPictureCover(pubCover)) return;
 
       switch (event.key) {
-        case 'ArrowLeft':
+        case 'ArrowLeft': {
           handlePrevious();
           break;
-        case 'ArrowRight':
+        }
+        case 'ArrowRight': {
           handleNext();
           break;
+        }
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    globalThis.addEventListener('keydown', handleKeyDown);
+    return () => {
+      globalThis.removeEventListener('keydown', handleKeyDown);
+    };
   }, [handleNext, handlePrevious, isOpen, pubCover]);
 
   if (!isOpen) return null;
@@ -119,9 +118,7 @@ export const PubModal: React.FC<PubModalProps> = ({ pubCover, isOpen }) => {
           </button>
         </Dialog.Close>
 
-        <Dialog.Content
-          className={`max-w-full ${getAspectRatioClasses(pubCover)} border-0 shadow-none outline-none`}
-        >
+        <Dialog.Content className={`max-w-full ${getAspectRatioClasses(pubCover)} border-0 shadow-none outline-none`}>
           <VisuallyHidden.Root>
             <Dialog.Title>{pubCover.title}</Dialog.Title>
           </VisuallyHidden.Root>
@@ -136,15 +133,12 @@ export const PubModal: React.FC<PubModalProps> = ({ pubCover, isOpen }) => {
             <>
               <Image
                 src={pubCover.pictures[currentImageIndex]}
-                alt={`${pubCover.title} - Image ${currentImageIndex + 1}`}
+                alt={`${pubCover.title} - Image ${String(currentImageIndex + 1)}`}
                 width={0}
                 height={0}
                 className="h-full w-full object-contain"
               />
-              <NavigationButton
-                onAction={handlePrevious}
-                direction="previous"
-              />
+              <NavigationButton onAction={handlePrevious} direction="previous" />
               <NavigationButton onAction={handleNext} direction="next" />
             </>
           ) : null}

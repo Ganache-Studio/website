@@ -1,4 +1,4 @@
-import { FestivalData } from '../../_types/festival-data.types';
+import { FestivalData } from '@/types/festival-data.types';
 
 export const festival2024Data: FestivalData = {
   year: '2024',
@@ -6,10 +6,8 @@ export const festival2024Data: FestivalData = {
   description: `La seconde édition du Ganache Festival s'est tenue les 19 et 20 avril 2024 à Paris. Une fois de plus, la grande salle du Grand Action était comble tout le week-end. La sélection, paritaire et particulièrement éclectique, a rencontré un public divers et festif qui a volontiers prolongé ces deux soirées autour d'un – ou plusieurs – verres. Ganache Studio remercie du fond du cœur les spectateur·ice·s, les artistes venu·e·s présenter leurs films, les partenaires pour leur généreux soutien, et notre parrain Alex Lutz pour son implication sincère. À l'année prochaine !`,
 
   presentation: {
-    posterUrl:
-      'https://ganache.studio/images/festival/2024/affiche_festival.jpeg',
-    teaserUrl:
-      'https://player.vimeo.com/video/931124635?h=89588603ba&title=0&byline=0&portrait=0',
+    posterUrl: 'https://ganache.studio/images/festival/2024/affiche_festival.jpeg',
+    teaserUrl: 'https://player.vimeo.com/video/931124635?h=89588603ba&title=0&byline=0&portrait=0',
   },
 
   photos: [
@@ -161,8 +159,7 @@ export const festival2024Data: FestivalData = {
       duration: "22'",
       synopsis:
         "Errant sur leur vélo tandem et armés de leur désespoir, Micka et Pierre, jeune duo d'un groupe de post-punk, recherchent désespérément leur public.",
-      imageUrl:
-        'https://ganache.studio/images/festival/2024/films/GWENDOLINE.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/GWENDOLINE.jpg',
     },
     {
       title: "L'AMÉRICAIN",
@@ -170,8 +167,7 @@ export const festival2024Data: FestivalData = {
       duration: "23'",
       synopsis:
         "Pour tromper l'ennui et attirer l'attention, Malik annonce à trois jeunes de son quartier qu'il va partir aux USA. Il ment, mais la nouvelle fait rapidement le tour du quartier et Malik devient un symbole d'espoir et de fierté pour tout le monde.",
-      imageUrl:
-        'https://ganache.studio/images/festival/2024/films/AMERICAIN.jpg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/AMERICAIN.jpg',
     },
     {
       title: 'LA DERNIÈRE VALLÉE',
@@ -195,8 +191,7 @@ export const festival2024Data: FestivalData = {
       duration: "12'",
       synopsis:
         "Lorraine, une jeune mannequin de vingt-trois ans, rend visite à sa mère dans sa maison d'enfance. Durant son séjour, elle va s'avouer la vraie raison de sa venue.",
-      imageUrl:
-        'https://ganache.studio/images/festival/2024/films/LORRAINE.jpeg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/LORRAINE.jpeg',
     },
     {
       title: 'MINUIT SUR MSN',
@@ -210,8 +205,7 @@ export const festival2024Data: FestivalData = {
       title: 'NATURE ATTACK',
       director: 'Erik Semashkin',
       duration: "3'25",
-      synopsis:
-        'Un oiseau décide de chasser les grillons, mais sa traversée sera plus compliquée que prévu.',
+      synopsis: 'Un oiseau décide de chasser les grillons, mais sa traversée sera plus compliquée que prévu.',
       imageUrl: 'https://ganache.studio/images/festival/2024/films/NA.jpg',
     },
     {
@@ -228,8 +222,7 @@ export const festival2024Data: FestivalData = {
       duration: "16'",
       synopsis:
         'Des parents sondent le passé pour tenter de comprendre la journée qui changea à jamais leur vie et celle de leur fille.',
-      imageUrl:
-        'https://ganache.studio/images/festival/2024/films/PARENTS.jpeg',
+      imageUrl: 'https://ganache.studio/images/festival/2024/films/PARENTS.jpeg',
     },
     {
       title: "RIEN N'EST GRAVE",
@@ -254,10 +247,8 @@ export const festival2024Data: FestivalData = {
     title: ['Alex Lutz,', 'parrain du festival'],
     description:
       'Alex Lutz est le parrain de la seconde édition du Ganache Festival. Acteur, auteur, réalisateur, metteur en scène, humoriste, romancier, son parcours complet et fédérateur nous inspire. Nous sommes fiers de compter sur son regard pour accompagner notre événement.',
-    posterUrl:
-      'https://ganache.studio/images/festival/2024/affiche_parrain.jpeg',
-    videoUrl:
-      'https://player.vimeo.com/video/938149440?h=2631b72169&title=0&byline=0&portrait=0',
+    posterUrl: 'https://ganache.studio/images/festival/2024/affiche_parrain.jpeg',
+    videoUrl: 'https://player.vimeo.com/video/938149440?h=2631b72169&title=0&byline=0&portrait=0',
   },
 
   team: [

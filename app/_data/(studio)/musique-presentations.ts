@@ -1,4 +1,4 @@
-import { FilmPresentation } from '../../_types/film-presentation.type';
+import { FilmPresentation } from '@/types/film-presentation.type';
 
 export const musiquePresentations: FilmPresentation[] = [
   {
@@ -14,8 +14,7 @@ export const musiquePresentations: FilmPresentation[] = [
     ],
     additionalHtml:
       '<p>Réalisé par Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin <br />Avec Eugène Marcuse</p>',
-    vimeoUrl:
-      'https://player.vimeo.com/video/467370202?title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/467370202?title=0&byline=0&portrait=0',
     festivals: ['Clipped Festival (Australia) - Top 5 International Finalists'],
   },
   {
@@ -29,8 +28,7 @@ export const musiquePresentations: FilmPresentation[] = [
         italic: true,
       },
     ],
-    vimeoUrl:
-      'https://player.vimeo.com/video/1062072432?title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/1062072432?title=0&byline=0&portrait=0',
     additionalHtml:
       '<p>Réalisé par Théo Vincent • Produit par Benjamin Gilet et Mathilde Hauser<br /> Avec Simon Rérolle et Lara Levy <br /></p>',
   },
@@ -45,8 +43,7 @@ export const musiquePresentations: FilmPresentation[] = [
         italic: true,
       },
     ],
-    vimeoUrl:
-      'https://player.vimeo.com/video/840748829?title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/840748829?title=0&byline=0&portrait=0',
     additionalHtml:
       "<p>Réalisé par Oscar et Max Lesage • Produit par Benjamin Gilet • Photographie de Kévin Dubert • Montage d'Aurélien Grellier-Beker<br />Avec Oscar Lesage, Ike Zacsongo-Joseph et Jules Benchetrit</p>",
   },
@@ -61,8 +58,7 @@ export const musiquePresentations: FilmPresentation[] = [
         italic: true,
       },
     ],
-    vimeoUrl:
-      'https://player.vimeo.com/video/726662080?h=67f402da2d&title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/726662080?h=67f402da2d&title=0&byline=0&portrait=0',
     additionalHtml:
       '<p>Réalisé par Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin</p>',
   },
@@ -77,8 +73,7 @@ export const musiquePresentations: FilmPresentation[] = [
         italic: true,
       },
     ],
-    vimeoUrl:
-      'https://player.vimeo.com/video/471434078?title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/471434078?title=0&byline=0&portrait=0',
     additionalHtml:
       '<p>Réalisé par Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin <br />Avec Suzanne de Baecque et Augustin Bouchacourt</p>',
   },

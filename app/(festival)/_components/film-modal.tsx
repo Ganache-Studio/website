@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect } from 'react';
-import { FiX, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { FiChevronLeft, FiChevronRight, FiX } from 'react-icons/fi';
 
 import { Film } from './film-card';
 
@@ -39,48 +39,43 @@ const NavigationButton = ({
   );
 };
 
-interface FilmModalProps {
+type FilmModalProps = {
   film: Film;
   isOpen: boolean;
   onClose: () => void;
   onNext: () => void;
   onPrevious: () => void;
-}
+};
 
-export const FilmModal: React.FC<FilmModalProps> = ({
-  film,
-  isOpen,
-  onClose,
-  onNext,
-  onPrevious,
-}) => {
+export const FilmModal = ({ film, isOpen, onClose, onNext, onPrevious }: FilmModalProps) => {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (!isOpen) return;
 
       switch (event.key) {
-        case 'Escape':
+        case 'Escape': {
           onClose();
           break;
-        case 'ArrowLeft':
+        }
+        case 'ArrowLeft': {
           onPrevious();
           break;
-        case 'ArrowRight':
+        }
+        case 'ArrowRight': {
           onNext();
           break;
+        }
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    globalThis.addEventListener('keydown', handleKeyDown);
+    return () => {
+      globalThis.removeEventListener('keydown', handleKeyDown);
+    };
   }, [isOpen, onClose, onNext, onPrevious]);
 
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
+    document.body.style.overflow = isOpen ? 'hidden' : 'unset';
 
     return () => {
       document.body.style.overflow = 'unset';
@@ -93,26 +88,18 @@ export const FilmModal: React.FC<FilmModalProps> = ({
       <div className="fixed inset-0 z-20 hidden items-center justify-center bg-black/90 select-none lg:flex">
         <CloseButton onClose={onClose} />
 
-        <div
-          className="absolute flex h-[80dvh] w-full items-center justify-between space-x-10 px-10"
-          onClick={onClose}
-        >
+        <div className="absolute flex h-[80dvh] w-full items-center justify-between space-x-10 px-10" onClick={onClose}>
           <NavigationButton onAction={onPrevious} direction="previous" />
 
           <div
             className="relative z-50 h-full w-full max-w-6xl border-4 border-white"
-            onClick={e => e.stopPropagation()}
+            onClick={e => {
+              e.stopPropagation();
+            }}
           >
-            <Image
-              src={film.imageUrl}
-              alt={film.title}
-              fill
-              className="object-cover"
-            />
+            <Image src={film.imageUrl} alt={film.title} fill className="object-cover" />
             <div className="absolute top-0 left-0 p-8">
-              <p className="mb-2 text-4xl tracking-wide text-white uppercase">
-                {film.title}
-              </p>
+              <p className="mb-2 text-4xl tracking-wide text-white uppercase">{film.title}</p>
               <p className="text-xl text-white">
                 de {film.director} — {film.duration}&apos;
               </p>
@@ -131,20 +118,13 @@ export const FilmModal: React.FC<FilmModalProps> = ({
         <CloseButton onClose={onClose} />
 
         <div className="flex-[15] p-4 pr-12 sm:p-6 sm:pr-16">
-          <h2 className="text-xl text-white uppercase sm:text-2xl">
-            {film.title}
-          </h2>
+          <h2 className="text-xl text-white uppercase sm:text-2xl">{film.title}</h2>
           <h3 className="text-lg font-light text-white sm:text-xl">
             de {film.director} — {film.duration}&apos;
           </h3>
         </div>
         <div className="relative flex-[60] border-4 border-white">
-          <Image
-            src={film.imageUrl}
-            alt={film.title}
-            fill
-            className="object-cover"
-          />
+          <Image src={film.imageUrl} alt={film.title} fill className="object-cover" />
           <div className="absolute inset-0 flex items-center justify-between p-4 sm:p-6">
             <NavigationButton onAction={onPrevious} direction="previous" />
             <NavigationButton onAction={onNext} direction="next" />

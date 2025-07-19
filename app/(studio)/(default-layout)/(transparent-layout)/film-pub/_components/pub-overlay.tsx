@@ -3,17 +3,13 @@
 import { gsap } from 'gsap';
 import { useEffect, useRef, useState } from 'react';
 
-interface PubOverlayProps {
+type PubOverlayProps = {
   onOverlayHidden: () => void;
-}
+};
 
 const useBlockScroll = (condition: boolean) => {
   useEffect(() => {
-    if (condition) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
+    document.body.style.overflow = condition ? 'hidden' : 'unset';
 
     return () => {
       document.body.style.overflow = 'unset';
@@ -68,15 +64,17 @@ export const PubOverlay = ({ onOverlayHidden }: PubOverlayProps) => {
     if (isOverlayVisible) {
       window.addEventListener('scroll', handleScroll, { passive: false });
       window.addEventListener('wheel', handleWheel, { passive: false });
-      window.addEventListener('touchstart', handleTouch, { passive: false });
-      window.addEventListener('touchmove', handleTouch, { passive: false });
+      globalThis.addEventListener('touchstart', handleTouch, {
+        passive: false,
+      });
+      globalThis.addEventListener('touchmove', handleTouch, { passive: false });
     }
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('wheel', handleWheel);
-      window.removeEventListener('touchstart', handleTouch);
-      window.removeEventListener('touchmove', handleTouch);
+      globalThis.removeEventListener('touchstart', handleTouch);
+      globalThis.removeEventListener('touchmove', handleTouch);
     };
   }, [isOverlayVisible, onOverlayHidden]);
 
@@ -85,15 +83,11 @@ export const PubOverlay = ({ onOverlayHidden }: PubOverlayProps) => {
   }
 
   return (
-    <div
-      ref={overlayRef}
-      className="fixed inset-0 z-9 flex items-center justify-center"
-    >
+    <div ref={overlayRef} className="fixed inset-0 z-9 flex items-center justify-center">
       <div className="w-4/5 text-left text-white lg:w-2/5">
         <p className="text-sm font-bold tracking-wide uppercase lg:text-lg">
-          Issus du cinéma, nous produisons des publicités avec le savoir-faire
-          et l&apos;exigence que demandent les grandes histoires. Nous croyons à
-          la créativité pure, à la disruption et au travail bien fait.
+          Issus du cinéma, nous produisons des publicités avec le savoir-faire et l&apos;exigence que demandent les
+          grandes histoires. Nous croyons à la créativité pure, à la disruption et au travail bien fait.
         </p>
       </div>
     </div>

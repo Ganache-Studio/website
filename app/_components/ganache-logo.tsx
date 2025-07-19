@@ -2,13 +2,7 @@
 
 import Image from 'next/image';
 
-const GanacheLogo = ({
-  isWhite,
-  className,
-}: {
-  isWhite: boolean;
-  className?: string;
-}) => {
+const GanacheLogo = ({ isWhite, className }: { isWhite: boolean; className?: string }) => {
   return (
     <Image
       src={

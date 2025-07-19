@@ -1,36 +1,24 @@
 'use client';
 
+import { useStudioContext } from '@studio/context/studio.context';
 import Image from 'next/image';
 import { Dialog } from 'radix-ui';
 import { PropsWithChildren, useEffect, useRef } from 'react';
 
-import { PubAnyCover } from '../../../../../_types/pub-cover.type';
-import { useStudioContext } from '../../../../_context/studio.context';
+import { PubAnyCover } from '@/types/pub-cover.type';
 
-const Title = ({ title }: { title: string }) => (
-  <h2 className="text-2xl font-bold text-white md:text-3xl">{title}</h2>
-);
+const Title = ({ title }: { title: string }) => <h2 className="text-2xl font-bold text-white md:text-3xl">{title}</h2>;
 
-const Producer = ({ producer }: { producer: string }) => (
-  <p className="text-sm text-white md:text-base">{producer}</p>
-);
+const Producer = ({ producer }: { producer: string }) => <p className="text-sm text-white md:text-base">{producer}</p>;
 
-const Type = ({ type }: { type: string }) => (
-  <p className="text-sm text-white md:text-base">{type}</p>
-);
+const Type = ({ type }: { type: string }) => <p className="text-sm text-white md:text-base">{type}</p>;
 
 const Agence = ({ agence }: { agence?: string }) => {
   if (!agence) return null;
   return <p className="text-sm text-white md:text-base">Agence : {agence}</p>;
 };
 
-const Video = ({
-  pubCover,
-  isPriority = false,
-}: {
-  pubCover: PubAnyCover;
-  isPriority?: boolean;
-}) => {
+const Video = ({ pubCover, isPriority = false }: { pubCover: PubAnyCover; isPriority?: boolean }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -38,7 +26,7 @@ const Video = ({
 
     if (!video) return;
 
-    video.play().catch(() => {});
+    video.play().catch(() => null);
   }, []);
 
   return (
@@ -55,13 +43,7 @@ const Video = ({
   );
 };
 
-const Picture = ({
-  pubCover,
-  isPriority = false,
-}: {
-  pubCover: PubAnyCover;
-  isPriority?: boolean;
-}) => {
+const Picture = ({ pubCover, isPriority = false }: { pubCover: PubAnyCover; isPriority?: boolean }) => {
   return (
     <Image
       src={pubCover.poster}
@@ -94,11 +76,11 @@ export const PubSection = ({
 
     const observer = new IntersectionObserver(
       entries => {
-        entries.forEach(entry => {
+        for (const entry of entries) {
           if (entry.isIntersecting) {
             onInView(index);
           }
-        });
+        }
       },
       {
         threshold: 0.5,

@@ -1,11 +1,12 @@
 'use client';
 
+import { useStudioContext } from '@studio/context/studio.context';
 import Link from 'next/link';
+
+import GanacheLogo from '@/components/ganache-logo';
 
 import { DesktopBottomNavigation } from './desktop-bottom-navigation';
 import { DesktopNavigationMenu } from './desktop-navigation-menu';
-import GanacheLogo from '../../../../_components/ganache-logo';
-import { useStudioContext } from '../../../_context/studio.context';
 
 export const DesktopLayout = () => {
   const { handleDrawerClose, isMainContentFullScreen } = useStudioContext();
@@ -19,10 +20,7 @@ export const DesktopLayout = () => {
       }`}
     >
       <Link href="/" onClick={handleDrawerClose}>
-        <GanacheLogo
-          className="h-16 w-auto md:h-20 lg:h-auto lg:w-56"
-          isWhite={isWhite}
-        />
+        <GanacheLogo className="h-16 w-auto md:h-20 lg:h-auto lg:w-56" isWhite={isWhite} />
       </Link>
       <DesktopNavigationMenu />
       <DesktopBottomNavigation />

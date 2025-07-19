@@ -1,8 +1,9 @@
+import './globals.css';
+
 import type { Metadata, Viewport } from 'next';
 
-import './globals.css';
-import { generateMetadata } from './_data/metadata';
-import { pages } from './_data/pages';
+import { generateMetadata } from '@/data/metadata';
+import { pages } from '@/data/pages';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -21,15 +22,10 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link
-          rel="icon"
-          href="https://ganache.studio/images/ganache_favicon.ico"
-        />
+        <link rel="icon" href="https://ganache.studio/images/ganache_favicon.ico" />
       </head>
 
-      <body className={`pt-safe px-safe pb-safe flex flex-col antialiased`}>
-        {children}
-      </body>
+      <body className={`pt-safe px-safe pb-safe flex flex-col antialiased`}>{children}</body>
     </html>
   );
 }

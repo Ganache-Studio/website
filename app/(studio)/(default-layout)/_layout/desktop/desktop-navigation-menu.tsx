@@ -1,10 +1,10 @@
 'use client';
 
+import { useStudioContext } from '@studio/context/studio.context';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { navigationLinks } from '../../../../_data/(studio)/navigation-links';
-import { useStudioContext } from '../../../_context/studio.context';
+import { navigationLinks } from '@/data/(studio)/navigation-links';
 
 export const DesktopNavigationMenu = () => {
   const { handleDrawerClose, isMainContentFullScreen } = useStudioContext();
@@ -14,9 +14,7 @@ export const DesktopNavigationMenu = () => {
     <nav className="group relative w-full p-6 text-2xl md:text-4xl lg:text-base">
       <Link
         href="/"
-        className={`flex w-full justify-center font-bold ${
-          isMainContentFullScreen ? 'text-white' : 'text-black'
-        }`}
+        className={`flex w-full justify-center font-bold ${isMainContentFullScreen ? 'text-white' : 'text-black'}`}
         onClick={handleDrawerClose}
       >
         FILMS
@@ -27,12 +25,8 @@ export const DesktopNavigationMenu = () => {
             <Link
               onClick={handleDrawerClose}
               href={item.path}
-              className={`flex transition-all duration-500 ${
-                isMainContentFullScreen ? 'text-white' : 'text-black'
-              } ${
-                pathname === item.path
-                  ? 'font-bold opacity-100'
-                  : 'opacity-30 hover:opacity-100'
+              className={`flex transition-all duration-500 ${isMainContentFullScreen ? 'text-white' : 'text-black'} ${
+                pathname === item.path ? 'font-bold opacity-100' : 'opacity-30 hover:opacity-100'
               }`}
             >
               {item.label}

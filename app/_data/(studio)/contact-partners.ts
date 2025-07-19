@@ -1,4 +1,4 @@
-import { ContactPartner } from '../../_types/contact-partner.type';
+import { ContactPartner } from '@/types/contact-partner.type';
 
 export const contactPartners: ContactPartner[] = [
   {

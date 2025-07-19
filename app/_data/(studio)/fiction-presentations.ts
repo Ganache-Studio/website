@@ -1,4 +1,4 @@
-import { FilmPresentation } from '../../_types/film-presentation.type';
+import { FilmPresentation } from '@/types/film-presentation.type';
 
 export const fictionPresentations: FilmPresentation[] = [
   {
@@ -53,8 +53,7 @@ export const fictionPresentations: FilmPresentation[] = [
     ],
     description:
       "Cela fait des semaines que plus une goutte ne coule aux robinets du mas où vivent Olivia et son père. Toutes les nuits, l'adolescente de 14 ans doit compter chaque litre d'eau de la dernière citerne pour remplir les abreuvoirs d'une chèvrerie, où suffoque un petit troupeau de chèvres. Mais l'arrivée soudaine de citadins, fuyant les fortes chaleurs de la ville, accélère la pénurie d'eau. Olivia va rapidement devoir choisir entre son amitié naissante avec Fanny, une citadine de son âge, et la survie du troupeau paternel.",
-    imageUrl:
-      'https://ganache.studio/images/fictions/le_silence_des_hirondelles.jpg',
+    imageUrl: 'https://ganache.studio/images/fictions/le_silence_des_hirondelles.jpg',
     additionalHtml:
       '<p>Un film de Louis Faury • Produit par Benjamin Gilet<br />Meilleur scénario au Festival Rêves de Court en 2024<br />En développement</p>',
   },
@@ -110,8 +109,7 @@ export const fictionPresentations: FilmPresentation[] = [
     ],
     description:
       "Titou est clippeur. Oscar est rappeur. Du moins, c'est ainsi qu'ils se sont auto-proclamés. Au beau milieu de l'été, Titou embarque son ami pour tourner un clip digne du rap game, en Bretagne, chez sa défunte grand-mère.",
-    vimeoUrl:
-      'https://player.vimeo.com/video/659465434?title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/659465434?title=0&byline=0&portrait=0',
     additionalHtml:
       '<p>Un film de Max Lesage • Produit par Benjamin Gilet • Photographie de Mathias Godron • Son de Philippe Farnole<br />Avec Maxime Crescini, Oscar Lesage et Ella Pellegrini<br />2022<br /><i>Acheté par OCS et UniversCiné<i/></p>',
     affiche: 'https://ganache.studio/images/fictions/titou/affiche.jpg',
@@ -137,8 +135,7 @@ export const fictionPresentations: FilmPresentation[] = [
         italic: true,
       },
     ],
-    description:
-      'Sous un soleil de plomb, un jeune couple se lance dans un jeu qui va les transformer.',
+    description: 'Sous un soleil de plomb, un jeune couple se lance dans un jeu qui va les transformer.',
     imageUrl: 'https://ganache.studio/images/capsules/12_decembre.png',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin • Son de Paul Kusnierek<br />Avec Pauline Briand, Benjamin Voisin et Eugène Marcuse <br />2021</p>",
@@ -156,8 +153,7 @@ export const fictionPresentations: FilmPresentation[] = [
     ],
     description:
       "Aujourd'hui, Joël présente son spectacle de fin d'année. À quelques heures de la représentation, la pression monte.",
-    vimeoUrl:
-      'https://player.vimeo.com/video/502540258?title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/502540258?title=0&byline=0&portrait=0',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet et Gabriel Washer • Photographie de Florian Solin • Son de Paul Kusnierek<br />Avec Augustin Bouchacourt, Stanislas Perrin, Éric Verdin, Lucie Brunet, Sylvain Debry, Édouard Eftimakis et Manon Rey<br />2021</p>",
     affiche: 'https://ganache.studio/images/capsules/11_novembre/affiche.jpg',
@@ -173,12 +169,10 @@ export const fictionPresentations: FilmPresentation[] = [
     ],
     description:
       'Voilà deux ans que sa sœur a disparu. Deux ans que Noémie mène sa propre enquête et envisage de dépasser les frontières du vraisemblable.',
-    vimeoUrl:
-      'https://player.vimeo.com/video/544546262?title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/544546262?title=0&byline=0&portrait=0',
     additionalHtml:
       "<p>Un film d'Hélène Delage • Co-produit par Ganache Studio • Photographie de Laurence Heintz <br />Avec Noémie Schmidt<br />2021</p>",
-    affiche:
-      'https://ganache.studio/images/fictions/la_troisieme_nuit/affiche.jpg',
+    affiche: 'https://ganache.studio/images/fictions/la_troisieme_nuit/affiche.jpg',
     festivals: ['Canberra Short Film Festival', 'Berlin Indie Film Festival'],
   },
   {
@@ -192,10 +186,8 @@ export const fictionPresentations: FilmPresentation[] = [
         italic: true,
       },
     ],
-    description:
-      'Aujourd\'hui, Joël donne son premier "cours d\'appréhension de la matière rire".',
-    vimeoUrl:
-      'https://player.vimeo.com/video/426943646?title=0&byline=0&portrait=0',
+    description: 'Aujourd\'hui, Joël donne son premier "cours d\'appréhension de la matière rire".',
+    vimeoUrl: 'https://player.vimeo.com/video/426943646?title=0&byline=0&portrait=0',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin • Son de Paul Kusnierek<br />Avec Augustin Bouchacourt, Lucie Brunet, Teddy Chawa, Sylvain Debry, Édouard Eftimakis et Manon Rey<br />2020</p>",
     festivals: ['Lyon Young Film Festival', 'Festival On Vous Ment'],
@@ -211,8 +203,7 @@ export const fictionPresentations: FilmPresentation[] = [
         italic: true,
       },
     ],
-    description:
-      "Un matin, Gabriel, 24 ans, se réveille avec l'âme d'un vieil homme au crépuscule de sa vie.",
+    description: "Un matin, Gabriel, 24 ans, se réveille avec l'âme d'un vieil homme au crépuscule de sa vie.",
     imageUrl: 'https://ganache.studio/images/capsules/6_juin/cover.jpg',
     affiche: 'https://ganache.studio/images/capsules/6_juin/affiche.png',
     additionalHtml:
@@ -236,8 +227,7 @@ export const fictionPresentations: FilmPresentation[] = [
       },
     ],
     description: '« Des êtres comme des nuages de fumée ».',
-    vimeoUrl:
-      'https://player.vimeo.com/video/394498915?title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/394498915?title=0&byline=0&portrait=0',
     additionalHtml:
       "<p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin <br />Avec Maxime Gleizes<br />2020</p>",
     festivals: ['The Fighting Spirit Film Festival - UK'],
@@ -256,8 +246,7 @@ export const fictionPresentations: FilmPresentation[] = [
     ],
     description:
       "Un jeune homme demande son chemin à une jeune femme dans une rue parisienne. Ils échangent brièvement en marchant dans la même direction. Chute libre - Première partie est le premier volet d'une trilogie relatant leur histoire d’amour.",
-    vimeoUrl:
-      'https://player.vimeo.com/video/362586135?title=0&byline=0&portrait=0',
+    vimeoUrl: 'https://player.vimeo.com/video/362586135?title=0&byline=0&portrait=0',
     additionalHtml:
       '<p>Un film d’Aurélien Grellier-Beker • Scénario de Gabriel Washer • Produit par Benjamin Gilet • Photographie de Florian Solin <br />Avec Gabriel Washer, Valentine Catzéflis, Dali Benssalah, Augustin Bouchacourt, Ilian Bergala, Théo Salemkour, Benjamin Voisin, Suzanne Rault-Balet, Harrison Arevalo et David Clavel <br />2019</p>',
   },

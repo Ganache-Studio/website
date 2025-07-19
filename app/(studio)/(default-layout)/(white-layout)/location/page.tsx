@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
-import { locationPresentations } from '../../../../_data/(studio)/location';
-import { generateMetadata } from '../../../../_data/metadata';
-import { pages } from '../../../../_data/pages';
+import { locationPresentations } from '@/data/(studio)/location';
+import { generateMetadata } from '@/data/metadata';
+import { pages } from '@/data/pages';
 
 export const metadata: Metadata = generateMetadata(pages.Location);
 
@@ -59,9 +59,7 @@ const LocationPage = () => {
                   className="h-[500px] w-full object-cover md:h-[700px]"
                 />
                 <LocationName name={locationPresentation.name} />
-                <LocationDescriptions
-                  descriptions={locationPresentation.descriptions}
-                />
+                <LocationDescriptions descriptions={locationPresentation.descriptions} />
               </div>
             );
           })}
@@ -73,10 +71,7 @@ const LocationPage = () => {
       <div className="hidden h-dvh w-full flex-col items-center justify-center space-y-10 py-10 xl:flex">
         <div className="mx-10 flex h-full max-w-7xl items-center space-x-10">
           {locationPresentations.map(locationPresentation => (
-            <div
-              key={locationPresentation.name}
-              className="relative h-full w-full"
-            >
+            <div key={locationPresentation.name} className="relative h-full w-full">
               <Image
                 src={locationPresentation.imageUrl}
                 alt={locationPresentation.name}
@@ -85,9 +80,7 @@ const LocationPage = () => {
                 className="h-full w-full object-cover"
               />
               <LocationName name={locationPresentation.name} />
-              <LocationDescriptions
-                descriptions={locationPresentation.descriptions}
-              />
+              <LocationDescriptions descriptions={locationPresentation.descriptions} />
             </div>
           ))}
         </div>

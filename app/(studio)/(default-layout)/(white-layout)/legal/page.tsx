@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 
+import { generateMetadata } from '@/data/metadata';
+import { pages } from '@/data/pages';
+
 import { CookiesPolicy } from './_components/cookies-policy';
 import { PrivacyPolicy } from './_components/privacy-policy';
-import { generateMetadata } from '../../../../_data/metadata';
-import { pages } from '../../../../_data/pages';
 
 export const metadata: Metadata = generateMetadata(pages.Legal);
 

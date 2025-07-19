@@ -1,15 +1,10 @@
-import { HiMiniBars3 as BurgerIcon } from 'react-icons/hi2';
-import { HiOutlineXMark as CrossIcon } from 'react-icons/hi2';
+'use client';
 
-import { useStudioContext } from '../../../_context/studio.context';
+import { useStudioContext } from '@studio/context/studio.context';
+import { HiMiniBars3 as BurgerIcon, HiOutlineXMark as CrossIcon } from 'react-icons/hi2';
 
 export const BurgerMenuButton = () => {
-  const {
-    isDrawerOpen,
-    handleDrawerOpen,
-    handleDrawerClose,
-    isMainContentFullScreen,
-  } = useStudioContext();
+  const { isDrawerOpen, handleDrawerOpen, handleDrawerClose, isMainContentFullScreen } = useStudioContext();
 
   return (
     <button
@@ -19,23 +14,11 @@ export const BurgerMenuButton = () => {
       }}
       className={`focus:outline-none`}
     >
-      <div
-        className={`transition-transform duration-300 ${
-          isDrawerOpen ? 'rotate-90' : 'rotate-0'
-        }`}
-      >
+      <div className={`transition-transform duration-300 ${isDrawerOpen ? 'rotate-90' : 'rotate-0'}`}>
         {isDrawerOpen ? (
-          <CrossIcon
-            className={`size-7 md:size-9 ${
-              isMainContentFullScreen ? 'text-white' : 'text-black'
-            }`}
-          />
+          <CrossIcon className={`size-7 md:size-9 ${isMainContentFullScreen ? 'text-white' : 'text-black'}`} />
         ) : (
-          <BurgerIcon
-            className={`size-7 md:size-9 ${
-              isMainContentFullScreen ? 'text-white' : 'text-black'
-            }`}
-          />
+          <BurgerIcon className={`size-7 md:size-9 ${isMainContentFullScreen ? 'text-white' : 'text-black'}`} />
         )}
       </div>
     </button>
