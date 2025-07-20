@@ -3,7 +3,7 @@
 import { useStudioContext } from '@studio/context/studio.context';
 import Image from 'next/image';
 import { Dialog } from 'radix-ui';
-import { PropsWithChildren, useEffect, useRef } from 'react';
+import { PropsWithChildren, useEffect, useRef, useState } from 'react';
 
 import { PubAnyCover } from '@/types/pub-cover.type';
 
@@ -18,28 +18,59 @@ const Agence = ({ agence }: { agence?: string }) => {
   return <p className="text-sm text-white md:text-base">Agence : {agence}</p>;
 };
 
-const Video = ({ pubCover, isPriority = false }: { pubCover: PubAnyCover; isPriority?: boolean }) => {
+const Video = ({
+  pubCover,
+  isPriority = false,
+  isInView,
+}: {
+  pubCover: PubAnyCover;
+  isPriority?: boolean;
+  isInView: boolean;
+}) => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   useEffect(() => {
     const video = videoRef.current;
 
-    if (!video) return;
+    if (!video || !isInView) return;
 
-    video.play().catch(() => null);
-  }, []);
+    const handleCanPlay = () => {
+      setIsVideoLoaded(true);
+      video.play().catch(() => null);
+    };
+
+    video.addEventListener('canplay', handleCanPlay);
+    video.load();
+
+    return () => {
+      video.removeEventListener('canplay', handleCanPlay);
+    };
+  }, [isInView]);
 
   return (
-    <video
-      ref={videoRef}
-      className="h-full w-full object-cover"
-      muted
-      loop
-      playsInline
-      preload={isPriority ? 'auto' : 'metadata'}
-      src={pubCover.src}
-      poster={pubCover.poster}
-    />
+    <>
+      {(!isInView || !isVideoLoaded) && (
+        <Image
+          src={pubCover.poster}
+          alt={pubCover.title}
+          fill
+          className="h-full w-full object-cover"
+          priority={isPriority}
+        />
+      )}
+      <video
+        ref={videoRef}
+        className="h-full w-full object-cover"
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        src={pubCover.src}
+        poster={pubCover.poster}
+        style={{ display: isInView && isVideoLoaded ? 'block' : 'none' }}
+      />
+    </>
   );
 };
 
@@ -70,6 +101,7 @@ export const PubSection = ({
 }>) => {
   const { isDrawerOpen } = useStudioContext();
   const sectionRef = useRef<HTMLDivElement>(null);
+  const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
     const currentElement = sectionRef.current;
@@ -78,6 +110,7 @@ export const PubSection = ({
       entries => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
+            setIsInView(true);
             onInView(index);
           }
         }
@@ -111,7 +144,7 @@ export const PubSection = ({
         id={pubCover.id}
       >
         {isVideo ? (
-          <Video pubCover={pubCover} isPriority={isPriority} />
+          <Video pubCover={pubCover} isPriority={isPriority} isInView={isInView} />
         ) : (
           <Picture pubCover={pubCover} isPriority={isPriority} />
         )}
