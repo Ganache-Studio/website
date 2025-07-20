@@ -41,7 +41,9 @@ const Navigation = () => {
             pathname === item.path ? 'font-bold opacity-100' : 'opacity-30 hover:opacity-100'
           }`}
         >
-          <Link href={item.path}>{item.label}</Link>
+          <Link href={item.path} target={item.target}>
+            {item.label}
+          </Link>
         </li>
       ))}
     </ul>
