@@ -104,6 +104,11 @@ const Programme = () => {
             title={festival2025Data.programme[1].steps[1].text}
             films={festival2025Data.programme[1].steps[1].films}
           />
+          <div className="border-b border-gray-300" />
+          <ProgrammeStep
+            title={festival2025Data.programme[1].steps[2].text}
+            films={festival2025Data.programme[1].steps[2].films}
+          />
         </div>
 
         {/* Desktop View */}
@@ -125,8 +130,8 @@ const Programme = () => {
             </div>
             <div className="flex-1/2">
               <ProgrammeStep
-                title={festival2025Data.programme[0].steps[1].text}
-                films={festival2025Data.programme[0].steps[1].films}
+                title={festival2025Data.programme[1].steps[0].text}
+                films={festival2025Data.programme[1].steps[0].films}
               />
             </div>
           </div>
