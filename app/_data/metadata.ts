@@ -7,68 +7,79 @@ import { Page } from './pages';
 export const metadataConfig: Record<Page, PageMetadata> = {
   '/': {
     title: 'Ganache Studio',
-    description: '',
+    description: 'Production basée à Paris • Fiction • Musique • Documentaire • Pub',
     keywords: [],
+    canonicalUrl: 'https://ganache-studio.com',
   },
 
   '/film-fiction': {
     title: 'Films de Fiction | Ganache Studio',
-    description: '',
+    description: 'Production basée à Paris • Fiction • Musique • Documentaire • Pub',
     keywords: [],
+    canonicalUrl: 'https://ganache-studio.com/film-fiction',
   },
 
   '/film-documentaire': {
     title: 'Films Documentaires | Ganache Studio',
-    description: '',
+    description: 'Production basée à Paris • Fiction • Musique • Documentaire • Pub',
     keywords: [],
+    canonicalUrl: 'https://ganache-studio.com/film-documentaire',
   },
 
   '/film-musique': {
     title: 'Clips Musicaux | Ganache Studio',
-    description: '',
+    description: 'Production basée à Paris • Fiction • Musique • Documentaire • Pub',
     keywords: [],
+    canonicalUrl: 'https://ganache-studio.com/film-musique',
   },
 
   '/film-pub': {
     title: 'Films Publicitaires | Ganache Studio',
-    description: '',
+    description: 'Production basée à Paris • Fiction • Musique • Documentaire • Pub',
     keywords: [],
+    canonicalUrl: 'https://ganache-studio.com/film-pub',
   },
 
   '/contact': {
     title: 'Contact | Ganache Studio',
-    description: '',
+    description: 'Production basée à Paris • Fiction • Musique • Documentaire • Pub',
     keywords: [],
+    canonicalUrl: 'https://ganache-studio.com/contact',
   },
 
   '/location': {
     title: 'Location | Ganache Studio',
-    description: '',
+    description: 'Production basée à Paris • Fiction • Musique • Documentaire • Pub',
     keywords: [],
+    canonicalUrl: 'https://ganache-studio.com/location',
   },
 
   '/legal': {
     title: 'Mentions Légales | Ganache Studio',
-    description: '',
+    description: 'Production basée à Paris • Fiction • Musique • Documentaire • Pub',
     keywords: [],
+    canonicalUrl: 'https://ganache-studio.com/legal',
   },
 
   '/ganache-festival': {
     title: 'Ganache Festival 2025 | 3ème Édition',
-    description: '',
+    description: 'Festival de courts métrages • Paris • 25-26 avril 2025 • Ganache Studio',
     keywords: [],
+    canonicalUrl: 'https://ganache-studio.com/ganache-festival',
   },
 
   '/ganache-festival-2024': {
     title: 'Ganache Festival 2024 | 2ème Édition',
-    description: '',
+    description: 'Festival de courts métrages • Paris • 19-20 avril 2024 • Ganache Studio',
     keywords: [],
+    canonicalUrl: 'https://ganache-studio.com/ganache-festival-2024',
   },
 
   '/ganache-festival-2023': {
     title: 'Ganache Festival 2023 | 1ère Édition',
-    description: '',
+    description: 'Festival de courts métrages • Paris • 21-22 avril 2023 • Ganache Studio',
     keywords: [],
+    canonicalUrl: 'https://ganache-studio.com/ganache-festival-2023',
   },
 };
 
@@ -82,6 +93,9 @@ export const generateMetadata = (path: Page): Metadata => {
     creator: 'Ganache Studio',
     publisher: 'Ganache Studio',
     referrer: 'origin-when-cross-origin',
+    alternates: {
+      canonical: config.canonicalUrl,
+    },
     robots: {
       index: true,
       follow: true,
