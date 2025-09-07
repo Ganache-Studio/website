@@ -1,5 +1,3 @@
-// Validated
-
 import Image from 'next/image';
 
 const GanacheLogo = ({ isWhite, className }: { isWhite: boolean; className?: string }) => {
@@ -7,8 +5,8 @@ const GanacheLogo = ({ isWhite, className }: { isWhite: boolean; className?: str
     <Image
       src={
         isWhite
-          ? 'https://ganache.studio/images/ganache_logo_white.png'
-          : 'https://ganache.studio/images/ganache_logo_black.png'
+          ? 'https://ganache.studio/media/ganache_logo_white.png'
+          : 'https://ganache.studio/media/ganache_logo_black.png'
       }
       width={0}
       height={0}

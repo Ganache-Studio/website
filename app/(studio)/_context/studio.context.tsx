@@ -1,6 +1,5 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
 
 type StudioContextType = {
@@ -23,10 +22,13 @@ export const useStudioContext = () => {
   return context;
 };
 
-export const StudioProvider = ({ children }: { children: ReactNode }) => {
-  const pathname = usePathname();
-  const isMainContentFullScreen = ['/film-pub'].includes(pathname);
-
+export const StudioProvider = ({
+  isMainContentFullScreen,
+  children,
+}: {
+  isMainContentFullScreen: boolean;
+  children: ReactNode;
+}) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const handleDrawerOpen = () => {

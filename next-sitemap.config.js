@@ -10,47 +10,39 @@ module.exports = {
     const customConfig = {
       '/': {
         priority: 1.0,
-        changefreq: 'weekly',
       },
       '/film-fiction': {
         priority: 0.9,
-        changefreq: 'monthly',
       },
       '/film-documentaire': {
         priority: 0.9,
-        changefreq: 'monthly',
       },
       '/film-musique': {
         priority: 0.9,
-        changefreq: 'monthly',
       },
       '/contact': {
         priority: 0.8,
-        changefreq: 'monthly',
       },
       '/film-pub': {
         priority: 0.8,
-        changefreq: 'monthly',
       },
       '/location': {
         priority: 0.7,
-        changefreq: 'monthly',
       },
       '/legal': {
         priority: 0.3,
-        changefreq: 'yearly',
       },
       '/ganache-festival': {
         priority: 0.9,
-        changefreq: 'monthly',
-      },
-      '/ganache-festival-2024': {
-        priority: 0.9,
-        changefreq: 'monthly',
       },
       '/ganache-festival-2023': {
         priority: 0.9,
-        changefreq: 'monthly',
+      },
+      '/ganache-festival-2024': {
+        priority: 0.9,
+      },
+      '/ganache-festival-2025': {
+        priority: 0.9,
       },
     };
 
@@ -59,7 +51,7 @@ module.exports = {
     return {
       loc: path,
       lastmod: new Date().toISOString(),
-      changefreq: customPage?.changefreq || 'monthly',
+      changefreq: 'weekly',
       priority: customPage?.priority || 0.7,
     };
   },

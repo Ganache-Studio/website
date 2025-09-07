@@ -34,6 +34,4 @@ jobs:
           local-dir: ./out/
           server-dir: ./www/
           exclude: |
-            **/images/**
-            **/videos/**
-            **/fonts/**
+            **/media/**
