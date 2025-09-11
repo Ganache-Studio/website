@@ -32,6 +32,7 @@ export const Navigation = ({
                     className={clsx(
                       'hover:underline hover:underline-offset-2',
                       activeSection === item.id && 'underline',
+                      item.italic && 'italic',
                     )}
                   >
                     {item.title}
@@ -42,7 +43,7 @@ export const Navigation = ({
             case 'page': {
               return (
                 <li key={item.href}>
-                  <Link href={item.href} className="italic hover:underline" onClick={onClick}>
+                  <Link href={item.href} className={clsx('hover:underline', item.italic && 'italic')} onClick={onClick}>
                     {item.title}
                   </Link>
                 </li>

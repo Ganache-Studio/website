@@ -46,10 +46,13 @@ export type NavigationItem = {
 } & (
   | {
       href: string;
+      italic?: boolean;
+      target?: string;
       to: 'page';
     }
   | {
       id: string;
+      italic?: boolean;
       to: 'section';
     }
 );
