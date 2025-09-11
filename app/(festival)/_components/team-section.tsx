@@ -33,7 +33,12 @@ export const TeamSection = ({ members }: TeamProps) => {
       <div className="mt-8 text-center lg:text-right">
         <p className="text-sm lg:text-base">
           Nous contacter :{' '}
-          <a href="mailto:festival@ganache.studio" className="underline hover:no-underline">
+          <a
+            href="mailto:festival@ganache.studio"
+            className="underline hover:no-underline"
+            target="_blank"
+            rel="noreferrer"
+          >
             festival@ganache.studio
           </a>
         </p>

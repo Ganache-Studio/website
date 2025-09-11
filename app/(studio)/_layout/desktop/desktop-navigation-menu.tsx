@@ -22,15 +22,25 @@ export const DesktopNavigationMenu = () => {
       <ul className="invisible absolute left-1/2 mt-2 flex -translate-x-1/2 flex-col items-center justify-center space-y-1 opacity-0 transition-all duration-300 ease-out group-hover:visible group-hover:opacity-100">
         {globalLayoutNavigationLinks.map(item => (
           <li key={item.path}>
-            <Link
-              onClick={handleDrawerClose}
-              href={item.path}
-              className={`flex transition-all duration-500 ${isMainContentFullScreen ? 'text-white' : 'text-black'} ${
-                pathname === item.path ? 'font-bold opacity-100' : 'opacity-30 hover:opacity-100'
-              }`}
-            >
-              {item.label}
-            </Link>
+            {item.path.startsWith('https') ? (
+              <a
+                href={item.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex transition-all duration-500 ${isMainContentFullScreen ? 'text-white' : 'text-black'} ${pathname === item.path ? 'font-bold opacity-100' : 'opacity-30 hover:opacity-100'}`}
+                onClick={handleDrawerClose}
+              >
+                {item.label}
+              </a>
+            ) : (
+              <Link
+                onClick={handleDrawerClose}
+                href={item.path}
+                className={`flex transition-all duration-500 ${isMainContentFullScreen ? 'text-white' : 'text-black'} ${pathname === item.path ? 'font-bold opacity-100' : 'opacity-30 hover:opacity-100'}`}
+              >
+                {item.label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>

@@ -12,6 +12,7 @@ export const festival2026Data = {
     {
       title: 'INSCRIRE UN FILM',
       href: 'https://filmfreeway.com/ganachefestival',
+      target: '_blank',
       to: 'page',
     },
     {
@@ -22,18 +23,21 @@ export const festival2026Data = {
     {
       title: '1ère ÉDITION',
       italic: true,
+      target: '_blank',
       href: '/ganache-festival-2023',
       to: 'page',
     },
     {
       title: '2ème ÉDITION',
       italic: true,
+      target: '_blank',
       href: '/ganache-festival-2024',
       to: 'page',
     },
     {
       title: '3ème ÉDITION',
       italic: true,
+      target: '_blank',
       href: '/ganache-festival-2025',
       to: 'page',
     },
