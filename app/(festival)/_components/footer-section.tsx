@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import GanacheLogo from '@/components/ganache-logo';
 
 export const FooterSection = ({ year }: { year: string }) => {
