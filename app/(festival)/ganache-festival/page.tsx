@@ -1,7 +1,6 @@
 import { Section } from '@festival/components/section';
 import { TeamSection } from '@festival/components/team-section';
 import { Metadata } from 'next';
-import Link from 'next/link';
 
 import { ClickableModalImage } from '@/components/clickable-modal-image';
 import { festival2026Data } from '@/data/(festival)/2026';
