@@ -23,14 +23,6 @@ const PresentationSection = () => {
           <ClickableModalImage src={festival2026Data.affiche} alt="Affiche Festival 2026" className="w-full" />
         </div>
         <div className="flex-2/3 space-y-4">
-          <p className="text-justify">
-            Le Ganache Festival est un festival de cinéma émergent créé en 2023 par la société de production{' '}
-            <Link href="/" className="underline">
-              Ganache Studio
-            </Link>
-            . La troisième édition s&apos;est tenue au cinéma Le Grand Action, à Paris, les vendredi 25 et samedi 26
-            avril 2025.
-          </p>
           <div className="space-y-2">
             <p className="text-justify">Cette année encore, nous avons projeté des films :</p>
             <ul className="ml-2 space-y-1">
