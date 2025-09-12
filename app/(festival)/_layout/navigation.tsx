@@ -43,24 +43,15 @@ export const Navigation = ({
             case 'page': {
               return (
                 <li key={item.href}>
-                  {item.target === '_blank' ? (
-                    <a
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={clsx('hover:underline', item.italic && 'italic')}
-                    >
-                      {item.title}
-                    </a>
-                  ) : (
-                    <Link
-                      href={item.href}
-                      className={clsx('hover:underline', item.italic && 'italic')}
-                      onClick={onClick}
-                    >
-                      {item.title}
-                    </Link>
-                  )}
+                  <Link
+                    href={item.href}
+                    target={item.target}
+                    rel={item.target === '_blank' ? 'noopener noreferrer' : undefined}
+                    className={clsx('hover:underline', item.italic && 'italic')}
+                    onClick={onClick}
+                  >
+                    {item.title}
+                  </Link>
                 </li>
               );
             }
