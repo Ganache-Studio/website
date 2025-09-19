@@ -464,7 +464,7 @@ export const films: Record<FilmType, FilmItem[]> = {
             <h2 className="text-lg font-bold">Festivals</h2>
             <ul className="ml-2">
               <li>- Festival Européen du film court de Brest</li>
-              <li>- Festival du Film Francophone d'Angoulême</li>
+              <li>- Festival du Film Francophone d&apos;Angoulême</li>
               <li>- Marseille International Film Festival by Cineverse</li>
             </ul>
           </div>
@@ -723,7 +723,7 @@ export const films: Record<FilmType, FilmItem[]> = {
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
-            <p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
+            <p>Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
             <p>
               Photographie de Florian Solin • Son de Paul Kusnierek • Assistant à la mise en scène : Stanislas Perrin •
               Mixage son de Matthieu Fraticelli • Graphisme de Nicholas Bochatay • Régie par Guillaume Joseph-Gabriel
@@ -1020,7 +1020,7 @@ export const films: Record<FilmType, FilmItem[]> = {
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
-            <p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
+            <p>Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
             <p>Étalonnage de Florian Solin</p>
           </div>
           <div>
