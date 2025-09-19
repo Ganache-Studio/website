@@ -469,7 +469,7 @@ export const films: Record<FilmType, FilmItem[]> = {
             </ul>
           </div>
           <Image
-            src="https://ganache.studio/media/films/fiction/son_seul/affiche.png"
+            src="https://ganache.studio/media/films/fiction/son-seul/affiche.png"
             alt="Affiche Son Seul"
             width={0}
             height={0}
