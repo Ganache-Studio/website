@@ -50,10 +50,6 @@ export const homeFilms: { id: string; filmType: FilmType }[] = [
     filmType: 'film-fiction',
   },
   {
-    id: 'capsules-septembre',
-    filmType: 'film-fiction',
-  },
-  {
     id: 'ephese-silver-lining',
     filmType: 'film-musique',
   },
@@ -62,15 +58,7 @@ export const homeFilms: { id: string; filmType: FilmType }[] = [
     filmType: 'film-fiction',
   },
   {
-    id: 'capsules-avril',
-    filmType: 'film-fiction',
-  },
-  {
     id: 'chute-libre-1',
     filmType: 'film-fiction',
-  },
-  {
-    id: 'capsules-fevrier',
-    filmType: 'film-documentaire',
   },
 ];

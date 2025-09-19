@@ -49,16 +49,17 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'food-society',
       title: [{ text: 'FOOD SOCIETY' }],
-      presentationItems: ['Théo Vincent', 'Agence Fullmoun', 'Film de marque'],
-      description:
-        "Film de marque pour Food Society, produit par Théo Vincent pour l'agence Fullmoun. Format horizontal.",
+      presentationItems: ['Théo Vincent', 'Agence : Fullmoun', 'Film de marque'],
+      description: 'Film de marque',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
             <p>Réalisé par Théo Vincent</p>
             <p>Étalonnage de Guillaume Chanaud</p>
-            <p>Finishing par Les Films du Périscope • Musique de Benjamin Cholet</p>
+            <p>Finishing par Les Films du Périscope</p>
+            <p>Musique de Benjamin Cholet</p>
+            <p>Agence : Fullmoun</p>
           </div>
         </div>
       ),
@@ -80,10 +81,21 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'vowels',
       title: [{ text: 'VOWELS' }],
-      presentationItems: ['Andreas Pappamikail', 'Film de marque', 'Production indépendante'],
-      description: 'Film de marque pour Vowels, produit par Andreas Pappamikail. Format horizontal.',
+      presentationItems: ['Andreas Pappamikail', 'Film de marque'],
+      description: 'Film de marque',
 
-      ComponentDescription: () => <div className="space-y-4"></div>,
+      ComponentDescription: () => (
+        <div className="space-y-4">
+          <div className="space-y-1">
+            <p>Narré par Yuki Yagi, Creative Director de vowels</p>
+            <p>Réalisé par Andreas Pappamikail</p>
+            <p>
+              Photographie de Joséphine Drouin-Viallard • Étalonnage de Grégoire Lesturgie • Montage de Démétria
+              Demathieu • Sound design de Raudie McLeod
+            </p>
+          </div>
+        </div>
+      ),
 
       // VIDEO
       video: 'https://ganache.studio/media/films/pub/vowels/video.mp4',
@@ -108,14 +120,15 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'heineken',
       title: [{ text: 'HEINEKEN' }, { text: 'SILVER', italic: true }],
-      presentationItems: ['Aurélien Grellier-Beker', 'Agence Publicis Conseil', 'Campagne social media'],
-      description: '',
+      presentationItems: ['Aurélien Grellier-Beker', 'Agence : Publicis Conseil', 'Campagne social media'],
+      description: 'Campagne social media',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
             <p>Réalisé par Aurélien Grellier-Beker</p>
             <p>Post-production par Cousin Bizarre</p>
+            <p>Agence : Publicis Conseil</p>
           </div>
         </div>
       ),
@@ -137,9 +150,8 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'florajet',
       title: [{ text: 'FLORAJET' }],
-      presentationItems: ['Rémy Cayuela', 'Agence Le Nouveau Bélier', 'Film TV'],
-      description:
-        "Film TV pour Florajet, produit par Rémy Cayuela pour l'agence Le Nouveau Bélier. Format horizontal.",
+      presentationItems: ['Rémy Cayuela', 'Agence : Le Nouveau Bélier', 'Campagne TV & Digital'],
+      description: 'Campagne TV & Digital',
 
       ComponentDescription: () => (
         <div className="space-y-4">
@@ -148,6 +160,7 @@ export const films: Record<FilmType, FilmItem[]> = {
             <p>Photographie de Jeff Bierman</p>
             <p>Étalonnage d&apos;Inês Loura</p>
             <p>Finishing par Les Films du Périscope</p>
+            <p>Agence : Le Nouveau Bélier</p>
           </div>
         </div>
       ),
@@ -169,16 +182,14 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'lgn',
       title: [{ text: 'LGN LOUIS GABRIEL NOUCHI' }],
-      presentationItems: ['Andreas Pappamikail', 'Campagne social media', 'Production indépendante'],
-      description:
-        'Campagne social media pour LGN Louis Gabriel Nouchi, produite par Andreas Pappamikail. Format horizontal.',
+      presentationItems: ['Andreas Pappamikail', 'Campagne social media'],
+      description: 'Campagne social media',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
             <p>Direction artistique par Andreas Pappamikail</p>
             <p>Photographie de Julien Saez</p>
-            <p>Musique de Osnat</p>
           </div>
         </div>
       ),
@@ -206,9 +217,8 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'prince-de-bretagne',
       title: [{ text: 'PRINCE DE BRETAGNE' }],
-      presentationItems: ['Julien Thiverny', 'Agence Josiane', 'Film TV'],
-      description:
-        "Film TV pour Prince de Bretagne, produit par Julien Thiverny pour l'agence Josiane. Format horizontal.",
+      presentationItems: ['Julien Thiverny', 'Agence : Josiane', 'Campagne TV & Digital'],
+      description: 'Campagne TV & Digital',
 
       ComponentDescription: () => (
         <div className="space-y-4">
@@ -216,6 +226,7 @@ export const films: Record<FilmType, FilmItem[]> = {
             <p>Réalisé par Julien Thiverny</p>
             <p>Étalonnage de Marine Surblé</p>
             <p>Finishing par Les Films du Périscope</p>
+            <p>Agence : Josiane</p>
           </div>
         </div>
       ),
@@ -237,8 +248,8 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'saint-gobain',
       title: [{ text: 'SAINT GOBAIN' }],
-      presentationItems: ['Théo Vincent', 'Agence Josiane', 'Film TV'],
-      description: "Film TV pour Saint Gobain, produit par Théo Vincent pour l'agence Josiane. Format horizontal.",
+      presentationItems: ['Théo Vincent', 'Agence : Josiane', 'Campagne TV & Digital'],
+      description: 'Campagne TV & Digital',
 
       ComponentDescription: () => (
         <div className="space-y-4">
@@ -248,6 +259,7 @@ export const films: Record<FilmType, FilmItem[]> = {
             <p>VFX par Paume Paris</p>
             <p>Étalonnage de Marine Surblé</p>
             <p>Finishing par Les Films du Périscope</p>
+            <p>Agence : Josiane</p>
           </div>
         </div>
       ),
@@ -269,15 +281,14 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'maison-margiela',
       title: [{ text: 'MAISON MARGIELA' }],
-      presentationItems: ['Aurélien Grellier-Beker', 'Campagne social media', 'Production indépendante'],
-      description:
-        'Campagne social media pour Maison Margiela, produite par Aurélien Grellier-Beker. Format horizontal.',
+      presentationItems: ['Aurélien Grellier-Beker', 'Campagne social media'],
+      description: 'Campagne social media',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
+            <p>Réalisé par Aurélien Grellier-Beker</p>
             <p>Direction artistique par Andreas Pappamikail</p>
-            <p>Edits d&apos;Aurélien Grellier-Beker</p>
           </div>
         </div>
       ),
@@ -299,15 +310,15 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'ornikar',
       title: [{ text: 'ORNIKAR' }],
-      presentationItems: ['Julien Thiverny', 'Agence Josiane', 'Campagne social media'],
-      description:
-        "Campagne social media pour Ornikar, produite par Julien Thiverny pour l'agence Josiane. Format horizontal.",
+      presentationItems: ['Julien Thiverny', 'Agence : Josiane', 'Campagne social media'],
+      description: 'Campagne social media',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
             <p>Réalisé par Julien Thiverny</p>
             <p>Motion par Rove</p>
+            <p>Agence : Josiane</p>
           </div>
         </div>
       ),
@@ -329,11 +340,16 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'lgn-2',
       title: [{ text: 'LGN LOUIS GABRIEL NOUCHI' }],
-      presentationItems: ['Andreas Pappamikail', 'Campagne social media', 'Production indépendante'],
-      description:
-        'Campagne social media pour LGN Louis Gabriel Nouchi, produite par Andreas Pappamikail. Format vertical.',
+      presentationItems: ['Andreas Pappamikail', 'Campagne social media'],
+      description: 'Campagne social media',
 
-      ComponentDescription: () => <div className="space-y-4"></div>,
+      ComponentDescription: () => (
+        <div className="space-y-4">
+          <div className="space-y-1">
+            <p>Réalisé par Andreas Pappamikail</p>
+          </div>
+        </div>
+      ),
 
       // VIDEO
       video: 'https://ganache.studio/media/films/pub/lgn-2/video.mp4',
@@ -352,10 +368,16 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'racine-avocats',
       title: [{ text: 'RACINE AVOCATS' }],
-      presentationItems: ['Aurélien Grellier-Beker', 'Film Corporate', 'Production indépendante'],
-      description: 'Film Corporate pour Racine Avocats, produit par Aurélien Grellier-Beker. Format carré.',
+      presentationItems: ['Aurélien Grellier-Beker', 'Film Corporate'],
+      description: 'Film Corporate',
 
-      ComponentDescription: () => <div className="space-y-4"></div>,
+      ComponentDescription: () => (
+        <div className="space-y-4">
+          <div className="space-y-1">
+            <p>Réalisé par Aurélien Grellier-Beker</p>
+          </div>
+        </div>
+      ),
 
       // VIDEO
       video: 'https://ganache.studio/media/films/pub/racine-avocats/video.mp4',
@@ -377,19 +399,31 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'les-tremblements',
       title: [{ text: 'LES TREMBLEMENTS' }],
-      presentationItems: ['Louise Chauvet'],
+      presentationItems: ['Louise Chauvet', 'Court métrage'],
       description:
-        "À la fin de l'été, Nine passe quelques jours à Béhuard, le minuscule village de sa grand-mère. Alors qu'elle prévoyait de s'isoler pour peindre et préparer le concours d'entrée aux Beaux-Arts, elle fait la rencontre d'Aurore, une jeune religieuse de son âge.",
+        "Nine passe quelques jours à Béhuard, le minuscule village de sa grand-mère. Alors qu'elle prévoyait de s'isoler pour préparer le concours d'entrée aux Beaux-Arts, elle fait la connaissance d'Aurore, une jeune femme de son âge qui s’apprête à entrer au couvent. Le temps de la fin d’un été, elles filent un amour impossible.",
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <p>Un film de Louise Chauvet • Produit par Benjamin Gilet</p>
           <p>
-            Avec le soutien de la région Pays de la Loire et du CNC, sélectionné au « Lab » du Moulin d’Andé en avril
-            2024
+            Photographie de Naomi Amarger • Son de Raphaël Bigaud • Montage de Laura Parade • Musique de Clément
+            Ferrigno
           </p>
           <p>Avec Marie Narbonne et Aisleen McLafferty</p>
-          <p>En production</p>
+          <p>Avec le soutien de la région Pays de la Loire et du CNC, sélectionné au « Lab » du Moulin d’Andé</p>
+          <p>
+            Distribué par{' '}
+            <a href="http://www.manifest.pictures/" target="_blank" rel="noopener noreferrer">
+              <u>Manifest</u>
+            </a>
+          </p>
+          <div>
+            <h2 className="text-lg font-bold">Festivals</h2>
+            <ul className="ml-2">
+              <li>- Festival du Film de Cabourg</li>
+            </ul>
+          </div>
         </div>
       ),
 
@@ -397,8 +431,9 @@ export const films: Record<FilmType, FilmItem[]> = {
       video: 'https://ganache.studio/media/films/fiction/les-tremblements/video.mp4',
       videoPoster: 'https://ganache.studio/media/films/fiction/les-tremblements/video-poster.jpg',
 
-      // PICTURES
-      pictures: ['https://ganache.studio/media/films/fiction/les-tremblements/picture.png'],
+      // VIMEO URL
+      vimeoUrl:
+        'https://player.vimeo.com/video/1082853088?h=29246e2413&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
 
       pageMetadata: {
         title: '',
@@ -410,15 +445,29 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'son-seul',
       title: [{ text: 'SON SEUL' }],
-      presentationItems: ['Théo Vincent-Suzzoni'],
+      presentationItems: ['Théo Vincent-Suzzoni', 'Court métrage'],
       description:
         "Stan, étudiant en cinéma, retourne le temps d'un week-end chez son père. Il prétexte un exercice de bruitage pour demander de l'aide à ce dernier, cloîtré dans une dépression mutique.",
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <p>Un film de Théo Vincent-Suzzoni • Produit par Benjamin Gilet</p>
+          <p>Photographie de Margot Besson</p>
           <p>Avec Stanislas Perrin et John Arnold</p>
-          <p>En production</p>
+          <p>
+            Distribué par{' '}
+            <a href="http://www.manifest.pictures/" target="_blank" rel="noopener noreferrer">
+              <u>Manifest</u>
+            </a>
+          </p>
+          <div>
+            <h2 className="text-lg font-bold">Festivals</h2>
+            <ul className="ml-2">
+              <li>- Festival Européen du film court de Brest</li>
+              <li>- Festival du Film Francophone d'Angoulême</li>
+              <li>- Marseille International Film Festival by Cineverse</li>
+            </ul>
+          </div>
         </div>
       ),
 
@@ -426,8 +475,9 @@ export const films: Record<FilmType, FilmItem[]> = {
       video: 'https://ganache.studio/media/films/fiction/son-seul/video.mp4',
       videoPoster: 'https://ganache.studio/media/films/fiction/son-seul/video-poster.jpg',
 
-      // PICTURES
-      pictures: ['https://ganache.studio/media/films/fiction/son-seul/picture.jpg'],
+      // VIMEO URL
+      vimeoUrl:
+        'https://player.vimeo.com/video/1081797012?h=84b9e26933&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
 
       pageMetadata: {
         title: '',
@@ -438,17 +488,20 @@ export const films: Record<FilmType, FilmItem[]> = {
     },
     {
       id: 'la-prehistoire',
-      title: [{ text: 'LA PREHISTOIRE' }],
-      presentationItems: ['Max Lesage'],
+      title: [{ text: 'LA PRÉHISTOIRE' }],
+      presentationItems: ['Max Lesage', 'Court métrage'],
       description:
-        "Théo a six ans et ne rêve que de Préhistoire. En randonnée dans les Vosges avec des amis de la famille, il s'imagine être un Homme des cavernes. Le problème c'est que son père le protège de tout et que son frère l'embête sans arrêt.",
+        'Théo a huit ans et ne rêve que de Préhistoire. En randonnée dans les Vosges avec son père et son grand frère, il apprend l’existence d’une mystérieuse grotte datant de l’âge de pierre. Entre son père qui le surprotège, les humeurs adolescentes de son frère, et la rencontre étouffante d’une autre famille, il se fait de plus en plus dur d’avoir des rêves d’enfant.',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <p>Un film de Max Lesage • Produit par Benjamin Gilet</p>
-          <p>Avec le soutien de la région Grand Est et du département des Vosges</p>
-          <p>Avec Éric Judor et Jean-Benoît Ugeux</p>
-          <p>En développement</p>
+          <p>Avec Paul Jeanson, Enzo Bonnet, Nathan Haggege et Amélie Prévot</p>
+          <p>
+            Avec le soutien du CNC, de la Procirep-Angoa, de la région Grand-Est, du département des Vosges, de la ville
+            de Mulhouse et de Vosges TV
+          </p>
+          <p>En production</p>
         </div>
       ),
 
@@ -468,14 +521,15 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'le-silence-des-hirondelles',
       title: [{ text: 'LE SILENCE DES HIRONDELLES' }],
-      presentationItems: ['Louis Faury'],
+      presentationItems: ['Louis Faury', 'Court métrage'],
       description:
-        "Cela fait des semaines que plus une goutte ne coule aux robinets du mas où vivent Olivia et son père. Toutes les nuits, l'adolescente de 14 ans doit compter chaque litre d'eau de la dernière citerne pour remplir les abreuvoirs d'une chèvrerie, où suffoque un petit troupeau de chèvres. Mais l'arrivée soudaine de citadins, fuyant les fortes chaleurs de la ville, accélère la pénurie d'eau. Olivia va rapidement devoir choisir entre son amitié naissante avec Fanny, une citadine de son âge, et la survie du troupeau paternel.",
+        'C’est la sécheresse. Olivia et son père doivent rationner l’eau du troupeau de chèvres. Mais l’arrivée soudaine de citadins, fuyant les fortes chaleurs de la ville, accélère la pénurie au village. Olivia fait la rencontre de Fanny, une adolescente de son âge, avec qui elle va tout faire pour retrouver de l’eau.',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <p>Un film de Louis Faury • Produit par Benjamin Gilet</p>
           <p>Meilleur scénario au Festival Rêves de Court en 2024</p>
+          <p>Avec le soutien de la région Sud, de la Corse et de la Procirep-Angoa</p>
           <p>En développement</p>
         </div>
       ),
@@ -496,15 +550,15 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'les-poetes-maudits',
       title: [{ text: 'LES POÈTES MAUDITS' }],
-      presentationItems: ['Gabriel Washer'],
+      presentationItems: ['Gabriel Washer', 'Court métrage'],
       description:
-        "Félix et Clément sont écrivains. En tout cas, ils essayent... Un soir, Clément demande à Félix de l'accompagner aux urgences psychiatriques. Il va mal depuis trop longtemps et voudrait être pris en charge. En chemin, ils rencontrent Émilie en la sauvant d'une agression. Impulsive, terre-à-terre, elle bouscule les « poètes maudits ». Débute une amitié d'une nuit.",
+        'Félix et Clément sont écrivains. En tout cas, ils essayent... Un soir, Clément demande à Félix de l’accompagner aux urgences psychiatriques. Il va mal depuis trop longtemps et voudrait être pris en charge. En chemin, ils rencontrent Émilie en la sauvant d’une agression. Spontanée, terre à terre, elle bouscule les « poètes maudits ». Débute une amitié d’une nuit.',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <p>Un film de Gabriel Washer • Produit par Benjamin Gilet</p>
-          <p>Avec Gabriel Washer, Manon Rey, Maxime Boutéraon et Mathieu Perotto</p>
-          <p>Avec le soutien de la Bourse Première Fois de l&apos;Adami</p>
+          <p>Avec Gabriel Washer, Mathieu Perotto, Manon Rey et Maxime Boutéraon</p>
+          <p>Avec le soutien de la Bourse Première Fois de l&apos;Adami et de la Procirep-Angoa</p>
           <p>En développement</p>
         </div>
       ),
@@ -525,7 +579,7 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'au-pays-des-mortels',
       title: [{ text: 'AU PAYS DES MORTELS' }],
-      presentationItems: ['Lily Papamiltiadès'],
+      presentationItems: ['Lily Papamiltiadès', 'Court métrage'],
       description:
         "Victor a 30 ans et est victime d'un bug administratif : il a été déclaré mort par erreur. Il tente en vain de régler ce problème alors qu'il est mannequin sur un shooting photo. Isolé dans sa loge et empêtré dans un costume de Minotaure qu'on lui demande de porter, Victor sent comme une angoisse.",
 
@@ -553,17 +607,16 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'max-entre-deux',
       title: [{ text: 'MAX ENTRE DEUX' }],
-      presentationItems: ['Margot Roussel'],
+      presentationItems: ['Margot Roussel', 'Court métrage'],
       description:
-        "Lors du premier été après le décès de leur père, Max, 12 ans, vit mal le basculement dans l'adolescence de sa soeur, Léa. Elle sent qu'elle lui échappe, alors que lui-même se voit changer et refuse de grandir. L'arrivée de son meilleur ami Théo complique les choses.",
-      date: '2023',
+        "Lors du premier été après le décès de leur père, Max, 12 ans, vit mal le basculement dans l'adolescence de sa sœur, Léa. Elle sent qu'elle lui échappe, alors que lui-même se voit changer et refuse de grandir. L'arrivée de son meilleur ami Théo complique les choses.",
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
             <p>Un film de Margot Roussel • Produit par Benjamin Gilet</p>
+            <p>Avec Elliot Chazal, Angelina Skrabo et Marwan Zeghoudi</p>
             <p>Photographie de Julien Saez</p>
           </div>
-          <p>Avec Elliot Chazal, Angelina Skrabo et Marwan Zeghoudi</p>
           <p>Avec le soutien de la Région Île-de-France</p>
         </div>
       ),
@@ -585,7 +638,7 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'titou',
       title: [{ text: 'TITOU' }],
-      presentationItems: ['Max Lesage'],
+      presentationItems: ['Max Lesage', 'Court métrage'],
       description:
         "Titou est clippeur. Oscar est rappeur. Du moins, c'est ainsi qu'ils se sont auto-proclamés. Au beau milieu de l'été, Titou embarque son ami pour tourner un clip digne du rap game, en Bretagne, chez sa défunte grand-mère.",
 
@@ -594,8 +647,21 @@ export const films: Record<FilmType, FilmItem[]> = {
           <div className="space-y-1">
             <p>Un film de Max Lesage • Produit par Benjamin Gilet</p>
             <p>Photographie de Mathias Godron • Son de Philippe Farnole</p>
+            <p>Avec Maxime Crescini, Oscar Lesage et Ella Pellegrini</p>
           </div>
-          <p>Avec Maxime Crescini, Oscar Lesage et Ella Pellegrini</p>
+          <div>
+            <h2 className="text-lg font-bold">Festivals</h2>
+            <ul className="ml-2">
+              <li>- Festival de Cabourg</li>
+              <li>- Festival de Brest (prix Brefcinéma)</li>
+              <li>- Festival Paris Courts Devant</li>
+              <li>- Festival du Film Jeune de Lyon</li>
+              <li>- Festival Eurydice de Fécamp</li>
+              <li>- Festival du Film de l’Ouest (prix spécial du jury)</li>
+              <li>- Festival Lisula CineMusica</li>
+            </ul>
+          </div>
+          <p>Acheté par OCS et UniversCiné</p>
           <Image
             src="https://ganache.studio/media/films/fiction/titou/affiche.jpg"
             alt="Affiche Titou"
@@ -623,15 +689,12 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'capsules-decembre',
       title: [{ text: 'CAPSULES' }, { text: 'DÉCEMBRE', italic: true }],
-      presentationItems: ['Aurélien Grellier-Beker'],
+      presentationItems: ['Aurélien Grellier-Beker', 'Court métrage'],
       description: 'Sous un soleil de plomb, un jeune couple se lance dans un jeu qui va les transformer.',
-      date: '2021',
       ComponentDescription: () => (
         <div className="space-y-4">
-          <p>
-            Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet • Photographie de Florian Solin • Son de
-            Paul Kusnierek
-          </p>
+          <p>Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet </p>
+          <p> Photographie de Florian Solin • Son de Paul Kusnierek </p>
           <p>Avec Pauline Briand, Benjamin Voisin et Eugène Marcuse</p>
         </div>
       ),
@@ -653,17 +716,17 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'capsules-novembre',
       title: [{ text: 'CAPSULES' }, { text: 'NOVEMBRE', italic: true }],
-      presentationItems: ['Aurélien Grellier-Beker'],
+      presentationItems: ['Aurélien Grellier-Beker', 'Court métrage'],
       description:
         "Aujourd'hui, Joël présente son spectacle de fin d'année. À quelques heures de la représentation, la pression monte.",
-      date: '2021',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
+            <p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
             <p>
-              Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet et Gabriel Washer • Photographie de
-              Florian Solin • Son de Paul Kusnierek
+              Photographie de Florian Solin • Son de Paul Kusnierek • Assistant à la mise en scène : Stanislas Perrin •
+              Mixage son de Matthieu Fraticelli • Graphisme de Nicholas Bochatay • Régie par Guillaume Joseph-Gabriel
             </p>
             <p>
               Avec Augustin Bouchacourt, Stanislas Perrin, Éric Verdin, Lucie Brunet, Sylvain Debry, Édouard Eftimakis
@@ -696,10 +759,9 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'la-troisieme-nuit',
       title: [{ text: 'LA TROISIÈME NUIT' }],
-      presentationItems: ['Hélène Delage'],
+      presentationItems: ['Hélène Delage', 'Court métrage'],
       description:
         'Voilà deux ans que sa sœur a disparu. Deux ans que Noémie mène sa propre enquête et envisage de dépasser les frontières du vraisemblable.',
-      date: '2021',
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
@@ -734,9 +796,8 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'capsules-septembre',
       title: [{ text: 'CAPSULES' }, { text: 'SEPTEMBRE', italic: true }],
-      presentationItems: ['Aurélien Grellier-Beker'],
+      presentationItems: ['Aurélien Grellier-Beker', 'Court métrage'],
       description: 'Aujourd\'hui, Joël donne son premier "cours d\'appréhension de la matière rire".',
-      date: '2020',
 
       ComponentDescription: () => (
         <div className="space-y-4">
@@ -744,7 +805,7 @@ export const films: Record<FilmType, FilmItem[]> = {
             <p>Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
             <p>Photographie de Florian Solin • Son de Paul Kusnierek</p>
           </div>
-          <p>Avec Augustin Bouchacourt, Lucie Brunet, Teddy Chawa, Sylvain Debry, Édouard Eftimakis et Manon Rey</p>
+          <p>Avec Augustin Bouchacourt, Lucie Brunet, Teddy Chawa, Sylvain Debry, Edouard Eftimakis et Manon Rey</p>
         </div>
       ),
 
@@ -765,17 +826,26 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'capsules-juin',
       title: [{ text: 'CAPSULES' }, { text: 'JUIN', italic: true }],
-      presentationItems: ['Aurélien Grellier-Beker'],
+      presentationItems: ['Aurélien Grellier-Beker', 'Court métrage'],
       description: "Un matin, Gabriel, 24 ans, se réveille avec l'âme d'un vieil homme au crépuscule de sa vie.",
-      date: '2020',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
-            <p>Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
+            <p>Réalisé par Aurélien Grellier-Beker • Scénario de Gabriel Washer • Produit par Benjamin Gilet</p>
             <p>Photographie de Florian Solin • Son de Paul Kusnierek</p>
           </div>
-          <p>Avec Gabriel Washer, Suzanne de Baecque, Adrien Rouyard, Théo Salemkour, et David Clavel</p>
+          <p>Avec Gabriel Washer, Suzanne de Baecque, Adrien Rouyard, Théo Salemkour et David Clavel</p>
+          <div className="space-y-1">
+            <div>
+              <h2 className="text-lg font-bold">Festivals</h2>
+              <ul className="ml-2">
+                <li>- Prix de la Meilleure Fiction au Festival du Film Court en Armagnac</li>
+                <li>- Festival International du Film Court d’Angoulême (FIFCA)</li>
+              </ul>
+            </div>
+          </div>
+
           <Image
             src="https://ganache.studio/media/films/fiction/capsules-juin/affiche.png"
             alt="Affiche Capsules Juin"
@@ -791,10 +861,7 @@ export const films: Record<FilmType, FilmItem[]> = {
       videoPoster: 'https://ganache.studio/media/films/fiction/capsules-juin/video-poster.jpg',
 
       // PICTURES
-      pictures: [
-        'https://ganache.studio/media/films/fiction/la-troisieme-nuit/affiche.jpg',
-        'https://ganache.studio/media/films/fiction/capsules-juin/picture.jpg',
-      ],
+      pictures: ['https://ganache.studio/media/films/fiction/capsules-juin/picture.jpg'],
 
       pageMetadata: {
         title: '',
@@ -803,54 +870,23 @@ export const films: Record<FilmType, FilmItem[]> = {
         canonicalUrl: '',
       },
     },
-    {
-      id: 'capsules-avril',
-      title: [{ text: 'CAPSULES' }, { text: 'AVRIL', italic: true }],
-      presentationItems: ['Aurélien Grellier-Beker'],
-      description: '« Des êtres comme des nuages de fumée ».',
-      date: '2020',
 
-      ComponentDescription: () => (
-        <div className="space-y-4">
-          <div className="space-y-1">
-            <p>Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
-            <p>Photographie de Florian Solin</p>
-          </div>
-          <p>Avec Maxime Gleizes</p>
-        </div>
-      ),
-
-      // VIDEO
-      video: 'https://ganache.studio/media/films/fiction/capsules-avril/video.mp4',
-      videoPoster: 'https://ganache.studio/media/films/fiction/capsules-avril/video-poster.jpg',
-
-      // VIMEO URL
-      vimeoUrl: 'https://player.vimeo.com/video/394498915?title=0&byline=0&portrait=0',
-
-      pageMetadata: {
-        title: '',
-        description: '',
-        keywords: [],
-        canonicalUrl: '',
-      },
-    },
     {
       id: 'chute-libre-1',
       title: [{ text: 'CHUTE LIBRE' }, { text: 'PREMIÈRE PARTIE', italic: true }],
-      presentationItems: ['Aurélien Grellier-Beker'],
+      presentationItems: ['Aurélien Grellier-Beker', 'Court métrage'],
       description:
-        "Un jeune homme demande son chemin à une jeune femme dans une rue parisienne. Ils échangent brièvement en marchant dans la même direction. Chute libre - Première partie est le premier volet d'une trilogie relatant leur histoire d'amour.",
-      date: '2019',
+        'Un jeune homme demande son chemin à une jeune femme dans une rue parisienne. Ils échangent brièvement en marchant dans la même direction.',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
-            <p>Un film d&apos;Aurélien Grellier-Beker • Scénario de Gabriel Washer • Produit par Benjamin Gilet</p>
+            <p>Réalisé par Aurélien Grellier-Beker • Écrit par Gabriel Washer • Produit par Benjamin Gilet</p>
             <p>Photographie de Florian Solin</p>
           </div>
           <p>
             Avec Gabriel Washer, Valentine Catzéflis, Dali Benssalah, Augustin Bouchacourt, Ilian Bergala, Théo
-            Salemkour, Benjamin Voisin, Suzanne Rault-Balet, Harrison Arevalo et David Clavel <br />
+            Salemkour, Benjamin Voisin, Suzanne Rault-Balet, Harrison Arrevalo et David Clavel
           </p>
         </div>
       ),
@@ -875,12 +911,7 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'mortel',
       title: [{ text: 'MORTEL' }],
-      presentationItems: [
-        'Benjamin Gilet & Julien Thiverny',
-        'Festival du Film Émergent de Lyon',
-        'Mention du Jury Angoulême',
-        'Co-production Belgique',
-      ],
+      presentationItems: ['Benjamin Gilet & Julien Thiverny', 'Court métrage documentaire'],
       description:
         "Lidvine est conseillère funéraire le jour et biker la nuit. Le temps d'un portrait, elle raconte les coulisses d'une vie à la croisée des morts et des vivants.",
 
@@ -893,6 +924,13 @@ export const films: Record<FilmType, FilmItem[]> = {
               <u>Manifest</u>
             </a>
           </p>
+          <div>
+            <h2 className="text-lg font-bold">Festivals</h2>
+            <ul className="ml-2">
+              <li>- Festival Que du Feu à Lyon</li>
+              <li>- FIFCA à Angoulême</li>
+            </ul>
+          </div>
         </div>
       ),
 
@@ -912,7 +950,7 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'max-et-sa-guitare',
       title: [{ text: 'MAX ET SA GUITARE' }],
-      presentationItems: ['Max Lesage', 'En production', 'Documentaire musical', 'Avec Maxime Crescini'],
+      presentationItems: ['Max Lesage', 'Court métrage documentaire'],
       description:
         "Deux ans après l'échec de son propre concert, Max repère Maxime et lui propose un défi : en l'espace d'une semaine, il doit composer une chanson et donner son premier concert. Derrière sa caméra, Max participe activement à la préparation de l'aspirant musicien, révélant peu à peu ses propres désirs artistiques inassouvis.",
 
@@ -922,7 +960,12 @@ export const films: Record<FilmType, FilmItem[]> = {
             <p>Un film de Max Lesage • Produit par Benjamin Gilet</p>
             <p>Avec Maxime Crescini</p>
           </div>
-          <p>En production</p>
+          <div>
+            <h2 className="text-lg font-bold">Festivals</h2>
+            <ul className="ml-2">
+              <li>- Festival du film de l’Est</li>
+            </ul>
+          </div>
         </div>
       ),
 
@@ -942,20 +985,16 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'rodrigo',
       title: [{ text: 'RODRIGO PEÑA, CAPITANO' }],
-      presentationItems: ['Thibault Pastierik', 'En développement', "Bourse Brouillon d'un Rêve", 'SCAM'],
-      description:
-        "Documentaire sur Rodrigo Peña, capitano, réalisé par Thibault Pastierik. En développement, soutenu par la Bourse Brouillon d'un Rêve de la SCAM.",
+      presentationItems: ['Thibault Pastierik', 'Documentaire 52 min'],
+      description: '',
 
       ComponentDescription: () => (
         <div className="space-y-4">
-          <p>
-            Un documentaire de Thibault Pastierik • Écrit par Thibault Pastierik et Emilio Frignati • Produit par
-            Benjamin Gilet
-          </p>
-          <p>En développement</p>
+          <p>Un film écrit par Thibault Pastierik et Emilio Frignati • Produit par Benjamin Gilet</p>
           <p>
             Soutenu par la Bourse <i>Brouillon d&apos;un Rêve</i> de la SCAM
           </p>
+          <p>En développement</p>
         </div>
       ),
 
@@ -973,47 +1012,16 @@ export const films: Record<FilmType, FilmItem[]> = {
       },
     },
     {
-      id: 'capsules-aout',
-      title: [{ text: 'CAPSULE' }, { text: 'AOÛT', italic: true }],
-      presentationItems: ['Aurélien Grellier-Beker', '2020', 'Étalonnage Florian Solin', 'Mixage Matthieu Fraticelli'],
-      date: '2020',
-      description: 'Après une nuit tourmentée, Yolande apprend une heureuse nouvelle de la bouche de son petit-fils.',
-
-      ComponentDescription: () => (
-        <div className="space-y-4">
-          <div className="space-y-1">
-            <p>Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
-            <p>Étalonnage de Florian Solin • Mixage de Matthieu Fraticelli</p>
-          </div>
-        </div>
-      ),
-
-      // VIDEO
-      video: 'https://ganache.studio/media/films/documentaire/capsules-aout/video.mp4',
-      videoPoster: 'https://ganache.studio/media/films/documentaire/capsules-aout/video-poster.jpg',
-
-      // VIMEO URL
-      vimeoUrl: 'https://player.vimeo.com/video/456740100?title=0&byline=0&portrait=0',
-
-      pageMetadata: {
-        title: '',
-        description: '',
-        keywords: [],
-        canonicalUrl: '',
-      },
-    },
-    {
       id: 'capsules-fevrier',
-      title: [{ text: 'CAPSULE' }, { text: 'FÉVRIER', italic: true }],
-      presentationItems: ['Aurélien Grellier-Beker', '2020', 'Lyon Young Film Festival', 'Étalonnage Florian Solin'],
-      date: '2020',
+      title: [{ text: 'CAPSULES' }, { text: 'FÉVRIER', italic: true }],
+      presentationItems: ['Aurélien Grellier-Beker', 'Court métrage documentaire'],
       description: "Yolande passe une journée en compagnie de son petit-fils alors que ses souvenirs s'évaporent.",
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
-            <p>Un film d&apos;Aurélien Grellier-Beker</p>
-            <p>Produit par Benjamin Gilet • Étalonnage de Florian Solin</p>
+            <p>Un film d'Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
+            <p>Étalonnage de Florian Solin</p>
           </div>
           <div>
             <h2 className="text-lg font-bold">Festivals</h2>
@@ -1044,22 +1052,24 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'napkey-land',
       title: [{ text: 'NAPKEY' }, { text: 'LAND', italic: true }],
-      presentationItems: [
-        'Aurélien Grellier-Beker',
-        'Clipped Festival Australia',
-        'Top 5 Finalists',
-        'Avec Eugène Marcuse',
-      ],
-      description:
-        'Clip musical pour Napkey, réalisé par Aurélien Grellier-Beker avec Eugène Marcuse. Sélectionné au Clipped Festival (Australia) - Top 5 International Finalists.',
+      presentationItems: ['Aurélien Grellier-Beker', 'Clip'],
+      description: '',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
             <p>Réalisé par Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
-            <p>Photographie de Florian Solin</p>
+            <p>Avec Eugène Marcuse, Victoria, Arthur, Eugénie, Armand, Justine, Lélio, Morgane, Florent et Raphaël</p>
+            <p>
+              Ecrit par Aurélien Grellier-Beker et Augustin Bouchacourt • Mise en scène par Célia Pyamootoo et Stanislas
+              Perrin • Photographie de Florian Solin • Steadicam ∙ Valentin Clarke • Image d’Eric Poupounot et Julien
+              Georgy • Lumière par Thomas Bayle et Julie Joumier • Machinerie par Sacha Benichou • Son de Paul Kusnierek
+              • Décors du Collectif Nymphe – Julie Znosko, Louise de Hollogne, Guillaume Leroy, Emma Bienfait • Costumes
+              par Florian Gauthiero • Maquillage par Micka Arasco et Laura Colas • Régie par Manon Rey et Justine
+              Rousseau • Coordination cascades par Florian Beaumont • Effets spéciaux par Paume – Bissane Kim •
+              Étalonnage de Florian Solin • Mixage son de Matthieu Fraticelli
+            </p>
           </div>
-          <p>Avec Eugène Marcuse</p>
         </div>
       ),
 
@@ -1080,8 +1090,8 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'birdwish-heart-of-clay',
       title: [{ text: 'BIRDWISH' }, { text: 'HEART OF CLAY', italic: true }],
-      presentationItems: ['Théo Vincent', 'Avec Simon Rérolle', 'Avec Lara Levy', 'Production Mathilde Hauser'],
-      description: 'Clip musical pour Birdwish, réalisé par Théo Vincent avec Simon Rérolle et Lara Levy.',
+      presentationItems: ['Théo Vincent', 'Clip'],
+      description: '',
 
       ComponentDescription: () => (
         <div className="space-y-4">
@@ -1109,22 +1119,14 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'oscar-lesage-action',
       title: [{ text: 'OSCAR LESAGE' }, { text: 'ACTION', italic: true }],
-      presentationItems: [
-        'Oscar Lesage',
-        'Photographie Kévin Dubert',
-        'Montage Aurélien Grellier-Beker',
-        'Avec Ike Zacsongo-Joseph',
-      ],
-      description:
-        'Clip musical pour Oscar Lesage, réalisé par Oscar et Max Lesage avec Oscar Lesage, Ike Zacsongo-Joseph et Jules Benchetrit.',
+      presentationItems: ['Oscar & Max Lesage', 'Clip'],
+      description: '',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
-            <p>Réalisé par Oscar et Max Lesage</p>
-            <p>Produit par Benjamin Gilet</p>
-            <p>Photographie de Kévin Dubert</p>
-            <p>Montage d&apos;Aurélien Grellier-Beker</p>
+            <p>Réalisé par Oscar et Max Lesage • Produit par Benjamin Gilet</p>
+            <p>Photographie de Kévin Dubert • Montage d&apos;Aurélien Grellier-Beker</p>
           </div>
           <p>Avec Oscar Lesage, Ike Zacsongo-Joseph et Jules Benchetrit</p>
         </div>
@@ -1147,20 +1149,13 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'suzanne-fowke-live-session',
       title: [{ text: 'SUZANNE FOWKE' }, { text: 'LIVE SESSION', italic: true }],
-      presentationItems: [
-        'Aurélien Grellier-Beker',
-        'Session live',
-        'Photographie Florian Solin',
-        'Production Benjamin Gilet',
-      ],
-      description:
-        'Session live de Suzanne Fowke, réalisée par Aurélien Grellier-Beker avec la photographie de Florian Solin.',
+      presentationItems: ['Aurélien Grellier-Beker', 'Clip'],
+      description: '',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <div className="space-y-1">
-            <p>Réalisé par Aurélien Grellier-Beker</p>
-            <p>Produit par Benjamin Gilet</p>
+            <p>Réalisé par Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
             <p>Photographie de Florian Solin</p>
           </div>
         </div>
@@ -1183,14 +1178,8 @@ export const films: Record<FilmType, FilmItem[]> = {
     {
       id: 'ephese-silver-lining',
       title: [{ text: 'EPHESE' }, { text: 'SILVER LINING', italic: true }],
-      presentationItems: [
-        'Aurélien Grellier-Beker',
-        'Avec Suzanne de Baecque',
-        'Avec Augustin Bouchacourt',
-        'Photographie Florian Solin',
-      ],
-      description:
-        'Clip musical pour Ephèse, réalisé par Aurélien Grellier-Beker avec Suzanne de Baecque et Augustin Bouchacourt.',
+      presentationItems: ['Aurélien Grellier-Beker', 'Clip'],
+      description: '',
 
       ComponentDescription: () => (
         <div className="space-y-4">
