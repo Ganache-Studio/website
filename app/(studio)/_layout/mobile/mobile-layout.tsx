@@ -3,7 +3,7 @@
 import { useStudioContext } from '@studio/context/studio.context';
 import Link from 'next/link';
 
-import GanacheLogo from '@/components/ganache-logo';
+import { GanacheLogo } from '@/components/ganache-logo';
 
 import { BurgerMenuButton } from './burger-menu-button';
 import { MobileDrawer } from './mobile-drawer';

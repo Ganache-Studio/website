@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const GanacheLogo = ({ isWhite, className }: { isWhite: boolean; className?: string }) => {
+export const GanacheLogo = ({ isWhite, className }: { isWhite: boolean; className?: string }) => {
   return (
     <Image
       src={
@@ -16,5 +16,3 @@ const GanacheLogo = ({ isWhite, className }: { isWhite: boolean; className?: str
     />
   );
 };
-
-export default GanacheLogo;

@@ -9,5 +9,5 @@ import { FilmsPresentation } from '../_components/films-presentation';
 export const metadata: Metadata = generateDefaultMetadata(metadataConfig['/film-fiction']);
 
 export default async function FilmFictionPage() {
-  return <FilmsPresentation filmType={filmsTypes.fiction} />;
+  return <FilmsPresentation filmType={filmsTypes.fiction} withSynopsis />;
 }

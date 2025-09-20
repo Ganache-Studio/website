@@ -2,9 +2,7 @@
 
 import { clsx } from 'clsx';
 import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { FiChevronLeft, FiChevronRight, FiSkipBack, FiSkipForward, FiX } from 'react-icons/fi';
 
 import { films } from '@/data/(studio)/films';
@@ -12,8 +10,9 @@ import { films } from '@/data/(studio)/films';
 type FilmPresentationMobileProps = {
   id: string;
   basePage: keyof typeof films;
-  nextId: string;
-  previousId: string;
+  onClose: () => void;
+  onNext: () => void;
+  onPrevious: () => void;
 };
 
 const ImageGallery = ({ pictures }: { pictures: string[] }) => {
@@ -62,45 +61,23 @@ const ImageGallery = ({ pictures }: { pictures: string[] }) => {
   );
 };
 
-export default function FilmPresentationMobile({ id, basePage, nextId, previousId }: FilmPresentationMobileProps) {
-  const router = useRouter();
-
-  const handleClose = useCallback(() => {
-    router.push(`/${basePage}#${id}`);
-  }, [router, id, basePage]);
-
-  const handlePrevious = useCallback(() => {
-    router.push(`/${basePage}/${previousId}`);
-  }, [router, basePage, previousId]);
-
-  const handleNext = useCallback(() => {
-    router.push(`/${basePage}/${nextId}`);
-  }, [router, basePage, nextId]);
-
+export function FilmPresentationMobile({ id, basePage, onClose, onNext, onPrevious }: FilmPresentationMobileProps) {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
-        handleClose();
+        onClose();
       }
       if (event.key === 'ArrowLeft') {
-        handleKeyLeft();
+        onPrevious();
       }
       if (event.key === 'ArrowRight') {
-        handleKeyRight();
+        onNext();
       }
-    };
-
-    const handleKeyLeft = () => {
-      handlePrevious();
-    };
-
-    const handleKeyRight = () => {
-      handleNext();
     };
 
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [handleClose, handlePrevious, handleNext]);
+  }, [onClose, onPrevious, onNext]);
 
   const film = useMemo(() => films[basePage].find(f => f.id === id), [basePage, id]);
 
@@ -118,7 +95,7 @@ export default function FilmPresentationMobile({ id, basePage, nextId, previousI
         <div className="px-4 pb-4">
           <div className="flex justify-end pb-2">
             <button
-              onClick={handleClose}
+              onClick={onClose}
               className="rounded-full p-2 text-gray-400 transition-all hover:bg-white/10 hover:text-white"
               aria-label="Close modal"
             >
@@ -136,18 +113,14 @@ export default function FilmPresentationMobile({ id, basePage, nextId, previousI
 
         {/* Navigation buttons */}
         <div className="flex w-full justify-between px-4 pb-4">
-          <Link href={`/${basePage}/${previousId}`}>
-            <button className="flex items-center space-x-2 transition-all hover:scale-105">
-              <FiSkipBack className="size-4" />
-              <span className="text-sm">Précédent</span>
-            </button>
-          </Link>
-          <Link href={`/${basePage}/${nextId}`}>
-            <button className="flex items-center space-x-2 transition-all hover:scale-105">
-              <span className="text-sm">Suivant</span>
-              <FiSkipForward className="size-4" />
-            </button>
-          </Link>
+          <button onClick={onPrevious} className="flex items-center space-x-2 transition-all hover:scale-105">
+            <FiSkipBack className="size-4" />
+            <span className="text-sm">Précédent</span>
+          </button>
+          <button onClick={onNext} className="flex items-center space-x-2 transition-all hover:scale-105">
+            <span className="text-sm">Suivant</span>
+            <FiSkipForward className="size-4" />
+          </button>
         </div>
 
         {/* Content area with title */}

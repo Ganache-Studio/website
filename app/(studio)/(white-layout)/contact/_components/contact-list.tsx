@@ -1,4 +1,4 @@
-const ContactList: React.FC = () => {
+export const ContactList: React.FC = () => {
   const contacts = [
     { name: 'Ganache Studio', email: 'hello@ganache.studio' },
     { name: 'Benjamin Gilet', email: 'benjamin@ganache.studio' },
@@ -18,5 +18,3 @@ const ContactList: React.FC = () => {
     </>
   );
 };
-
-export default ContactList;

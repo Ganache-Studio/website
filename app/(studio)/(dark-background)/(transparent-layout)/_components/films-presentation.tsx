@@ -119,16 +119,26 @@ const FilmPresentationPresentationItems = ({ film }: { film: FilmItem }) => {
   );
 };
 
+const FilmPresentationSynopsis = ({ film }: { film: FilmItem }) => {
+  return (
+    <div className="w-full pl-4 text-sm sm:w-8/10 md:text-base">
+      <p className="text-white/90">{film.description}</p>
+    </div>
+  );
+};
+
 const FilmPresentation = ({
   item,
   index,
   onInView,
   filmType,
+  withSynopsis,
 }: PropsWithChildren<{
   item: FilmItem;
   index: number;
   onInView: (index: number) => void;
   filmType: FilmType;
+  withSynopsis?: boolean;
 }>) => {
   const { isDrawerOpen } = useStudioContext();
 
@@ -169,10 +179,11 @@ const FilmPresentation = ({
       <div ref={sectionRef} className="relative h-dvh w-full cursor-pointer snap-start snap-always" id={item.id}>
         {item.video ? <Video film={item} isInView={isInView} /> : <Picture film={item} />}
         <div
-          className={`absolute right-4 bottom-4 text-right transition-opacity duration-500 ${isDrawerOpen ? 'opacity-0' : 'opacity-100'}`}
+          className={`absolute right-4 bottom-4 flex flex-col items-end text-right transition-opacity duration-500 ${isDrawerOpen ? 'opacity-0' : 'opacity-100'}`}
         >
           <FilmPresentationTitle film={item} />
           <FilmPresentationPresentationItems film={item} />
+          {withSynopsis && <FilmPresentationSynopsis film={item} />}
         </div>
       </div>
     </Link>
@@ -181,9 +192,10 @@ const FilmPresentation = ({
 
 type FilmsPresentationProps = {
   readonly filmType: FilmType;
+  readonly withSynopsis?: boolean;
 };
 
-export const FilmsPresentation: FunctionComponent<FilmsPresentationProps> = ({ filmType }) => {
+export const FilmsPresentation: FunctionComponent<FilmsPresentationProps> = ({ filmType, withSynopsis = false }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   return (
@@ -197,6 +209,7 @@ export const FilmsPresentation: FunctionComponent<FilmsPresentationProps> = ({ f
             item={filmItem}
             index={index}
             onInView={setCurrentIndex}
+            withSynopsis={withSynopsis}
           />
         ))}
       </div>

@@ -167,7 +167,7 @@ const FilmPresentation = ({
   if (!item) return null;
 
   return (
-    <Link href={`/${filmType}/${item.id}`}>
+    <Link href={`/home/${item.id}`}>
       <div ref={sectionRef} className="relative h-dvh w-full cursor-pointer snap-start snap-always" id={item.id}>
         {item.video ? <Video film={item} isInView={isInView} /> : <Picture film={item} />}
         <div

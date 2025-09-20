@@ -5,9 +5,9 @@ import { metadataConfig } from '@/data/default-metadata';
 import { generateDefaultMetadata } from '@/helpers/generate-default-metadata.helper';
 
 import { Address } from './_components/address';
-import ContactList from './_components/contact-list';
+import { ContactList } from './_components/contact-list';
 import { Footer } from './_components/footer';
-import PartnerList from './_components/partner-list';
+import { PartnerList } from './_components/partner-list';
 
 export const metadata: Metadata = generateDefaultMetadata(metadataConfig['/contact']);
 

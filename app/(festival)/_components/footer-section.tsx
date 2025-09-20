@@ -1,4 +1,4 @@
-import GanacheLogo from '@/components/ganache-logo';
+import { GanacheLogo } from '@/components/ganache-logo';
 
 export const FooterSection = ({ year }: { year: string }) => {
   return (

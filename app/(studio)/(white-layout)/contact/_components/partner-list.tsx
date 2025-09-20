@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { contactPartners } from '@/data/(studio)/contact/partners';
 
-const PartnerList = () => {
+export const PartnerList = () => {
   return (
     <>
       {contactPartners.map((partner, index) => (
@@ -19,5 +19,3 @@ const PartnerList = () => {
     </>
   );
 };
-
-export default PartnerList;
