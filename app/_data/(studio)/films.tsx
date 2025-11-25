@@ -421,9 +421,18 @@ export const films: Record<FilmType, FilmItem[]> = {
           <div>
             <h2 className="text-lg font-bold">Festivals</h2>
             <ul className="ml-2">
+              <li>- Prix du Public au Festival Que du Feu</li>
               <li>- Festival du Film de Cabourg</li>
-            </ul>
+              <li>- Festival du Court Métrage d'Auch</li>
+                        </ul>
           </div>
+           <Image
+            src="https://ganache.studio/media/films/fiction/les-tremblements/affiche.png"
+            alt="Affiche Les Tremblements"
+            width={0}
+            height={0}
+            className="h-auto w-full"
+          />
         </div>
       ),
 
@@ -463,9 +472,12 @@ export const films: Record<FilmType, FilmItem[]> = {
           <div>
             <h2 className="text-lg font-bold">Festivals</h2>
             <ul className="ml-2">
-              <li>- Festival Européen du film court de Brest</li>
-              <li>- Festival du Film Francophone d&apos;Angoulême</li>
-              <li>- Marseille International Film Festival by Cineverse</li>
+              <li>- Grand Prix du Festival Européen du Film Court de Brest</li>
+              <li>- Prix du Meilleur Scénario et du Meilleur Film au Marseille International Film Festival by Cineverse
+</li>
+              <li>- Festival du Film Francophone d’Angoulême</li>
+              <li>- Festival Tous Courts d’Aix-en-Provence</li>
+              <li>- Festival du Court Métrage d’Auch</li>
             </ul>
           </div>
           <Image
@@ -973,6 +985,13 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Festival du film de l’Est</li>
             </ul>
           </div>
+          <Image
+            src="https://ganache.studio/media/films/documentaire/max-et-sa-guitare/affiche.jpg"
+            alt="Affiche Max et sa guitare"
+            width={0}
+            height={0}
+            className="h-auto w-full"
+          />
         </div>
       ),
 
