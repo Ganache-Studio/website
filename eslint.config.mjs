@@ -64,6 +64,6 @@ export default tseslintConfig(
   prettierPluginRecommended,
 
   {
-    ignores: ['node_modules/', '.next/', 'out/'],
+    ignores: ['node_modules/', '.next/', 'out/', 'next-env.d.ts'],
   },
 );
