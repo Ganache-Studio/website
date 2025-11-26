@@ -401,7 +401,7 @@ export const films: Record<FilmType, FilmItem[]> = {
       title: [{ text: 'LES TREMBLEMENTS' }],
       presentationItems: ['Louise Chauvet', 'Court métrage'],
       description:
-        "Nine passe quelques jours à Béhuard, le minuscule village de sa grand-mère. Alors qu'elle prévoyait de s'isoler pour préparer le concours d'entrée aux Beaux-Arts, elle fait la connaissance d'Aurore, une jeune femme de son âge qui s’apprête à entrer au couvent. Le temps de la fin d’un été, elles filent un amour impossible.",
+        "Nine passe quelques jours à Béhuard, le minuscule village de sa grand-mère. Alors qu'elle prévoyait de s'isoler pour préparer le concours d'entrée aux Beaux-Arts, elle fait la connaissance d'Aurore, une jeune femme de son âge qui s’apprête à entrer au couvent.",
 
       ComponentDescription: () => (
         <div className="space-y-4">
@@ -423,10 +423,10 @@ export const films: Record<FilmType, FilmItem[]> = {
             <ul className="ml-2">
               <li>- Prix du Public au Festival Que du Feu</li>
               <li>- Festival du Film de Cabourg</li>
-              <li>- Festival du Court Métrage d'Auch</li>
-                        </ul>
+              <li>- Festival du Court Métrage d&apos;Auch</li>
+            </ul>
           </div>
-           <Image
+          <Image
             src="https://ganache.studio/media/films/fiction/les-tremblements/affiche.png"
             alt="Affiche Les Tremblements"
             width={0}
@@ -473,8 +473,9 @@ export const films: Record<FilmType, FilmItem[]> = {
             <h2 className="text-lg font-bold">Festivals</h2>
             <ul className="ml-2">
               <li>- Grand Prix du Festival Européen du Film Court de Brest</li>
-              <li>- Prix du Meilleur Scénario et du Meilleur Film au Marseille International Film Festival by Cineverse
-</li>
+              <li>
+                - Prix du Meilleur Scénario et du Meilleur Film au Marseille International Film Festival by Cineverse
+              </li>
               <li>- Festival du Film Francophone d’Angoulême</li>
               <li>- Festival Tous Courts d’Aix-en-Provence</li>
               <li>- Festival du Court Métrage d’Auch</li>
@@ -982,7 +983,7 @@ export const films: Record<FilmType, FilmItem[]> = {
           <div>
             <h2 className="text-lg font-bold">Festivals</h2>
             <ul className="ml-2">
-              <li>- Festival du film de l’Est</li>
+              <li>- Prix du Jury Jeune au Festival du film de l’Est</li>
             </ul>
           </div>
           <Image
