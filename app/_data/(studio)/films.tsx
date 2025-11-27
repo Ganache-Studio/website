@@ -763,8 +763,9 @@ export const films: Record<FilmType, FilmItem[]> = {
         </div>
       ),
 
-      // PICTURE
-      picture: 'https://ganache.studio/media/films/fiction/capsules-novembre/picture.png',
+      // VIDEO
+      video: 'https://ganache.studio/media/films/fiction/capsules-novembre/video.mp4',
+      videoPoster: 'https://ganache.studio/media/films/fiction/capsules-novembre/picture.png',
 
       // PICTURES
       pictures: ['https://ganache.studio/media/films/fiction/capsules-novembre/picture.png'],
@@ -954,8 +955,9 @@ export const films: Record<FilmType, FilmItem[]> = {
         </div>
       ),
 
-      // PICTURE
-      picture: 'https://ganache.studio/media/films/documentaire/mortel/picture.png',
+      // VIDEO
+      video: 'https://ganache.studio/media/films/documentaire/mortel/video.mp4',
+      videoPoster: 'https://ganache.studio/media/films/documentaire/mortel/picture.png',
 
       // VIMEO URL
       vimeoUrl: 'https://player.vimeo.com/video/887722450?title=0&byline=0&portrait=0',
