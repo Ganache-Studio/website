@@ -122,7 +122,7 @@ const FilmPresentationPresentationItems = ({ film }: { film: FilmItem }) => {
 const FilmPresentationSynopsis = ({ film }: { film: FilmItem }) => {
   return (
     <div className="w-full pl-4 text-sm sm:w-8/10 md:text-base">
-      <p className="text-white/90">{film.description}</p>
+      <p className="text-white/90 italic">{film.description}</p>
     </div>
   );
 };

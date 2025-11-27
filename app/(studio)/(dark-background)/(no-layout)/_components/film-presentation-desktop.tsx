@@ -123,7 +123,7 @@ export function FilmPresentationDesktop({ id, basePage, onClose, onNext, onPrevi
           <p className="text-md italic opacity-80">{date}</p>
         </div>
 
-        <p className="opacity-80">{description}</p>
+        <p className="italic opacity-80">{description}</p>
         <div className="pb-16">{film.ComponentDescription && <film.ComponentDescription />}</div>
       </div>
 

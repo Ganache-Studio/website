@@ -138,7 +138,7 @@ export function FilmPresentationMobile({ id, basePage, onClose, onNext, onPrevio
               </h1>
               {date && <p className="text-sm italic opacity-80">{date}</p>}
             </div>
-            <p className="text-sm leading-relaxed opacity-90">{description}</p>
+            <p className="text-sm leading-relaxed italic opacity-90">{description}</p>
             {film.ComponentDescription && <film.ComponentDescription />}
           </div>
         </div>
