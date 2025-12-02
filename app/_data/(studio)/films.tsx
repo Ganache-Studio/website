@@ -479,6 +479,7 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Festival du Film Francophone d’Angoulême</li>
               <li>- Festival Tous Courts d’Aix-en-Provence</li>
               <li>- Festival du Court Métrage d’Auch</li>
+              <li>- Festival Paris Courts devant</li>
             </ul>
           </div>
           <Image

@@ -9,7 +9,7 @@ export type PageMetadata = {
 
 export const metadataConfig: Record<Page, PageMetadata> = {
   '/': {
-    title: 'Ganache Studio',
+    title: 'Ganache Studio • Société de production',
     description: 'Production basée à Paris • Fiction • Musique • Documentaire • Pub',
     keywords: [],
     canonicalUrl: 'https://ganache.studio',
