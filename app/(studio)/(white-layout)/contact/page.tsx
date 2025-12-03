@@ -16,6 +16,16 @@ export default function ContactPage() {
     <div className="flex min-h-[calc(100dvh-theme(height.16))] p-4 md:min-h-[calc(100dvh-theme(height.20))] lg:min-h-dvh">
       <div className="flex flex-col space-y-8 lg:hidden">
         <div className="space-y-8">
+          {/* Intro (mobile) */}
+          <div className="mt-4 flex h-auto flex-col justify-end space-y-2">
+            <p className="font-bold">QUI SOMMES-NOUS ?</p>
+            <p>
+              Ganache Studio est une société de production créée en 2020 par Benjamin Gilet et Gabriel Washer. Notre
+              vocation est d’accompagner des films singuliers, des personnages et des interprètes fort·e·s, et des
+              scénarios qui allient avec la même exigence récit, thèmes et propos. Principalement tournés vers le
+              cinéma, nous travaillons également pour les marques.
+            </p>
+          </div>
           <div className="space-y-4">
             <ContactList />
           </div>
@@ -35,6 +45,20 @@ export default function ContactPage() {
       </div>
       <div className="hidden w-full space-x-8 lg:flex">
         <div className="flex flex-2/3 flex-col">
+          {/* Intro (desktop) */}
+          <div className="mt-0 mb-5 flex flex-3/4 items-end" style={{ paddingLeft: '14%', paddingRight: '3%' }}>
+            <div className="w-full space-y-4">
+              <div className="text-justify">
+                <p className="font-bold">QUI SOMMES-NOUS ?</p>
+                <p className="mt-2">
+                  Ganache Studio est une société de production créée en 2020 par Benjamin Gilet et Gabriel Washer. Notre
+                  vocation est d’accompagner des films singuliers, des personnages et des interprètes fort·e·s, et des
+                  scénarios qui allient avec la même exigence récit, thèmes et propos. Principalement tournés vers le
+                  cinéma, nous travaillons également pour les marques.
+                </p>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-3/4 items-center justify-around">
             <div className="space-y-4">
               <ContactList />
