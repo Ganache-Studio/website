@@ -8,6 +8,7 @@ import { metadataConfig } from '@/data/default-metadata';
 import { generateDefaultMetadata } from '@/helpers/generate-default-metadata.helper';
 
 import { FooterSection } from '../_components/footer-section';
+import { ParrainSection } from '../_components/parrain-section';
 import { FestivalProvider } from '../_context/festival.context';
 import { DesktopLayout } from '../_layout/desktop-layout';
 import { MobileLayout } from '../_layout/mobile-layout';
@@ -95,6 +96,7 @@ export default function GanacheFestivalPage() {
         </div>
         <main className="mx-6 mt-16 space-y-24 md:mx-8 md:mt-20 md:space-y-32 lg:mx-56 lg:mt-[7vw] lg:space-y-48">
           <PresentationSection />
+          <ParrainSection parrain={festival2026Data.parrain} />
           <TeamSection members={festival2026Data.team} />
         </main>
         <FooterSection year="2026" />
