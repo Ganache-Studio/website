@@ -52,7 +52,7 @@ export const festival2026Data = {
     gender: 'male',
     title: ['Dali Benssalah,', 'parrain du festival'],
     description:
-      'Acteur au cinéma et au théâtre, réalisateur, sportif de haut niveau, Dali est un artiste pluriel que ses goûts ont autant porté autant vers le cinéma d’auteur que les grandes productions internationales. Nous sommes comblé·e·s de compter sur son regard humain, bienveillant et affûté pour accompagner cette édition.',
+      'Acteur au cinéma et au théâtre, réalisateur, sportif de haut niveau, Dali est un artiste pluriel que ses goûts ont autant porté vers le cinéma d’auteur que les grandes productions internationales. Nous sommes comblé·e·s de compter sur son regard humain, bienveillant et affûté pour accompagner cette édition.',
     affiche: 'https://ganache.studio/media/festival/2026/affiche_parrain.jpeg',
   },
 
