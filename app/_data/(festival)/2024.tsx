@@ -32,7 +32,7 @@ export const festival2024Data = {
       to: 'section',
     },
     {
-      title: 'MARRAINE',
+      title: 'PARRAIN',
       id: 'parrain',
       to: 'section',
     },
