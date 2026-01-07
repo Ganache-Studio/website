@@ -425,6 +425,7 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Sélection en compétition Nationale au Festival du court métrage de Clermont-Ferrand</li>
               <li>- Festival du Film de Cabourg</li>
               <li>- Festival du Court Métrage d&apos;Auch</li>
+              <li>- Festival Gueules d’amour de Lille</li>
             </ul>
           </div>
           <Image
@@ -481,6 +482,8 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Festival Tous Courts d’Aix-en-Provence</li>
               <li>- Festival du Court Métrage d’Auch</li>
               <li>- Festival Paris Courts devant</li>
+              <li>- Festival Regard de Chicoutimi • Canada</li>
+              <li>- Short Film Market Picks du Festival International du court-métrage de Clermont Ferrand</li>
             </ul>
           </div>
           <Image
@@ -988,6 +991,7 @@ export const films: Record<FilmType, FilmItem[]> = {
             <h2 className="text-lg font-bold">Festivals</h2>
             <ul className="ml-2">
               <li>- Prix du Jury Jeune au Festival du film de l’Est</li>
+              <li>- Short Film Market Picks du Festival International du court-métrage de Clermont Ferrand</li>
             </ul>
           </div>
           <Image
