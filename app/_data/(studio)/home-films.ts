@@ -6,12 +6,20 @@ export const homeFilms: { id: string; filmType: FilmType }[] = [
     filmType: 'film-fiction',
   },
   {
+    id: 'la-prehistoire',
+    filmType: 'film-fiction',
+  },
+  {
     id: 'les-tremblements',
     filmType: 'film-fiction',
   },
   {
     id: 'mortel',
     filmType: 'film-documentaire',
+  },
+  {
+    id: 'jo-2030',
+    filmType: 'film-pub',
   },
   {
     id: 'max-entre-deux',

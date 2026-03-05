@@ -79,6 +79,36 @@ export const films: Record<FilmType, FilmItem[]> = {
       },
     },
     {
+      id: 'jo-2030',
+      title: [{ text: 'JEUX OLYMPIQUES' }],
+      presentationItems: ['Benjamin Gilet', 'Campagne social media'],
+      description: 'Campagne social media',
+
+      ComponentDescription: () => (
+        <div className="space-y-4">
+          <div className="space-y-1">
+            <p>Réalisé par Benjamin Gilet</p>
+            <p>Image de Julien Thiverny</p>
+            <p>Son de Raphaël Prat</p>
+          </div>
+        </div>
+      ),
+
+      // VIDEO
+      video: 'https://ganache.studio/media/films/pub/jo-2030/extrait-JO.mp4',
+      videoPoster: 'https://ganache.studio/media/films/pub/jo-2030/video-poster.png',
+
+      // VIMEO URL
+      vimeoUrl: 'https://player.vimeo.com/video/1161000957?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
+
+      pageMetadata: {
+        title: '',
+        description: '',
+        keywords: [],
+        canonicalUrl: '',
+      },
+    },
+    {
       id: 'vowels',
       title: [{ text: 'VOWELS' }],
       presentationItems: ['Andreas Pappamikail', 'Film de marque'],
@@ -246,6 +276,35 @@ export const films: Record<FilmType, FilmItem[]> = {
       },
     },
     {
+      id: 'verlan-umbro',
+      title: [{ text: 'VERLAN X UMBRO' }],
+      presentationItems: ['Théo Vincent', 'Campagne social media'],
+      description: 'Campagne social media',
+
+      ComponentDescription: () => (
+        <div className="space-y-4">
+          <div className="space-y-1">
+            <p>Réalisé par Théo Vincent</p>
+          </div>
+        </div>
+      ),
+
+      // VIDEO
+      video: 'https://ganache.studio/media/films/pub/verlan-umbro/extrait-Umbro.mp4',
+      videoPoster: 'https://ganache.studio/media/films/pub/verlan-umbro/video-poster.png',
+
+      // VIMEO URL
+      vimeoUrl:
+        'https://player.vimeo.com/video/1151901344?h=103ea9d51f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
+
+      pageMetadata: {
+        title: '',
+        description: '',
+        keywords: [],
+        canonicalUrl: '',
+      },
+    },
+    {
       id: 'saint-gobain',
       title: [{ text: 'SAINT GOBAIN' }],
       presentationItems: ['Théo Vincent', 'Agence : Josiane', 'Campagne TV & Digital'],
@@ -270,6 +329,35 @@ export const films: Record<FilmType, FilmItem[]> = {
 
       // VIMEO URL
       vimeoUrl: 'https://player.vimeo.com/video/737931861?h=ae743b9c61&title=0&byline=0&portrait=0',
+
+      pageMetadata: {
+        title: '',
+        description: '',
+        keywords: [],
+        canonicalUrl: '',
+      },
+    },
+    {
+      id: 'selle-jallot',
+      title: [{ text: 'SELLE JALLOT' }],
+      presentationItems: ['Théo Vincent', 'Film de marque'],
+      description: 'Film de marque',
+
+      ComponentDescription: () => (
+        <div className="space-y-4">
+          <div className="space-y-1">
+            <p>Réalisé par Théo Vincent</p>
+          </div>
+        </div>
+      ),
+
+      // VIDEO
+      video: 'https://ganache.studio/media/films/pub/selle-jallot/extrait-Selle-Jallot.mp4',
+      videoPoster: 'https://ganache.studio/media/films/pub/selle-jallot/video-poster.png',
+
+      // VIMEO URL
+      vimeoUrl:
+        'https://player.vimeo.com/video/1095633233?h=76511ac566&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
 
       pageMetadata: {
         title: '',
@@ -421,11 +509,12 @@ export const films: Record<FilmType, FilmItem[]> = {
           <div>
             <h2 className="text-lg font-bold">Festivals</h2>
             <ul className="ml-2">
-              <li>- Prix du Public au Festival Que du Feu</li>
               <li>- Sélection en compétition Nationale au Festival du court métrage de Clermont-Ferrand</li>
+              <li>- Prix du Public au Festival Que du Feu</li>
               <li>- Festival du Film de Cabourg</li>
               <li>- Festival du Court Métrage d&apos;Auch</li>
               <li>- Festival Gueules d’amour de Lille</li>
+              <li>- Queer Shorts Vienna</li>
             </ul>
           </div>
           <Image
@@ -475,6 +564,7 @@ export const films: Record<FilmType, FilmItem[]> = {
             <h2 className="text-lg font-bold">Festivals</h2>
             <ul className="ml-2">
               <li>- Grand Prix du Festival Européen du Film Court de Brest</li>
+              <li>- Short Film Market Picks du Festival International du court-métrage de Clermont Ferrand</li>
               <li>
                 - Prix du Meilleur Scénario et du Meilleur Film au Marseille International Film Festival by Cineverse
               </li>
@@ -483,7 +573,6 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Festival du Court Métrage d’Auch</li>
               <li>- Festival Paris Courts devant</li>
               <li>- Festival Regard de Chicoutimi • Canada</li>
-              <li>- Short Film Market Picks du Festival International du court-métrage de Clermont Ferrand</li>
             </ul>
           </div>
           <Image
@@ -516,25 +605,36 @@ export const films: Record<FilmType, FilmItem[]> = {
       title: [{ text: 'LA PRÉHISTOIRE' }],
       presentationItems: ['Max Lesage', 'Court métrage'],
       description:
-        'Théo a huit ans et ne rêve que de Préhistoire. En randonnée dans les Vosges avec son père et son grand frère, il apprend l’existence d’une mystérieuse grotte datant de l’âge de pierre. Entre son père qui le surprotège, les humeurs adolescentes de son frère, et la rencontre étouffante d’une autre famille, il se fait de plus en plus dur d’avoir des rêves d’enfant.',
+        'Lors d’une randonnée dans les Vosges avec son père et son frère, un jeune garçon passionné de Préhistoire, apprend l’existence d’une mystérieuse grotte et s’enfonce dans son monde imaginaire.',
 
       ComponentDescription: () => (
         <div className="space-y-4">
           <p>Un film de Max Lesage • Produit par Benjamin Gilet</p>
+          <p>
+            Photographie d’Emmanuel Bernard • Son de Vivien Roche • Montage de Barnabé Zocchetti • Musique de Stegonaute
+          </p>
           <p>Avec Paul Jeanson, Enzo Bonnet, Nathan Haggege et Amélie Prévot</p>
           <p>
             Avec le soutien du CNC, de la Procirep-Angoa, de la région Grand-Est, du département des Vosges, de la ville
             de Mulhouse et de Vosges TV
           </p>
-          <p>En production</p>
+          <Image
+            src="https://ganache.studio/media/films/fiction/la-prehistoire/Affiche-LP.png"
+            alt="Affiche La Préhistoire"
+            width={0}
+            height={0}
+            className="h-auto w-full"
+          />
         </div>
       ),
 
-      // PICTURE
-      picture: 'https://ganache.studio/media/films/fiction/la-prehistoire/picture.jpeg',
+      // VIDEO
+      video: 'https://ganache.studio/media/films/fiction/la-prehistoire/extrait-LP.mp4',
+      videoPoster: 'https://ganache.studio/media/films/fiction/la-prehistoire/video-poster.png',
 
-      // PICTURES
-      pictures: ['https://ganache.studio/media/films/fiction/la-prehistoire/picture.jpeg'],
+      // VIMEO URL
+      vimeoUrl:
+        'https://player.vimeo.com/video/1159677103?h=151b59500d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
 
       pageMetadata: {
         title: '',
