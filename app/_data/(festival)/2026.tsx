@@ -1,7 +1,7 @@
 import { FestivalData } from './types';
 
 export const festival2026Data = {
-  affiche: 'https://ganache.studio/media/festival/2026/affiche_festival.jpeg',
+  affiche: 'https://ganache.studio/media/festival/2026/affiche_festival.jpg',
 
   navigationItems: [
     {
@@ -76,6 +76,48 @@ export const festival2026Data = {
     {
       name: 'Lily',
       image: 'https://ganache.studio/media/festival/staffs/lily.jpg',
+    },
+  ],
+  partners: [
+    {
+      name: 'Ganache Studio',
+      image: 'https://ganache.studio/media/ganache_logo_black.png',
+      url: 'https://ganache.studio/',
+    },
+    {
+      name: 'Le Grand Action',
+      image: 'https://ganache.studio/media/festival/partenaires/GA.png',
+      url: 'https://www.legrandaction.com/',
+    },
+    {
+      name: 'La Septième Obsession',
+      image: 'https://ganache.studio/media/festival/partenaires/LSO.jpg',
+      url: 'https://www.laseptiemeobsession.com/',
+    },
+    {
+      name: "L'éloge",
+      image: 'https://ganache.studio/media/festival/partenaires/LELG.png',
+      url: 'https://www.instagram.com/l_eloge_/',
+    },
+    {
+      name: 'Reepost',
+      image: 'https://ganache.studio/media/festival/partenaires/RP.png',
+      url: 'https://www.reepoststudio.fr/',
+    },
+    {
+      name: 'Transpa',
+      image: 'https://ganache.studio/media/festival/partenaires/TP.png',
+      url: 'https://transpalux.com/',
+    },
+    {
+      name: 'Apicorp',
+      image: 'https://ganache.studio/media/festival/partenaires/AC.png',
+      url: 'https://agenceapicorp.com/',
+    },
+    {
+      name: 'Movinmotion',
+      image: 'https://ganache.studio/media/festival/partenaires/MM.png',
+      url: 'https://www.movinmotion.com/',
     },
   ],
 } satisfies FestivalData;
