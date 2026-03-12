@@ -10,12 +10,6 @@ export const festival2026Data = {
       to: 'section',
     },
     {
-      title: 'INSCRIRE UN FILM',
-      href: 'https://filmfreeway.com/ganachefestival',
-      target: '_blank',
-      to: 'page',
-    },
-    {
       title: 'PARRAIN',
       id: 'parrain',
       to: 'section',
@@ -23,6 +17,11 @@ export const festival2026Data = {
     {
       title: 'ÉQUIPE',
       id: 'equipe',
+      to: 'section',
+    },
+    {
+      title: 'PARTENAIRES',
+      id: 'partenaires',
       to: 'section',
     },
     {
@@ -79,11 +78,6 @@ export const festival2026Data = {
     },
   ],
   partners: [
-    {
-      name: 'Ganache Studio',
-      image: 'https://ganache.studio/media/ganache_logo_black.png',
-      url: 'https://ganache.studio/',
-    },
     {
       name: 'Le Grand Action',
       image: 'https://ganache.studio/media/festival/partenaires/GA.png',

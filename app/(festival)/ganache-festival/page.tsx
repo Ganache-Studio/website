@@ -45,8 +45,7 @@ const PresentationSection = () => {
             <ul className="ml-2 space-y-1">
               <li>— autoproduits ou qui sont le fruit d’une première production,</li>
               <li>— réalisés par des personnes âgées de moins de 35 ans, </li>
-              <li>— d’une durée de 30 minutes maximum,</li>
-              <li>— en langue française.</li>
+              <li>— d’une durée de 30 minutes maximum.</li>
             </ul>
           </div>
           <div className="space-y-2">
