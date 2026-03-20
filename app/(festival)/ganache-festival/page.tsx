@@ -69,7 +69,7 @@ const PresentationSection = () => {
 const BilletterieSection = () => {
   return (
     <Section id="billetterie">
-      <div className="-mt-30 flex justify-center">
+      <div className="-mt-8 flex justify-center md:-mt-30">
         <a
           href="https://www.billetweb.fr/ganache-festival3"
           target="_blank"
