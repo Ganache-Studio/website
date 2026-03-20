@@ -1,6 +1,4 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
 
 import { ClickableModalImage } from '@/components/clickable-modal-image';
 import { festival2026Data } from '@/data/(festival)/2026';
