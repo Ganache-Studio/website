@@ -1,7 +1,6 @@
-import { PartnersSection } from '@festival/components/partners-section';
-import { Section } from '@festival/components/section';
-import { TeamSection } from '@festival/components/team-section';
 import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
 
 import { ClickableModalImage } from '@/components/clickable-modal-image';
 import { festival2026Data } from '@/data/(festival)/2026';
@@ -10,6 +9,12 @@ import { generateDefaultMetadata } from '@/helpers/generate-default-metadata.hel
 
 import { FooterSection } from '../_components/footer-section';
 import { ParrainSection } from '../_components/parrain-section';
+import { PartnersSection } from '../_components/partners-section';
+import { ProgrammeStep } from '../_components/program-step';
+import { Section } from '../_components/section';
+import { SelectionSection } from '../_components/selection-section';
+import { TeamSection } from '../_components/team-section';
+import { Title } from '../_components/title';
 import { FestivalProvider } from '../_context/festival.context';
 import { DesktopLayout } from '../_layout/desktop-layout';
 import { MobileLayout } from '../_layout/mobile-layout';
@@ -63,6 +68,108 @@ const PresentationSection = () => {
   );
 };
 
+const ProgrammeSection = () => {
+  return (
+    <Section id="programme">
+      <Title>LE PROGRAMME</Title>
+      <div className="space-y-4 md:space-y-8">
+        {/* Mobile View */}
+        <div className="block space-y-4 md:hidden">
+          <p className="text-xl md:text-2xl">{festival2026Data.programme[0].title}</p>
+          <div className="border-b border-gray-300" />
+          <ProgrammeStep
+            title={festival2026Data.programme[0].steps[0].title}
+            films={festival2026Data.programme[0].steps[0].films}
+          />
+          <div className="border-b border-gray-300" />
+          <ProgrammeStep
+            title={festival2026Data.programme[0].steps[1].title}
+            films={festival2026Data.programme[0].steps[1].films}
+          />
+          <div className="border-b border-gray-300" />
+          <ProgrammeStep
+            title={festival2026Data.programme[0].steps[2].title}
+            films={festival2026Data.programme[0].steps[2].films}
+          />
+          <div className="border-b border-gray-300" />
+          <h4 className="text-xl md:text-2xl">{festival2026Data.programme[1].title}</h4>
+          <div className="border-b border-gray-300" />
+          <ProgrammeStep
+            title={festival2026Data.programme[1].steps[0].title}
+            films={festival2026Data.programme[1].steps[0].films}
+          />
+          <div className="border-b border-gray-300" />
+          <ProgrammeStep
+            title={festival2026Data.programme[1].steps[1].title}
+            films={festival2026Data.programme[1].steps[1].films}
+          />
+          <div className="border-b border-gray-300" />
+          <ProgrammeStep
+            title={festival2026Data.programme[1].steps[2].title}
+            films={festival2026Data.programme[1].steps[2].films}
+          />
+        </div>
+
+        {/* Desktop View */}
+        <div className="hidden space-y-8 md:block">
+          <div className="flex space-x-4">
+            {festival2026Data.programme.map(({ day, title }) => (
+              <div key={day} className="flex-1/2">
+                <h4 className="text-2xl">{title}</h4>
+              </div>
+            ))}
+          </div>
+          <div className="border-b border-gray-300" />
+          <div className="flex space-x-4">
+            <div className="flex-1/2">
+              <ProgrammeStep
+                title={festival2026Data.programme[0].steps[0].title}
+                films={festival2026Data.programme[0].steps[0].films}
+              />
+            </div>
+            <div className="flex-1/2">
+              <ProgrammeStep
+                title={festival2026Data.programme[1].steps[0].title}
+                films={festival2026Data.programme[1].steps[0].films}
+              />
+            </div>
+          </div>
+          <div className="border-b border-gray-300" />
+          <div className="flex space-x-4">
+            <div className="flex-1/2">
+              <ProgrammeStep
+                title={festival2026Data.programme[0].steps[1].title}
+                films={festival2026Data.programme[0].steps[1].films}
+              />
+            </div>
+            <div className="flex-1/2">
+              <ProgrammeStep
+                title={festival2026Data.programme[1].steps[1].title}
+                films={festival2026Data.programme[1].steps[1].films}
+              />
+            </div>
+          </div>
+          <div className="border-b border-gray-300" />
+          <div className="flex space-x-4">
+            <div className="flex-1/2">
+              <ProgrammeStep
+                title={festival2026Data.programme[0].steps[2].title}
+                films={festival2026Data.programme[0].steps[2].films}
+              />
+            </div>
+            <div className="flex-1/2">
+              <ProgrammeStep
+                title={festival2026Data.programme[1].steps[2].title}
+                films={festival2026Data.programme[1].steps[2].films}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+  );
+};
+
 export default function GanacheFestivalPage() {
   return (
     <FestivalProvider>
@@ -75,6 +182,8 @@ export default function GanacheFestivalPage() {
         </div>
         <main className="mx-6 mt-16 space-y-24 md:mx-8 md:mt-20 md:space-y-32 lg:mx-56 lg:mt-[7vw] lg:space-y-48">
           <PresentationSection />
+          <ProgrammeSection />
+          <SelectionSection selection={festival2026Data.selection} columns={4} />
           <ParrainSection parrain={festival2026Data.parrain} />
           <TeamSection members={festival2026Data.team} />
           <PartnersSection partners={festival2026Data.partners} />
