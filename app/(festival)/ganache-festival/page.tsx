@@ -66,6 +66,23 @@ const PresentationSection = () => {
   );
 };
 
+const BilletterieSection = () => {
+  return (
+    <Section id="billetterie">
+      <div className="-mt-30 flex justify-center">
+        <a
+          href="https://www.billetweb.fr/ganache-festival3"
+          target="_blank"
+          rel="noreferrer"
+          className="transform rounded-[10px] bg-[#cf3f2c] px-10 py-4 text-base font-bold tracking-wider text-white uppercase transition duration-150 ease-in-out hover:-translate-y-0.5 hover:cursor-pointer hover:opacity-90"
+        >
+          BILLETTERIE
+        </a>
+      </div>
+    </Section>
+  );
+};
+
 const ProgrammeSection = () => {
   return (
     <Section id="programme">
@@ -180,6 +197,7 @@ export default function GanacheFestivalPage() {
         </div>
         <main className="mx-6 mt-16 space-y-24 md:mx-8 md:mt-20 md:space-y-32 lg:mx-56 lg:mt-[7vw] lg:space-y-48">
           <PresentationSection />
+          <BilletterieSection />
           <ProgrammeSection />
           <SelectionSection selection={festival2026Data.selection} columns={4} />
           <ParrainSection parrain={festival2026Data.parrain} />

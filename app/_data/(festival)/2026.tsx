@@ -10,6 +10,12 @@ export const festival2026Data = {
       to: 'section',
     },
     {
+      title: 'BILLETTERIE',
+      target: '_blank',
+      href: 'https://www.billetweb.fr/ganache-festival3',
+      to: 'page',
+    },
+    {
       title: 'PROGRAMME',
       id: 'programme',
       to: 'section',
