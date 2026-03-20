@@ -254,7 +254,7 @@ export const festival2026Data = {
     {
       title: 'POURQUOI PARLEZ-VOUS SI BAS ?',
       director: 'Pauline Broulis et Zoe Labasse',
-      duration: '2(',
+      duration: '25',
       image: 'https://ganache.studio/media/festival/2026/films/12_Pourquoi_parlez-vous_si_bas.jpg',
       synopsis:
         'Été 1583. Obsédé par l’idée d’avoir un héritier, un riche marchand fait vivre un enfer à sa jeune épouse, Isabelle. Charlotte, sa femme de chambre, décide d’agir. Dans l’ombre de la grande maison, les domestiques s’organisent en secret.',
