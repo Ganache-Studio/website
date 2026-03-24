@@ -515,6 +515,7 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Festival du Court Métrage d&apos;Auch</li>
               <li>- Festival Gueules d’amour de Lille</li>
               <li>- Queer Shorts Vienna</li>
+              <li>- Festival Zinegoak • Espagne</li>
             </ul>
           </div>
           <Image
@@ -571,8 +572,10 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Festival du Film Francophone d’Angoulême</li>
               <li>- Festival Tous Courts d’Aix-en-Provence</li>
               <li>- Festival du Court Métrage d’Auch</li>
-              <li>- Festival Paris Courts devant</li>
+              <li>- Festival Paris Courts Devant</li>
               <li>- Festival Regard de Chicoutimi • Canada</li>
+              <li>- Festival Le Courtivore</li>
+              <li>- Stinville Festival</li>
             </ul>
           </div>
           <Image
