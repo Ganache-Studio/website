@@ -574,7 +574,7 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Festival du Court Métrage d’Auch</li>
               <li>- Festival Paris Courts Devant</li>
               <li>- Festival Regard de Chicoutimi • Canada</li>
-              <li>- Festival Le Courtivore</li>
+              <li>- Festival Courtivore</li>
               <li>- Stinville Festival</li>
             </ul>
           </div>
