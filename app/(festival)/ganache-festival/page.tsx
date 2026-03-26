@@ -62,15 +62,7 @@ const PresentationSection = () => {
           </div>
         </div>
       </div>
-      <iframe className="aspect-video w-full" src={festival2026Data.teaser} allowFullScreen />
-    </Section>
-  );
-};
-
-const BilletterieSection = () => {
-  return (
-    <Section id="billetterie">
-      <div className="-mt-8 flex justify-center md:-mt-30">
+      <div className="mt-4 flex justify-center md:mt-8">
         <a
           href="https://www.billetweb.fr/ganache-festival3"
           target="_blank"
@@ -80,6 +72,7 @@ const BilletterieSection = () => {
           BILLETTERIE
         </a>
       </div>
+      <iframe className="aspect-video w-full" src={festival2026Data.teaser} allowFullScreen />
     </Section>
   );
 };
@@ -198,7 +191,6 @@ export default function GanacheFestivalPage() {
         </div>
         <main className="mx-6 mt-16 space-y-24 md:mx-8 md:mt-20 md:space-y-32 lg:mx-56 lg:mt-[7vw] lg:space-y-48">
           <PresentationSection />
-          <BilletterieSection />
           <ProgrammeSection />
           <SelectionSection selection={festival2026Data.selection} columns={4} />
           <ParrainSection parrain={festival2026Data.parrain} />
