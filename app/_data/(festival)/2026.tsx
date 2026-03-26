@@ -2,6 +2,8 @@ import { FestivalData } from './types';
 
 export const festival2026Data = {
   affiche: 'https://ganache.studio/media/festival/2026/affiche_festival.jpg',
+  teaser:
+    'https://player.vimeo.com/video/1177268627?h=a53bf523ed&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
 
   navigationItems: [
     {
