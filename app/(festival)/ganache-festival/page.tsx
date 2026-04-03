@@ -56,7 +56,9 @@ const PresentationSection = () => {
               À l&apos;instar des éditions précédentes, le festival se déroulera avec l&apos;accompagnement bienveillant
               d’un parrain connu de la profession, et aucun prix n’y sera décerné.
             </p>
-            <p className="text-justify">Ouverture de la billetterie très prochainement.</p>
+            <p className="text-justify">
+              <b>BILLETTERIE CI-DESSOUS.</b>
+            </p>
             <p className="text-justify">À bientôt !</p>
             <p className="text-justify">Ganache Studio et l’équipe du Ganache Festival</p>
           </div>
