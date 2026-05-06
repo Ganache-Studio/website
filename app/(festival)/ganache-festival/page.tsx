@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 import { ClickableModalImage } from '@/components/clickable-modal-image';
 import { festival2026Data } from '@/data/(festival)/2026';
@@ -8,6 +9,7 @@ import { generateDefaultMetadata } from '@/helpers/generate-default-metadata.hel
 import { FooterSection } from '../_components/footer-section';
 import { ParrainSection } from '../_components/parrain-section';
 import { PartnersSection } from '../_components/partners-section';
+import { PhotoGallery } from '../_components/photo-gallery';
 import { ProgrammeStep } from '../_components/program-step';
 import { Section } from '../_components/section';
 import { SelectionSection } from '../_components/selection-section';
@@ -22,49 +24,56 @@ export const metadata: Metadata = generateDefaultMetadata(metadataConfig['/ganac
 const PresentationSection = () => {
   return (
     <Section id="presentation">
+      <div className="space-y-1 text-sm lg:space-y-4 lg:text-base">
+        <PhotoGallery photos={festival2026Data.photos} columns={3} />
+        <p className="text-right text-xs opacity-70">Crédit photo : Julia Her</p>
+        <p className="text-justify">
+          Vous avez été nombreux·ses à vous déplacer au Grand Action pour cette quatrième édition du Ganache Festival.
+          La salle était comble pour les quatre projections, et nous tenions à vous remercier de votre enthousiasme et
+          votre fidélité. Une fois de plus, vous nous aidez à démontrer que le cinéma est avant tout une fête. Nous
+          remercions également les artistes venu·e·s présenter leurs films, les partenaires pour leur généreux soutien,
+          et notre parrain Dali Benssalah pour son accompagnement. Merci pour les étoiles dans les yeux, et à
+          l&apos;année prochaine !
+        </p>
+        <p className="text-end">Ganache Studio et l&apos;équipe du Ganache Festival</p>
+      </div>
       <div className="mt-30 flex flex-col items-center space-y-4 text-xs lg:space-y-6 lg:text-sm xl:flex-row xl:space-y-0 xl:space-x-8">
         <div className="flex-1/3">
           <ClickableModalImage src={festival2026Data.affiche} alt="Affiche Festival 2026" className="w-full" />
         </div>
         <div className="flex-2/3 space-y-4">
+          <p className="text-justify">
+            Le Ganache Festival est un festival de cinéma émergent créé en 2023 par la société de production{' '}
+            <Link href="/" className="underline">
+              Ganache Studio
+            </Link>
+            . La quatrième édition s&apos;est tenue au cinéma Le Grand Action, à Paris, les vendredi 24 et samedi 25
+            avril 2026.
+          </p>
           <div className="space-y-2">
-            <p className="text-justify">
-              La quatrième édition du Ganache Festival se tiendra au cinéma Le Grand Action, à Paris, les 24 et 25 avril
-              2026. Cette année encore, nous avons à cœur de :
-            </p>
+            <p className="text-justify">Cette année encore, nous avons projeté des films :</p>
             <ul className="ml-2 space-y-1">
-              <li>— donner à voir des courts métrages émergents et personnels,</li>
-              <li>— construire une programmation éclectique, exigeante et paritaire,</li>
-              <li>
-                — permettre à des réalisateur·trice·s, technicien·ne·s, auteur·trice·s, comédien·ne·s de tisser des
-                liens,
-              </li>
-              <li>— réunir un public varié et organiser une fête !</li>
-            </ul>
-            <p className="text-justify">
-              Nous y montrerons des films portés par de jeunes réalisateur·rice·s, et qui répondent aux critères
-              suivants :
-            </p>
-            <ul className="ml-2 space-y-1">
-              <li>— autoproduits ou qui sont le fruit d’une première production,</li>
-              <li>— réalisés par des personnes âgées de moins de 35 ans, </li>
-              <li>— d’une durée de 30 minutes maximum.</li>
+              <li>- autoproduits ou qui sont le fruit d&apos;une première production,</li>
+              <li>- réalisés par des personnes francophones de moins de 35 ans.</li>
             </ul>
           </div>
           <div className="space-y-2">
-            <p className="text-justify">
-              À l&apos;instar des éditions précédentes, le festival se déroulera avec l&apos;accompagnement bienveillant
-              d’un parrain connu de la profession, et aucun prix n’y sera décerné.
-            </p>
-            <p className="text-justify">
-              <b>BILLETTERIE CI-DESSOUS.</b>
-            </p>
-            <p className="text-justify">À bientôt !</p>
-            <p className="text-justify">Ganache Studio et l’équipe du Ganache Festival</p>
+            <p className="text-justify">Nous avons eu à cœur de :</p>
+            <ul className="ml-2 space-y-1">
+              <li>
+                - donner à voir une sélection paritaire de films émergents et personnels (fiction, documentaire et
+                animation),
+              </li>
+              <li>
+                - permettre à des réalisateur·trice·s, technicien·ne·s, auteur·trice·s, comédien·ne·s de tisser des
+                liens,
+              </li>
+              <li>- réunir un public varié et organiser une grande fête !</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div className="mt-4 flex justify-center md:mt-8">
+      {/* <div className="mt-4 flex justify-center md:mt-8">
         <a
           href="https://www.billetweb.fr/ganache-festival3"
           target="_blank"
@@ -73,7 +82,7 @@ const PresentationSection = () => {
         >
           BILLETTERIE
         </a>
-      </div>
+      </div> */}
       <iframe className="aspect-video w-full" src={festival2026Data.teaser} allowFullScreen />
     </Section>
   );
@@ -195,7 +204,10 @@ export default function GanacheFestivalPage() {
           <PresentationSection />
           <ProgrammeSection />
           <SelectionSection selection={festival2026Data.selection} columns={4} />
-          <ParrainSection parrain={festival2026Data.parrain} />
+          <ParrainSection
+            parrain={festival2026Data.parrain}
+            imageSrc="https://ganache.studio/media/festival/2026/photos/Dali.jpeg"
+          />
           <TeamSection members={festival2026Data.team} />
           <PartnersSection partners={festival2026Data.partners} />
         </main>

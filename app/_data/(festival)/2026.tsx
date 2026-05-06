@@ -5,17 +5,23 @@ export const festival2026Data = {
   teaser:
     'https://player.vimeo.com/video/1177268627?h=a53bf523ed&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
 
+  photos: [
+    'https://ganache.studio/media/festival/2026/photos/1.jpeg',
+    'https://ganache.studio/media/festival/2026/photos/2.jpeg',
+    'https://ganache.studio/media/festival/2026/photos/3.jpeg',
+    'https://ganache.studio/media/festival/2026/photos/4.jpeg',
+    'https://ganache.studio/media/festival/2026/photos/5.jpeg',
+    'https://ganache.studio/media/festival/2026/photos/6.jpeg',
+    'https://ganache.studio/media/festival/2026/photos/7.jpeg',
+    'https://ganache.studio/media/festival/2026/photos/8.jpeg',
+    'https://ganache.studio/media/festival/2026/photos/9.jpeg',
+  ],
+
   navigationItems: [
     {
       title: 'PRÉSENTATION',
       id: 'presentation',
       to: 'section',
-    },
-    {
-      title: 'BILLETTERIE',
-      target: '_blank',
-      href: 'https://www.billetweb.fr/ganache-festival3',
-      to: 'page',
     },
     {
       title: 'PROGRAMME',
@@ -312,23 +318,19 @@ export const festival2026Data = {
   team: [
     {
       name: 'Adrio',
-      image: 'https://ganache.studio/media/festival/staffs/adrio.jpeg',
+      image: 'https://ganache.studio/media/festival/staffs/Adrio2026.jpeg',
     },
     {
       name: 'Benjamin',
-      image: 'https://ganache.studio/media/festival/staffs/benjamin.jpg',
+      image: 'https://ganache.studio/media/festival/staffs/Benjamin2026.jpeg',
     },
     {
       name: 'Mathilde',
-      image: 'https://ganache.studio/media/festival/staffs/mathilde.jpg',
+      image: 'https://ganache.studio/media/festival/staffs/Mathilde2026.jpeg',
     },
     {
       name: 'Gabriel',
-      image: 'https://ganache.studio/media/festival/staffs/gabriel.jpg',
-    },
-    {
-      name: 'Lily',
-      image: 'https://ganache.studio/media/festival/staffs/lily.jpg',
+      image: 'https://ganache.studio/media/festival/staffs/Gabriel2026.jpg',
     },
   ],
   partners: [

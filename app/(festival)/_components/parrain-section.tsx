@@ -5,12 +5,17 @@ import { Parrain } from '@/data/(festival)/types';
 import { Section } from './section';
 import { Title } from './title';
 
-export const ParrainSection = ({ parrain }: { parrain: Parrain }) => {
+export const ParrainSection = ({ parrain, imageSrc }: { parrain: Parrain; imageSrc?: string }) => {
   const sectionTitle = parrain.gender === 'male' ? 'LE PARRAIN' : 'LA MARRAINE';
 
   return (
     <Section id="parrain">
       <Title>{sectionTitle}</Title>
+      {imageSrc && (
+        <div className="mx-auto mb-6 w-full max-w-[360px] sm:max-w-[420px]">
+          <Image className="w-full" src={imageSrc} alt="Dali Benssalah" width={420} height={560} />
+        </div>
+      )}
       {parrain.teaser && <iframe className="aspect-video w-full" src={parrain.teaser} allowFullScreen />}
       <div className="flex flex-col items-center space-y-4 text-sm lg:space-y-6 lg:text-base xl:flex-row xl:space-y-0 xl:space-x-8">
         <div className="flex-1/3">
