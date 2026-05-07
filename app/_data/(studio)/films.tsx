@@ -109,6 +109,35 @@ export const films: Record<FilmType, FilmItem[]> = {
       },
     },
     {
+      id: 'dynamo',
+      title: [{ text: 'DYNAMO' }],
+      presentationItems: ['Julien Thiverny', 'Film de marque'],
+      description: 'Production d’une campagne de 4 films de marque pour le groupe Monday Sports Club.',
+
+      ComponentDescription: () => (
+        <div className="space-y-4">
+          <div className="space-y-1">
+            <p>Réalisé par Julien Thiverny</p>
+          </div>
+        </div>
+      ),
+
+      // VIDEO
+      video: 'https://ganache.studio/media/films/pub/dynamo/video.mov',
+      videoPoster: 'https://ganache.studio/media/films/pub/dynamo/video-poster.png',
+
+      // VIMEO URL
+      vimeoUrl:
+        'https://player.vimeo.com/video/1181579877?h=4ca1135eea&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
+
+      pageMetadata: {
+        title: '',
+        description: '',
+        keywords: [],
+        canonicalUrl: '',
+      },
+    },
+    {
       id: 'vowels',
       title: [{ text: 'VOWELS' }],
       presentationItems: ['Andreas Pappamikail', 'Film de marque'],
@@ -512,10 +541,12 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Sélection en compétition Nationale au Festival du court métrage de Clermont-Ferrand</li>
               <li>- Prix du Public au Festival Que du Feu</li>
               <li>- Festival du Film de Cabourg</li>
+              <li>- Short Film Corner du Festival de Cannes</li>
               <li>- Festival du Court Métrage d&apos;Auch</li>
               <li>- Festival Gueules d’amour de Lille</li>
-              <li>- Queer Shorts Vienna</li>
+              <li>- Queer Shorts Vienna • Autriche</li>
               <li>- Festival Zinegoak • Espagne</li>
+              <li>- Fairy Tales Queer Art and Film Festival • Canada</li>
             </ul>
           </div>
           <Image
@@ -569,13 +600,16 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>
                 - Prix du Meilleur Scénario et du Meilleur Film au Marseille International Film Festival by Cineverse
               </li>
+              <li>- Prix du Meilleur Film et du Meilleur Acteur au Stinville Festival</li>
               <li>- Festival du Film Francophone d’Angoulême</li>
               <li>- Festival Tous Courts d’Aix-en-Provence</li>
-              <li>- Festival du Court Métrage d’Auch</li>
               <li>- Festival Paris Courts Devant</li>
+              <li>- Festival du Court Métrage d’Auch</li>
               <li>- Festival Regard de Chicoutimi • Canada</li>
               <li>- Festival Courtivore</li>
-              <li>- Stinville Festival</li>
+              <li>- Festival Courts Circuit 66</li>
+              <li>- Festival Le Cri du Court</li>
+              <li>- Festival Court sur Place • Canada</li>
             </ul>
           </div>
           <Image
