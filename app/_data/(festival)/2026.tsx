@@ -317,20 +317,20 @@ export const festival2026Data = {
 
   team: [
     {
-      name: 'Adrio',
-      image: 'https://ganache.studio/media/festival/staffs/Adrio2026.jpeg',
-    },
-    {
       name: 'Benjamin',
       image: 'https://ganache.studio/media/festival/staffs/Benjamin2026.jpeg',
+    },
+    {
+      name: 'Gabriel',
+      image: 'https://ganache.studio/media/festival/staffs/Gabriel2026.jpg',
     },
     {
       name: 'Mathilde',
       image: 'https://ganache.studio/media/festival/staffs/Mathilde2026.jpeg',
     },
     {
-      name: 'Gabriel',
-      image: 'https://ganache.studio/media/festival/staffs/Gabriel2026.jpg',
+      name: 'Adrio',
+      image: 'https://ganache.studio/media/festival/staffs/Adrio2026.jpeg',
     },
   ],
   partners: [
