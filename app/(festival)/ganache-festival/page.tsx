@@ -26,7 +26,7 @@ const PresentationSection = () => {
     <Section id="presentation">
       <div className="space-y-1 text-sm lg:space-y-4 lg:text-base">
         <PhotoGallery photos={festival2026Data.photos} columns={3} />
-        <p className="text-right text-xs opacity-70">Crédit photo : Julia Her</p>
+        <p className="text-right text-xs opacity-70">Crédit photo : Julia Hervouin</p>
         <p className="text-justify">
           Vous avez été nombreux·ses à vous déplacer au Grand Action pour cette quatrième édition du Ganache Festival.
           La salle était comble pour les quatre projections, et nous tenions à vous remercier de votre enthousiasme et
@@ -208,7 +208,7 @@ export default function GanacheFestivalPage() {
             parrain={festival2026Data.parrain}
             imageSrc="https://ganache.studio/media/festival/2026/photos/Dali.jpeg"
           />
-          <TeamSection members={festival2026Data.team} />
+          <TeamSection members={festival2026Data.team} showNames={true} />
           <PartnersSection partners={festival2026Data.partners} />
         </main>
         <FooterSection year="2026" />

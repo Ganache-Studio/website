@@ -7,9 +7,10 @@ import { Title } from './title';
 
 type TeamProps = {
   members: TeamItem[];
+  showNames?: boolean;
 };
 
-export const TeamSection = ({ members }: TeamProps) => {
+export const TeamSection = ({ members, showNames = false }: TeamProps) => {
   return (
     <Section id="equipe">
       <Title>L&apos;ÉQUIPE</Title>
@@ -26,6 +27,7 @@ export const TeamSection = ({ members }: TeamProps) => {
                 className="h-auto w-full object-contain"
               />
             </div>
+            {showNames && <p className="mt-2 text-xs font-medium md:text-sm">{member.name}</p>}
           </div>
         ))}
       </div>

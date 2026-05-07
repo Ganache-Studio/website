@@ -317,19 +317,19 @@ export const festival2026Data = {
 
   team: [
     {
-      name: 'Benjamin',
+      name: 'Benjamin Gilet',
       image: 'https://ganache.studio/media/festival/staffs/Benjamin2026.jpeg',
     },
     {
-      name: 'Gabriel',
+      name: 'Gabriel Washer',
       image: 'https://ganache.studio/media/festival/staffs/Gabriel2026.jpg',
     },
     {
-      name: 'Mathilde',
+      name: 'Mathilde Hauser',
       image: 'https://ganache.studio/media/festival/staffs/Mathilde2026.jpeg',
     },
     {
-      name: 'Adrio',
+      name: 'Adrio Guarino',
       image: 'https://ganache.studio/media/festival/staffs/Adrio2026.jpeg',
     },
   ],
