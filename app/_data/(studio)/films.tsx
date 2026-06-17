@@ -544,6 +544,7 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Short Film Corner du Festival de Cannes</li>
               <li>- Festival du Court Métrage d&apos;Auch</li>
               <li>- Festival Gueules d’amour de Lille</li>
+              <li>- Festival International du Film de Vébron</li>
               <li>- Queer Shorts Vienna • Autriche</li>
               <li>- Festival Zinegoak • Espagne</li>
               <li>- Fairy Tales Queer Art and Film Festival • Canada</li>
@@ -691,8 +692,8 @@ export const films: Record<FilmType, FilmItem[]> = {
         <div className="space-y-4">
           <p>Un film de Louis Faury • Produit par Benjamin Gilet</p>
           <p>Meilleur scénario au Festival Rêves de Court en 2024</p>
-          <p>Avec le soutien de la région Sud, de la Corse et de la Procirep-Angoa</p>
-          <p>En développement</p>
+          <p>Avec le soutien du CNC, de la région Sud, de la Corse et de la Procirep-Angoa</p>
+          <p>En production</p>
         </div>
       ),
 
@@ -701,6 +702,35 @@ export const films: Record<FilmType, FilmItem[]> = {
 
       // PICTURES
       pictures: ['https://ganache.studio/media/films/fiction/le-silence-des-hirondelles/picture.jpg'],
+
+      pageMetadata: {
+        title: '',
+        description: '',
+        keywords: [],
+        canonicalUrl: '',
+      },
+    },
+    {
+      id: 'stephanie',
+      title: [{ text: 'STÉPHANIE' }],
+      presentationItems: ['Oscar Lesage', 'Court métrage'],
+      description:
+        'Camille, la trentaine, se rend à l’hôpital pour effectuer une cryopréservation de sperme avant l’ablation d’un testicule touché par un cancer. Après un entretien éprouvant avec son médecin et un malaise vagal, il se retrouve seul dans l’exiguïté d’une cabine de prélèvement, tiraillé entre ses angoisses existentielles et l’absurdité de la situation.',
+
+      ComponentDescription: () => (
+        <div className="space-y-4">
+          <p>Un film d&apos;Oscar Lesage • Produit par Benjamin Gilet</p>
+          <p>Avec Oscar Lesage, Julie Recoing et Maxime Crescini</p>
+          <p>Avec le soutien de l’Adami Déclencheur</p>
+          <p>En développement</p>
+        </div>
+      ),
+
+      // PICTURE
+      picture: 'https://ganache.studio/media/films/fiction/stephanie/picture.jpg',
+
+      // PICTURES
+      pictures: ['https://ganache.studio/media/films/fiction/stephanie/picture.jpg'],
 
       pageMetadata: {
         title: '',
