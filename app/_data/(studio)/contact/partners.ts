@@ -11,11 +11,6 @@ export const contactPartners: ContactPartner[] = [
     link: 'http://www.fjpi.org',
   },
   {
-    src: 'https://ganache.studio/media/partenaires/logo_ecoprod.jpeg',
-    alt: 'ECOPROD logo',
-    link: 'https://www.ecoprod.com',
-  },
-  {
     src: 'https://ganache.studio/media/partenaires/logo_unifrance.png',
     alt: 'UNIFRANCE logo',
     link: 'https://www.unifrance.org/annuaires/societe/366410/ganache-studio/',
