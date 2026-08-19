@@ -548,6 +548,7 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Queer Shorts Vienna • Autriche</li>
               <li>- Festival Zinegoak • Espagne</li>
               <li>- Fairy Tales Queer Art and Film Festival • Canada</li>
+              <li>- Zefestival par Polychromes</li>
             </ul>
           </div>
           <Image
@@ -585,7 +586,7 @@ export const films: Record<FilmType, FilmItem[]> = {
       ComponentDescription: () => (
         <div className="space-y-4">
           <p>Un film de Théo Vincent-Suzzoni • Produit par Benjamin Gilet</p>
-          <p>Photographie de Margot Besson</p>
+          <p>Photographie de Margot Besson • Son de Frédéric Buy</p>
           <p>Avec Stanislas Perrin et John Arnold</p>
           <p>
             Distribué par{' '}
@@ -611,6 +612,8 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Festival Courts Circuit 66</li>
               <li>- Festival Le Cri du Court</li>
               <li>- Festival Court sur Place • Canada</li>
+              <li>- Fine Line Film Fest • Serbie</li>
+              <li>- FILMETS Badalona Film Festival • Espagne</li>
             </ul>
           </div>
           <Image
@@ -643,7 +646,7 @@ export const films: Record<FilmType, FilmItem[]> = {
       title: [{ text: 'LA PRÉHISTOIRE' }],
       presentationItems: ['Max Lesage', 'Court métrage'],
       description:
-        'Lors d’une randonnée dans les Vosges avec son père et son frère, un jeune garçon passionné de Préhistoire, apprend l’existence d’une mystérieuse grotte et s’enfonce dans son monde imaginaire.',
+        'Lors d’une randonnée dans les Vosges avec son père et son frère, un jeune garçon passionné de Préhistoire apprend l’existence d’une mystérieuse grotte et s’enfonce dans son monde imaginaire.',
 
       ComponentDescription: () => (
         <div className="space-y-4">
@@ -655,6 +658,12 @@ export const films: Record<FilmType, FilmItem[]> = {
           <p>
             Avec le soutien du CNC, de la Procirep-Angoa, de la région Grand-Est, du département des Vosges, de la ville
             de Mulhouse et de Vosges TV
+          </p>
+          <p>
+            Distribué par{' '}
+            <a href="https://flowartsales.com/" target="_blank" rel="noopener noreferrer">
+              <u>Fløw</u>
+            </a>
           </p>
           <Image
             src="https://ganache.studio/media/films/fiction/la-prehistoire/Affiche-LP.png"
@@ -691,8 +700,9 @@ export const films: Record<FilmType, FilmItem[]> = {
       ComponentDescription: () => (
         <div className="space-y-4">
           <p>Un film de Louis Faury • Produit par Benjamin Gilet</p>
+          <p>Avec Ghjuvanna Benedetti, Fantine Harduin et Paul Garatte</p>
           <p>Meilleur scénario au Festival Rêves de Court en 2024</p>
-          <p>Avec le soutien du CNC, de la région Sud, de la Corse et de la Procirep-Angoa</p>
+          <p>Avec le soutien du CNC, de France TV, de la région Sud, de la Corse, d’Orezza et de la Procirep-Angoa</p>
           <p>En production</p>
         </div>
       ),
@@ -749,7 +759,7 @@ export const films: Record<FilmType, FilmItem[]> = {
       ComponentDescription: () => (
         <div className="space-y-4">
           <p>Un film de Gabriel Washer • Produit par Benjamin Gilet</p>
-          <p>Avec Gabriel Washer, Mathieu Perotto, Manon Rey et Maxime Boutéraon</p>
+          <p>Avec Gabriel Washer, Augustin Bouchacourt, Manon Rey et Maxime Boutéraon</p>
           <p>Avec le soutien de la Bourse Première Fois de l&apos;Adami et de la Procirep-Angoa</p>
           <p>En développement</p>
         </div>
@@ -804,11 +814,9 @@ export const films: Record<FilmType, FilmItem[]> = {
         "Lors du premier été après le décès de leur père, Max, 12 ans, vit mal le basculement dans l'adolescence de sa sœur, Léa. Elle sent qu'elle lui échappe, alors que lui-même se voit changer et refuse de grandir. L'arrivée de son meilleur ami Théo complique les choses.",
       ComponentDescription: () => (
         <div className="space-y-4">
-          <div className="space-y-1">
-            <p>Un film de Margot Roussel • Produit par Benjamin Gilet</p>
-            <p>Avec Elliot Chazal, Angelina Skrabo et Marwan Zeghoudi</p>
-            <p>Photographie de Julien Saez</p>
-          </div>
+          <p>Un film de Margot Roussel • Produit par Benjamin Gilet</p>
+          <p>Avec Elliot Chazal, Angelina Skrabo et Marwan Zeghoudi</p>
+          <p>Photographie de Julien Saez</p>
           <p>Avec le soutien de la Région Île-de-France</p>
         </div>
       ),
@@ -836,11 +844,9 @@ export const films: Record<FilmType, FilmItem[]> = {
 
       ComponentDescription: () => (
         <div className="space-y-4">
-          <div className="space-y-1">
-            <p>Un film de Max Lesage • Produit par Benjamin Gilet</p>
-            <p>Photographie de Mathias Godron • Son de Philippe Farnole</p>
-            <p>Avec Maxime Crescini, Oscar Lesage et Ella Pellegrini</p>
-          </div>
+          <p>Un film de Max Lesage • Produit par Benjamin Gilet</p>
+          <p>Photographie de Mathias Godron • Son de Philippe Farnole</p>
+          <p>Avec Maxime Crescini, Oscar Lesage et Ella Pellegrini</p>
           <div>
             <h2 className="text-lg font-bold">Festivals</h2>
             <ul className="ml-2">
@@ -914,17 +920,12 @@ export const films: Record<FilmType, FilmItem[]> = {
 
       ComponentDescription: () => (
         <div className="space-y-4">
-          <div className="space-y-1">
-            <p>Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
-            <p>
-              Photographie de Florian Solin • Son de Paul Kusnierek • Assistant à la mise en scène : Stanislas Perrin •
-              Mixage son de Matthieu Fraticelli • Graphisme de Nicholas Bochatay • Régie par Guillaume Joseph-Gabriel
-            </p>
-            <p>
-              Avec Augustin Bouchacourt, Stanislas Perrin, Éric Verdin, Lucie Brunet, Sylvain Debry, Édouard Eftimakis
-              et Manon Rey
-            </p>
-          </div>
+          <p>Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
+          <p>Photographie de Florian Solin</p>
+          <p>
+            Avec Augustin Bouchacourt, Stanislas Perrin, Éric Verdin, Lucie Brunet, Sylvain Debry, Édouard Eftimakis et
+            Manon Rey
+          </p>
           <Image
             src="https://ganache.studio/media/films/fiction/capsules-novembre/affiche.jpg"
             alt="Affiche Capsules Novembre"
@@ -957,10 +958,8 @@ export const films: Record<FilmType, FilmItem[]> = {
         'Voilà deux ans que sa sœur a disparu. Deux ans que Noémie mène sa propre enquête et envisage de dépasser les frontières du vraisemblable.',
       ComponentDescription: () => (
         <div className="space-y-4">
-          <div className="space-y-1">
-            <p>Un film d&apos;Hélène Delage • Co-produit par Ganache Studio</p>
-            <p>Photographie de Laurence Heintz</p>
-          </div>
+          <p>Un film d&apos;Hélène Delage • Co-produit par Ganache Studio</p>
+          <p>Photographie de Laurence Heintz</p>
           <p>Avec Noémie Schmidt</p>
           <Image
             src="https://ganache.studio/media/films/fiction/la-troisieme-nuit/affiche.jpg"
@@ -994,10 +993,8 @@ export const films: Record<FilmType, FilmItem[]> = {
 
       ComponentDescription: () => (
         <div className="space-y-4">
-          <div className="space-y-1">
-            <p>Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
-            <p>Photographie de Florian Solin • Son de Paul Kusnierek</p>
-          </div>
+          <p>Un film d&apos;Aurélien Grellier-Beker • Produit par Benjamin Gilet</p>
+          <p>Photographie de Florian Solin</p>
           <p>Avec Augustin Bouchacourt, Lucie Brunet, Teddy Chawa, Sylvain Debry, Edouard Eftimakis et Manon Rey</p>
         </div>
       ),
@@ -1024,19 +1021,15 @@ export const films: Record<FilmType, FilmItem[]> = {
 
       ComponentDescription: () => (
         <div className="space-y-4">
-          <div className="space-y-1">
-            <p>Réalisé par Aurélien Grellier-Beker • Scénario de Gabriel Washer • Produit par Benjamin Gilet</p>
-            <p>Photographie de Florian Solin • Son de Paul Kusnierek</p>
-          </div>
+          <p>Réalisé par Aurélien Grellier-Beker • Scénario de Gabriel Washer • Produit par Benjamin Gilet</p>
+          <p>Photographie de Florian Solin</p>
           <p>Avec Gabriel Washer, Suzanne de Baecque, Adrien Rouyard, Théo Salemkour et David Clavel</p>
-          <div className="space-y-1">
-            <div>
-              <h2 className="text-lg font-bold">Festivals</h2>
-              <ul className="ml-2">
-                <li>- Prix de la Meilleure Fiction au Festival du Film Court en Armagnac</li>
-                <li>- Festival International du Film Court d’Angoulême (FIFCA)</li>
-              </ul>
-            </div>
+          <div>
+            <h2 className="text-lg font-bold">Festivals</h2>
+            <ul className="ml-2">
+              <li>- Prix de la Meilleure Fiction au Festival du Film Court en Armagnac</li>
+              <li>- Festival International du Film Court d’Angoulême (FIFCA)</li>
+            </ul>
           </div>
 
           <Image
@@ -1073,10 +1066,8 @@ export const films: Record<FilmType, FilmItem[]> = {
 
       ComponentDescription: () => (
         <div className="space-y-4">
-          <div className="space-y-1">
-            <p>Réalisé par Aurélien Grellier-Beker • Écrit par Gabriel Washer • Produit par Benjamin Gilet</p>
-            <p>Photographie de Florian Solin</p>
-          </div>
+          <p>Réalisé par Aurélien Grellier-Beker • Écrit par Gabriel Washer • Produit par Benjamin Gilet</p>
+          <p>Photographie de Florian Solin</p>
           <p>
             Avec Gabriel Washer, Valentine Catzéflis, Dali Benssalah, Augustin Bouchacourt, Ilian Bergala, Théo
             Salemkour, Benjamin Voisin, Suzanne Rault-Balet, Harrison Arrevalo et David Clavel
