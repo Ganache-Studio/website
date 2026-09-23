@@ -9,5 +9,5 @@ import { FilmsPresentation } from '../_components/films-presentation';
 export const metadata: Metadata = generateDefaultMetadata(metadataConfig['/film-pub']);
 
 export default async function FilmPubPage() {
-  return <FilmsPresentation filmType={filmsTypes.pub} />;
+  return <FilmsPresentation filmType={filmsTypes.pub} withIntro />;
 }
