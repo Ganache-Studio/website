@@ -543,12 +543,15 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Festival du Film de Cabourg</li>
               <li>- Short Film Corner du Festival de Cannes</li>
               <li>- Festival du Court Métrage d&apos;Auch</li>
-              <li>- Festival Gueules d’amour de Lille</li>
+              <li>- Festival Chéries-Chéris</li>
+              <li>- Festival Gueules d’amour</li>
               <li>- Festival International du Film de Vébron</li>
               <li>- Queer Shorts Vienna • Autriche</li>
               <li>- Festival Zinegoak • Espagne</li>
               <li>- Fairy Tales Queer Art and Film Festival • Canada</li>
               <li>- Zefestival par Polychromes</li>
+              <li>- Film Festival BRNO16 ! • République Tchèque</li>
+              <li>- Love Queer Cinema Week • Beijing </li>
             </ul>
           </div>
           <Image
@@ -598,22 +601,25 @@ export const films: Record<FilmType, FilmItem[]> = {
             <h2 className="text-lg font-bold">Festivals</h2>
             <ul className="ml-2">
               <li>- Grand Prix du Festival Européen du Film Court de Brest</li>
-              <li>- Short Film Market Picks du Festival International du court-métrage de Clermont Ferrand</li>
+              <li>- Short Film Market Picks du Festival International du court-métrage de Clermont-Ferrand</li>
+              <li>- Prix des Communes & Mention coup de coeur des cinéclubs au festival Courts Circuit 66</li>
+              <li>- Prix du Meilleur Son au FILMETS Badalona Film Festival • Espagne</li>
               <li>
                 - Prix du Meilleur Scénario et du Meilleur Film au Marseille International Film Festival by Cineverse
               </li>
               <li>- Prix du Meilleur Film et du Meilleur Acteur au Stinville Festival</li>
+              <li>- Mention Spéciale au Fine Line Film Fest • Serbie</li>
               <li>- Festival du Film Francophone d’Angoulême</li>
               <li>- Festival Tous Courts d’Aix-en-Provence</li>
               <li>- Festival Paris Courts Devant</li>
               <li>- Festival du Court Métrage d’Auch</li>
               <li>- Festival Regard de Chicoutimi • Canada</li>
               <li>- Festival Courtivore</li>
-              <li>- Festival Courts Circuit 66</li>
               <li>- Festival Le Cri du Court</li>
               <li>- Festival Court sur Place • Canada</li>
-              <li>- Fine Line Film Fest • Serbie</li>
-              <li>- FILMETS Badalona Film Festival • Espagne</li>
+              <li>- Tripoli Film Festival • Liban</li>
+              <li>- International Film Festival of Jammu & Kashmir • Inde</li>
+              <li>- Festival Georges Sand du court métrage</li>
             </ul>
           </div>
           <Image
@@ -665,6 +671,12 @@ export const films: Record<FilmType, FilmItem[]> = {
               <u>Fløw</u>
             </a>
           </p>
+          <div>
+            <h2 className="text-lg font-bold">Festivals</h2>
+            <ul className="ml-2">
+              <li>- Festival Européen du Film Court de Brest</li>
+            </ul>
+          </div>
           <Image
             src="https://ganache.studio/media/films/fiction/la-prehistoire/Affiche-LP.png"
             alt="Affiche La Préhistoire"
