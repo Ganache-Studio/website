@@ -58,9 +58,9 @@ export const Navigation = ({
             case 'group': {
               return (
                 <li key={item.title}>
-                  <details className="group">
+                  <details>
                     <summary className="cursor-pointer list-none hover:underline">{item.title}</summary>
-                    <ul className="hidden space-y-2 pt-2 group-focus-within:block group-hover:block group-[open]:block">
+                    <ul className="space-y-2 pt-2">
                       {item.items.map(subItem => (
                         <li key={subItem.href}>
                           <Link
