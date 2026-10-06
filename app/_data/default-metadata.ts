@@ -72,7 +72,7 @@ export const metadataConfig: Record<Page, PageMetadata> = {
   },
 
   '/ganache-festival': {
-    title: 'Ganache Festival 2026 | 4ème Édition',
+    title: 'Ganache Festival 2027 | 5ème Édition',
     description: 'Festival de courts métrages • Paris • Ganache Studio',
     keywords: [],
     canonicalUrl: 'https://ganache.studio/ganache-festival',
@@ -97,5 +97,12 @@ export const metadataConfig: Record<Page, PageMetadata> = {
     description: 'Festival de courts métrages • Paris • 25-26 avril 2025 • Ganache Studio',
     keywords: [],
     canonicalUrl: 'https://ganache.studio/ganache-festival-2025',
+  },
+
+  '/ganache-festival-2026': {
+    title: 'Ganache Festival 2026 | 4ème Édition',
+    description: 'Festival de courts métrages • Paris • 24-25 avril 2026 • Ganache Studio',
+    keywords: [],
+    canonicalUrl: 'https://ganache.studio/ganache-festival-2026',
   },
 };

@@ -55,6 +55,30 @@ export const Navigation = ({
                 </li>
               );
             }
+            case 'group': {
+              return (
+                <li key={item.title}>
+                  <details className="group">
+                    <summary className="cursor-pointer list-none hover:underline">{item.title}</summary>
+                    <ul className="hidden space-y-2 pt-2 group-focus-within:block group-hover:block group-[open]:block">
+                      {item.items.map(subItem => (
+                        <li key={subItem.href}>
+                          <Link
+                            href={subItem.href}
+                            target={subItem.target}
+                            rel={subItem.target === '_blank' ? 'noopener noreferrer' : undefined}
+                            className={clsx('hover:underline', subItem.italic && 'italic')}
+                            onClick={onClick}
+                          >
+                            {subItem.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              );
+            }
           }
         })}
         <li className="flex justify-end">

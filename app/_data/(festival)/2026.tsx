@@ -69,6 +69,13 @@ export const festival2026Data = {
       href: '/ganache-festival-2025',
       to: 'page',
     },
+    {
+      title: '5ème ÉDITION',
+      italic: true,
+      target: '_blank',
+      href: '/ganache-festival',
+      to: 'page',
+    },
   ],
 
   programme: [

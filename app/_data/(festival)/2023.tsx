@@ -49,18 +49,28 @@ export const festival2023Data = {
       href: '/ganache-festival-2024',
       to: 'page',
       italic: true,
+      target: '_blank',
     },
     {
       title: '3ème ÉDITION',
       href: '/ganache-festival-2025',
       to: 'page',
       italic: true,
+      target: '_blank',
     },
     {
       title: '4ème ÉDITION',
+      href: '/ganache-festival-2026',
+      to: 'page',
+      italic: true,
+      target: '_blank',
+    },
+    {
+      title: '5ème ÉDITION',
       href: '/ganache-festival',
       to: 'page',
       italic: true,
+      target: '_blank',
     },
   ],
 

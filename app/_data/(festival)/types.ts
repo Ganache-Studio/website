@@ -41,21 +41,27 @@ export type ProgrammeItem = {
   steps?: ProgrammeStep[];
 };
 
-export type NavigationItem = {
+type NavigationPageItem = {
   title: string;
-} & (
+  href: string;
+  italic?: boolean;
+  target?: string;
+  to: 'page';
+};
+
+export type NavigationItem =
+  | NavigationPageItem
   | {
-      href: string;
-      italic?: boolean;
-      target?: string;
-      to: 'page';
-    }
-  | {
+      title: string;
       id: string;
       italic?: boolean;
       to: 'section';
     }
-);
+  | {
+      title: string;
+      items: NavigationPageItem[];
+      to: 'group';
+    };
 
 export type FestivalData = {
   navigationItems: NavigationItem[];
