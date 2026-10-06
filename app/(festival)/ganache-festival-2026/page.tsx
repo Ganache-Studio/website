@@ -19,7 +19,7 @@ import { FestivalProvider } from '../_context/festival.context';
 import { DesktopLayout } from '../_layout/desktop-layout';
 import { MobileLayout } from '../_layout/mobile-layout';
 
-export const metadata: Metadata = generateDefaultMetadata(metadataConfig['/ganache-festival']);
+export const metadata: Metadata = generateDefaultMetadata(metadataConfig['/ganache-festival-2026']);
 
 const PresentationSection = () => {
   return (
