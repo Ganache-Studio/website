@@ -27,7 +27,7 @@ export const TeamSection = ({ members, showNames = false }: TeamProps) => {
                 className="h-auto w-full object-contain"
               />
             </div>
-            {showNames && <p className="mt-2 text-xs font-medium md:text-sm">{member.name}</p>}
+            {showNames && <p className="mt-2 text-sm font-medium">{member.name}</p>}
           </div>
         ))}
       </div>

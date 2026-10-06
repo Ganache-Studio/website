@@ -7,7 +7,7 @@ export const ProgrammeStep = ({ title, films }: { title: string; films?: Program
       <div className="space-y-1">
         {films?.map(({ title, text }) => {
           return (
-            <p className="text-xs md:text-sm lg:text-base" key={title}>
+            <p className="text-sm md:text-sm lg:text-base" key={title}>
               <i>{title}</i> {text}
             </p>
           );

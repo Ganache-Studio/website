@@ -17,10 +17,10 @@ export const metadata: Metadata = generateDefaultMetadata(metadataConfig['/ganac
 const PresentationSection = () => {
   return (
     <Section id="presentation">
-      <div className="mt-40 flex flex-col items-center space-y-4 text-xs lg:space-y-6 lg:text-sm xl:flex-row xl:space-y-0 xl:space-x-8">
+      <div className="mt-40 flex flex-col items-center space-y-4 text-sm lg:space-y-6 xl:flex-row xl:space-y-0 xl:space-x-8">
         <div className="flex-1/3">
           <ClickableModalImage src={festival2027Data.affiche} alt="Affiche Festival 2027" className="w-full" />
-          <p className="mt-2 text-right text-xs opacity-70">Crédit affiche : Jonathan Bertin</p>
+          <p className="mt-2 text-right text-sm opacity-70">Crédit affiche : Jonathan Bertin</p>
         </div>
         <div className="flex-2/3 space-y-3">
           <p className="text-justify">

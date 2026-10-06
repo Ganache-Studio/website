@@ -24,9 +24,9 @@ export const metadata: Metadata = generateDefaultMetadata(metadataConfig['/ganac
 const PresentationSection = () => {
   return (
     <Section id="presentation">
-      <div className="space-y-1 text-sm lg:space-y-4 lg:text-base">
+      <div className="space-y-1 text-base lg:space-y-4">
         <PhotoGallery photos={festival2026Data.photos} columns={3} />
-        <p className="text-right text-xs opacity-70">Crédit photo : Julia Hervouin</p>
+        <p className="text-right text-sm opacity-70">Crédit photo : Julia Hervouin</p>
         <p className="text-justify">
           Vous avez été nombreux·ses à vous déplacer au Grand Action pour cette quatrième édition du Ganache Festival.
           La salle était comble pour les quatre projections, et nous tenions à vous remercier de votre enthousiasme et
@@ -37,7 +37,7 @@ const PresentationSection = () => {
         </p>
         <p className="text-end">Ganache Studio et l&apos;équipe du Ganache Festival</p>
       </div>
-      <div className="mt-30 flex flex-col items-center space-y-4 text-xs lg:space-y-6 lg:text-sm xl:flex-row xl:space-y-0 xl:space-x-8">
+      <div className="mt-30 flex flex-col items-center space-y-4 text-sm lg:space-y-6 xl:flex-row xl:space-y-0 xl:space-x-8">
         <div className="flex-1/3">
           <ClickableModalImage src={festival2026Data.affiche} alt="Affiche Festival 2026" className="w-full" />
         </div>
