@@ -24,9 +24,8 @@ const PresentationSection = () => {
         </div>
         <div className="flex-2/3 space-y-3">
           <p className="text-justify">
-            Les candidatures sont ouvertes pour la <b>cinquième</b> édition du Ganache Festival, qui se tiendra au
-            cinéma <b>Le Grand Action</b>, à Paris, les <b>23 et 24 avril 2027</b>. Cette année encore, nous avons à
-            cœur de :
+            Les candidatures sont ouvertes pour la cinquième édition du Ganache Festival, qui se tiendra au cinéma Le
+            Grand Action, à Paris, les 23 et 24 avril 2027. Cette année encore, nous avons à cœur de :
           </p>
           <ul className="ml-2 space-y-1">
             <li>- donner à voir des courts métrages émergents et personnels,</li>
@@ -47,8 +46,8 @@ const PresentationSection = () => {
             <li>- en langue française.</li>
           </ul>
           <p className="text-justify">
-            À l’instar des éditions précédentes, le festival se déroulera avec l’accompagnement bienveillant{' '}
-            <b> d’une marraine</b> connue de la profession, et aucun prix n’y sera décerné.
+            À l’instar des éditions précédentes, le festival se déroulera avec l’accompagnement bienveillant d’une
+            marraine connue de la profession, et aucun prix n’y sera décerné.
           </p>
           <p className="text-justify">
             Les candidatures s’effectuent via la plateforme{' '}
