@@ -324,9 +324,16 @@ export const FilmsPresentation: FunctionComponent<FilmsPresentationProps> = ({
     setIsIntroVisible(inView);
   }, []);
 
+  const scrollPastIntro = useCallback(() => {
+    const first = films[filmType][0];
+    if (first) scrollToSection(first.id);
+  }, [filmType]);
+
   return (
     <>
-      {withIntro && introText && <IntroOverlay isVisible={isIntroVisible} text={introText} />}
+      {withIntro && introText && (
+        <IntroOverlay isVisible={isIntroVisible} text={introText} onScroll={scrollPastIntro} />
+      )}
       <DownArrow
         currentIndex={currentIndex}
         filmType={filmType}

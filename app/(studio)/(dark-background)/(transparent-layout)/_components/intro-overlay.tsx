@@ -2,14 +2,17 @@
 
 import { useStudioContext } from '@studio/context/studio.context';
 import { clsx } from 'clsx';
+import { FaChevronDown } from 'react-icons/fa';
 
 type IntroOverlayProps = {
   isVisible: boolean;
   text: string;
+  onScroll: () => void;
 };
 
-export const IntroOverlay = ({ isVisible, text }: IntroOverlayProps) => {
+export const IntroOverlay = ({ isVisible, text, onScroll }: IntroOverlayProps) => {
   const { isDrawerOpen } = useStudioContext();
+  const showScrollHint = isVisible && !isDrawerOpen;
 
   return (
     <div
@@ -27,6 +30,18 @@ export const IntroOverlay = ({ isVisible, text }: IntroOverlayProps) => {
       >
         {text}
       </p>
+      <button
+        type="button"
+        onClick={onScroll}
+        aria-label="Faire défiler"
+        tabIndex={showScrollHint ? 0 : -1}
+        className={clsx(
+          'absolute bottom-0 left-1/2 flex -translate-x-1/2 transform items-center justify-center p-2 text-white transition-opacity duration-300 hover:opacity-100 md:p-3 lg:p-4',
+          showScrollHint ? 'pointer-events-auto opacity-90' : 'pointer-events-none opacity-0',
+        )}
+      >
+        <FaChevronDown className="size-4 cursor-pointer" />
+      </button>
     </div>
   );
 };
