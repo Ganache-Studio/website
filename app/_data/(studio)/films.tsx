@@ -425,6 +425,40 @@ export const films: Record<FilmType, FilmItem[]> = {
       },
     },
     {
+      id: 'cazabat',
+      title: [{ text: 'CAZABAT' }],
+      presentationItems: ['Emma Panchot', 'Photoshoot'],
+      description: 'Photoshoot',
+
+      ComponentDescription: () => (
+        <div className="space-y-4">
+          <div className="space-y-1">
+            <p>Emma Panchot</p>
+          </div>
+        </div>
+      ),
+
+      // PICTURE
+      picture: 'https://ganache.studio/media/films/pub/cazabat/COVER.jpg',
+
+      // PICTURES
+      pictures: [
+        'https://ganache.studio/media/films/pub/cazabat/1.jpg',
+        'https://ganache.studio/media/films/pub/cazabat/2.jpg',
+        'https://ganache.studio/media/films/pub/cazabat/3.jpg',
+        'https://ganache.studio/media/films/pub/cazabat/4.jpg',
+        'https://ganache.studio/media/films/pub/cazabat/5.jpg',
+        'https://ganache.studio/media/films/pub/cazabat/6.jpg',
+      ],
+
+      pageMetadata: {
+        title: '',
+        description: '',
+        keywords: [],
+        canonicalUrl: '',
+      },
+    },
+    {
       id: 'ornikar',
       title: [{ text: 'ORNIKAR' }],
       presentationItems: ['Julien Thiverny', 'Agence : Josiane', 'Campagne social media'],
@@ -474,6 +508,33 @@ export const films: Record<FilmType, FilmItem[]> = {
 
       // VIMEO URL
       vimeoUrl: 'https://player.vimeo.com/video/884433759?h=4cfe06afed&title=0',
+
+      pageMetadata: {
+        title: '',
+        description: '',
+        keywords: [],
+        canonicalUrl: '',
+      },
+    },
+    {
+      id: 'ona',
+      title: [{ text: 'ONA' }],
+      presentationItems: ['Marina Germain', 'Photoshoot'],
+      description: 'Photoshoot',
+
+      ComponentDescription: () => (
+        <div className="space-y-4">
+          <div className="space-y-1">
+            <p>Marina Germain</p>
+          </div>
+        </div>
+      ),
+
+      // PICTURE
+      picture: 'https://ganache.studio/media/films/pub/ona/ONA-compressed.jpg',
+
+      // PICTURES
+      pictures: ['https://ganache.studio/media/films/pub/ona/ONA-compressed.jpg'],
 
       pageMetadata: {
         title: '',
