@@ -681,9 +681,9 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Festival Courtivore</li>
               <li>- Festival Le Cri du Court</li>
               <li>- Festival Court sur Place • Canada</li>
-              <li>- Tripoli Film Festival • Liban</li>
               <li>- International Film Festival of Jammu & Kashmir • Inde</li>
               <li>- C&apos;est Pas La Taille Qui Compte !</li>
+              <li>- Festival International Séquence Court-Métrage de Toulouse</li>
             </ul>
           </div>
           <Image
