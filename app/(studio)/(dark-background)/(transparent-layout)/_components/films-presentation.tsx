@@ -340,7 +340,7 @@ export const FilmsPresentation: FunctionComponent<FilmsPresentationProps> = ({
         isIntroVisible={isIntroVisible}
         withIntro={withIntro}
       />
-      <div className="h-dvh w-full snap-y snap-mandatory overflow-y-auto">
+      <div id="films-presentation" className="h-dvh w-full snap-y snap-mandatory overflow-y-auto">
         {films[filmType].map((filmItem, index) =>
           withIntro && index === 0 ? (
             <FirstFilmWithIntro

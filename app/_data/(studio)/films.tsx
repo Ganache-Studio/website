@@ -613,6 +613,7 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Zefestival par Polychromes</li>
               <li>- Film Festival BRNO16 ! • République Tchèque</li>
               <li>- Love Queer Cinema Week • Beijing </li>
+              <li>- MixBrasil Festival of Diversity • Brésil</li>
             </ul>
           </div>
           <Image
@@ -669,6 +670,8 @@ export const films: Record<FilmType, FilmItem[]> = {
                 - Prix du Meilleur Scénario et du Meilleur Film au Marseille International Film Festival by Cineverse
               </li>
               <li>- Prix du Meilleur Film et du Meilleur Acteur au Stinville Festival</li>
+              <li>- Prix du meilleur film au Tripoli Film Festival • Liban</li>
+              <li>- Prix de la création sonore au Festival George Sand du court métrage</li>
               <li>- Mention Spéciale au Fine Line Film Fest • Serbie</li>
               <li>- Festival du Film Francophone d’Angoulême</li>
               <li>- Festival Tous Courts d’Aix-en-Provence</li>
@@ -680,7 +683,7 @@ export const films: Record<FilmType, FilmItem[]> = {
               <li>- Festival Court sur Place • Canada</li>
               <li>- Tripoli Film Festival • Liban</li>
               <li>- International Film Festival of Jammu & Kashmir • Inde</li>
-              <li>- Festival Georges Sand du court métrage</li>
+              <li>- C&apos;est Pas La Taille Qui Compte !</li>
             </ul>
           </div>
           <Image
@@ -773,10 +776,14 @@ export const films: Record<FilmType, FilmItem[]> = {
       ComponentDescription: () => (
         <div className="space-y-4">
           <p>Un film de Louis Faury • Produit par Benjamin Gilet</p>
+          <p>Photographie de Noé Mercklé • Son d’Alexis Pinto • Montage de Laura Parade • Musique de Yeahman</p>
           <p>Avec Ghjuvanna Benedetti, Fantine Harduin et Paul Garatte</p>
           <p>Meilleur scénario au Festival Rêves de Court en 2024</p>
-          <p>Avec le soutien du CNC, de France TV, de la région Sud, de la Corse, d’Orezza et de la Procirep-Angoa</p>
-          <p>En production</p>
+          <p>
+            Avec le soutien du CNC, de France TV, de la région Sud, de la Corse, de la SACEM en association avec ALCIMÉ,
+            d’Orezza et de la Procirep-Angoa
+          </p>
+          <p>En post-production</p>
         </div>
       ),
 
@@ -832,9 +839,10 @@ export const films: Record<FilmType, FilmItem[]> = {
       ComponentDescription: () => (
         <div className="space-y-4">
           <p>Un film de Gabriel Washer • Produit par Benjamin Gilet</p>
-          <p>Avec Gabriel Washer, Augustin Bouchacourt, Manon Rey et Maxime Boutéraon</p>
+          <p>Photographie de Julien Thiverny • Son de Raoul Barbé • Montage de Laura Parade</p>
+          <p>Avec Gabriel Washer, Augustin Bouchacourt, Manon Rey et Alexandre Auvergne</p>
           <p>Avec le soutien de la Bourse Première Fois de l&apos;Adami et de la Procirep-Angoa</p>
-          <p>En développement</p>
+          <p>En post-production</p>
         </div>
       ),
 
@@ -862,7 +870,8 @@ export const films: Record<FilmType, FilmItem[]> = {
         <div className="space-y-4">
           <p>Un film de Lily Papamiltiadès • Produit par Benjamin Gilet</p>
           <p>Avec Oscar Lesage et Mathilde Weil</p>
-          <p>En développement</p>
+          <p>Avec le soutien de PurpleMatters</p>
+          <p>En production</p>
         </div>
       ),
 

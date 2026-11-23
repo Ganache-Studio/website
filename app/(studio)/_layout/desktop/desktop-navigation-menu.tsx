@@ -34,7 +34,13 @@ export const DesktopNavigationMenu = () => {
               </a>
             ) : (
               <Link
-                onClick={handleDrawerClose}
+                onClick={event => {
+                  handleDrawerClose();
+                  if (pathname.replace(/\/$/, '') === item.path) {
+                    event.preventDefault();
+                    document.getElementById('films-presentation')?.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
+                }}
                 href={item.path}
                 className={`flex transition-all duration-500 ${isMainContentFullScreen ? 'text-white' : 'text-black'} ${pathname === item.path ? 'font-bold opacity-100' : 'opacity-30 hover:opacity-100'}`}
               >

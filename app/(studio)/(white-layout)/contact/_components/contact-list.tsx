@@ -3,6 +3,7 @@ export const ContactList: React.FC = () => {
     { name: 'Ganache Studio', email: 'hello@ganache.studio' },
     { name: 'Benjamin Gilet', email: 'benjamin@ganache.studio' },
     { name: 'Gabriel Washer', email: 'gabriel@ganache.studio' },
+    { name: 'Maëva Raymond', email: 'maeva@ganache.studio' },
   ];
 
   return (

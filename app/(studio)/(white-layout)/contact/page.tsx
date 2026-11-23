@@ -59,7 +59,7 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-          <div className="flex flex-3/4 items-center justify-around">
+          <div className="mb-6 flex flex-3/4 items-center justify-around">
             <div className="space-y-4">
               <ContactList />
             </div>

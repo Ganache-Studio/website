@@ -25,7 +25,13 @@ export const MobileNavigationMenu = () => {
         {globalLayoutNavigationLinks.map(item => (
           <li className="flex justify-center" key={item.path}>
             <Link
-              onClick={handleDrawerClose}
+              onClick={event => {
+                handleDrawerClose();
+                if (pathname.replace(/\/$/, '') === item.path) {
+                  event.preventDefault();
+                  document.getElementById('films-presentation')?.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
               href={item.path}
               className={`leading-none ${isMainContentFullScreen ? 'text-white' : 'text-black'} ${
                 pathname === item.path ? 'font-bold opacity-100' : 'opacity-30 hover:opacity-100'
